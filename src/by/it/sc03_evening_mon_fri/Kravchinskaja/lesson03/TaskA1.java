@@ -1,4 +1,4 @@
-package by.it.akhmelev.lesson03;
+package by.it.sc03_evening_mon_fri.Kravchinskaja.lesson03;
 
 class TaskA1 {
 /*
@@ -9,8 +9,7 @@ Hello world!
 Для ручной проверки запустите программу Ctrl+Shift+F10
 Для автоматической проверки откройте и запустите класс Testing
 */
-    public static void main(String[] args) {
-     System.out.println("Hello World");
-    }
-    }
-
+    public static void main(String[] args)
+    {
+     System.out.println("Hello world!");
+    }}
