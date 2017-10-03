@@ -23,11 +23,5 @@ class TaskB1 {
         int res=i*i;
         System.out.println(res);
 
-
-
-
-
-
-
     }
 }
