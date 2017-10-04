@@ -1,11 +1,12 @@
-package by.it.akhmelev.lesson03;
+package by.it.sc04_evening_tue_thu.Tovstik.lesson03;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.*;
 import java.lang.reflect.Method;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 //поставьте курсор на следующую строку и нажмите Ctrl+Shift+F10
 public class Testing {
@@ -61,8 +62,7 @@ public class Testing {
 
     @Test
     public void testTaskC2() throws Exception {
-        Testing testing = new Testing(TaskC2.class, "34\n" +
-                "26\n");
+        Testing testing = new Testing(TaskC2.class, "34\n26\n");
         testing.contains(
                 "DEC:34+26=60\n" +
                         "BIN:100010+11010=111100\n" +
@@ -79,8 +79,8 @@ public class Testing {
         testing.contains("39.35\n");
         try {
             Method m = TaskC3.class.getDeclaredMethod("getWeight", int.class);
-            assertEquals((Double) m.invoke(null, 100), 39.35, 1e-100);
-            assertEquals((Double) m.invoke(null, 75), 29.51, 1e-100);
+            Assert.assertEquals((Double) m.invoke(null, 100), 39.35, 1e-100);
+            Assert.assertEquals((Double) m.invoke(null, 75), 29.51, 1e-100);
         } catch (NoSuchMethodException e) {
             org.junit.Assert.fail("Метод getWeight не найден");
         }
