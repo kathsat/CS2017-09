@@ -9,10 +9,8 @@ package by.it.sc04_evening_tue_thu.bayramova.lesson03;
 */
 class TaskA2 {
     public static void main(String[] args) {
-        System.out.println("Я начинаю изучать Java!");
-        System.out.println("Я начинаю изучать Java!");
-        System.out.println("Я начинаю изучать Java!");
-        System.out.println("Я начинаю изучать Java!");
-        System.out.println("Я начинаю изучать Java!");
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Я начинаю изучать Java!");
+        }
     }
 }
