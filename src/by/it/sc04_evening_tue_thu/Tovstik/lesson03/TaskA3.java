@@ -7,9 +7,11 @@ package by.it.sc04_evening_tue_thu.Tovstik.lesson03;
 
 class TaskA3 {
     public static void main(String[] args) {
-        int i = 2;
+        int i = 3;
         int j = 3;
-        int k = i + j;
-        System.out.println(i + "+" + j + "=" + k);
+        int p = 4;
+        int x = 4;
+        int k = i * j + p * x;
+        System.out.println(i + "*" + j + "+" + p + "*" + x + "=" + k);
     }
 }
