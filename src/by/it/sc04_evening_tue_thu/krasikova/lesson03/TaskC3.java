@@ -39,17 +39,18 @@ class TaskC3 {
         System.out.println(i);
         System.out.println("");
         System.out.println("Вывод:");
-        System.out.println(String.format("%(.2f", getWeight(i)));
+        System.out.println(getWeight(i));
 
     }
 
     public static double getWeight(double x) {
-        double weightMars;
-        weightMars= 3.86 / 9.81 * x;
-        return weightMars;
+        double weightMars = 3.86 / 9.81 * x * 100;
+        int weight = (int) weightMars + 1;
+        double finalWeightMars = (double) weight / 100;
+        return finalWeightMars;
 
     }
-    }
+}
 
 
 
