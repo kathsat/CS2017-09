@@ -13,13 +13,23 @@ Scanner sc=new Scanner(System.in);
 3. Программа должна считывать число типа Int с клавиатуры.
 4. Программа должна выводить квадрат считанного числа.
  */
-import java.util.Scanner
+import java.util.Scanner;
 
-class TaskB1 {
-    public static void main (String [] arga){
-        Scanner sc=new Scanner (System.in);
-    int i=sc.nextInt();
-    int result=i*i;
-    System.out.println(result);
 
+public class TaskB1 {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Введите целое число:");
+
+        int Number = sc.nextInt();
+
+        int Result = Number*Number;
+
+        System.out.println("Квадрат считанного числа равен:" + Result);
+
+    }
 }

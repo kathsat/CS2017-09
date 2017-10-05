@@ -7,9 +7,13 @@ package by.it.sc02_morning.karenda.lesson03;
 Для ручной проверки запустите программу Ctrl+Shift+F10
 Для автоматической проверки откройте и запустите класс Testing
 */
-class TaskA2
-    public static void main (String [] arga){
-    Scanner sc=new Scanner (System.in);
-    int i=sc.nextInt();
+class TaskA2 {
+    public static void main(String[] args) {
 
+        System.out.println("Я начинаю изучать Java!");
+        System.out.println("Я начинаю изучать Java!");
+        System.out.println("Я начинаю изучать Java!");
+        System.out.println("Я начинаю изучать Java!");
+        System.out.println("Я начинаю изучать Java!");
+    }
 }
