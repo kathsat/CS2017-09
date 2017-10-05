@@ -61,7 +61,8 @@ public class Testing {
 
     @Test
     public void testTaskC2() throws Exception {
-        Testing testing = new Testing(TaskC2.class, "34\n26\n");
+        Testing testing = new Testing(TaskC2.class, "34\n" +
+                "26\n");
         testing.contains(
                 "DEC:34+26=60\n" +
                         "BIN:100010+11010=111100\n" +
