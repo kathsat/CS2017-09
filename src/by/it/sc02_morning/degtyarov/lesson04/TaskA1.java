@@ -37,10 +37,11 @@ import java.util.Scanner;
 
 class TaskA1 {
     public static void main(String[] args) {
-          Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int i = sc.nextInt();
         int j = sc.nextInt();
-        int  a, b, c, d, e;
+
+        int a, b, c, d, e;
         double a1, b1, c1, d1, e1;
 
         a = i + j;
@@ -49,20 +50,14 @@ class TaskA1 {
         d = i / j;
         e = i % j;
 
+        System.out.println(a + " " + b + " " + c + " " + d + " " + e);
 
-          System.out.println(a + " " + b + " " + c + " " + d + " " + e);
-
-        a1 = (double) i + j;
-        b1 = (double) i - j;
-        c1 = (double) i * j;
-        d1 = (double) i / j;
-        e1 = (double) i % j;
-
+        a1 = (double)i + j;
+        b1 = (double)i - j;
+        c1 = (double)i * j;
+        d1 = (double)i / j;
+        e1 = (double)i % j;
 
         System.out.println(a1 + " " + b1 + " " + c1 + " " + d1 + " " + e1);
-
-
     }
-
-
 }
