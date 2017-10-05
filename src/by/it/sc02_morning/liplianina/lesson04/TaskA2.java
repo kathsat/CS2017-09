@@ -1,4 +1,4 @@
-package by.it.akhmelev.lesson04;
+package by.it.sc02_morning.liplianina.lesson04;
 
 /*
 Lesson 04. Task A2. Стихотворение
@@ -20,6 +20,16 @@ Lesson 04. Task A2. Стихотворение
 Для ручной проверки запустите программу Ctrl+Shift+F10
 Для автоматической проверки откройте и запустите класс Testing
 */
-public class TaskA2 {
-
+class TaskA2 {
+    public static void main(String[] args) {
+        String a = "Let us try to be polite";
+        String b = "In everything we do";
+        String c = "Remember always to say 'please'";
+        String d = "And don't forget 'thank you'!";
+        System.out.println("Мое любимое стихотворение:");
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+    }
 }
