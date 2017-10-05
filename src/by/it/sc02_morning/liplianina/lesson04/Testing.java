@@ -1,10 +1,6 @@
 package by.it.sc02_morning.liplianina.lesson04;
 
-import by.it.akhmelev.lesson04.TaskA1;
 import by.it.akhmelev.lesson04.TaskA2;
-import by.it.akhmelev.lesson04.TaskB1;
-import by.it.akhmelev.lesson04.TaskB2;
-import by.it.akhmelev.lesson04.TaskC1;
 import by.it.akhmelev.lesson04.TaskC2;
 import org.junit.Test;
 
@@ -19,7 +15,7 @@ public class Testing {
 
     @Test
     public void testTaskA1() throws Exception {
-        Testing testing = new Testing(TaskA1.class, "7 2");
+        Testing testing = new Testing(by.it.akhmelev.lesson04.TaskA1.class, "7 2");
         testing.contains("9 5 14 3 1\n9.0 5.0 14.0 3.5 1.0");
     }
 
@@ -43,7 +39,7 @@ public class Testing {
 
     @Test
     public void testTaskB1() throws Exception {
-        Testing testing = new Testing(TaskB1.class);
+        Testing testing = new Testing(by.it.akhmelev.lesson04.TaskB1.class);
         testing.contains(
                 "575.2220000610351\n" +
                         "111.111 7 73 273 111.111"
@@ -53,19 +49,19 @@ public class Testing {
     @Test
     public void testTaskB2() throws Exception {
         Testing testing;
-        testing = new Testing(TaskB2.class, "2 5 3");
+        testing = new Testing(by.it.akhmelev.lesson04.TaskB2.class, "2 5 3");
         testing.contains("-1.0");
         testing.contains("-1.5");
-        testing = new Testing(TaskB2.class, "2 4 2");
+        testing = new Testing(by.it.akhmelev.lesson04.TaskB2.class, "2 4 2");
         testing.contains("-1.0\n");
-        testing = new Testing(TaskB2.class, "2 2 2");
+        testing = new Testing(by.it.akhmelev.lesson04.TaskB2.class, "2 2 2");
         testing.contains("Отрицательный дискриминант");
     }
 
     @Test
     public void testTaskC1() throws Exception {
         try {
-            Method m = TaskC1.class.getDeclaredMethod("convertCelsiumToFahrenheit", int.class);
+            Method m = by.it.akhmelev.lesson04.TaskC1.class.getDeclaredMethod("convertCelsiumToFahrenheit", int.class);
             assertEquals(104.0, (double) m.invoke(null, 40), 1e-22);
             assertEquals(68.0, (double) m.invoke(null, 20), 1e-22);
             assertEquals(32.0, (double) m.invoke(null, 0), 1e-22);
