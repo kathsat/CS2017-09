@@ -45,13 +45,12 @@ class TaskC3 {
 
     public static double getWeight(double x) {
         double weightMars = 3.86 / 9.81 * x * 100;
-        int weight = (int) weightMars + 1;
-        double finalWeightMars = (double) weight / 100;
-        return finalWeightMars;
+        int weight = (int) weightMars;
+        double newWeightMars = (double) weight / 100;
+        return newWeightMars;
 
     }
 }
-
 
 
 
