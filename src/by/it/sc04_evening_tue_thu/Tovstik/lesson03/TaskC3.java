@@ -38,7 +38,7 @@ class TaskC3 {
         double weightMars = getWeight(weighEarth);
         System.out.println(weightMars);
     }
-    
+
     public static double getWeight(int aEarthWeight){
         double gravityEarth = 9.81;
         double gravityMars = 3.86;
