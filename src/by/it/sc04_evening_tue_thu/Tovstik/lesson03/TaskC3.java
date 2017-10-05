@@ -1,5 +1,7 @@
 package by.it.sc04_evening_tue_thu.Tovstik.lesson03;
 
+import java.util.Scanner;
+
 /*
 Ускорение свободного падения на Земле и Марсе таково:
 Марс   3,86
@@ -27,5 +29,21 @@ package by.it.sc04_evening_tue_thu.Tovstik.lesson03;
 
 */
 class TaskC3 {
+    public static void main(String[] args) {
+        System.out.println("Ввод");
 
+        Scanner sc =  new Scanner(System.in);
+        int weighEarth = sc.nextInt();
+        System.out.println("Вывод:");
+        double weightMars = getWeight(weighEarth);
+        System.out.println(weightMars);
+    }
+    public static double getWeight(int aEarthWeight){
+        double gravityEarth = 9.81;
+        double gravityMars = 3.86;
+
+        double weightMars = aEarthWeight * gravityMars / gravityEarth;
+
+        return Math.round(weightMars * 100.0) / 100.0;
+    }
 }

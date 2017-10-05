@@ -78,7 +78,7 @@ public class Testing {
         testing = new Testing(TaskC3.class, "100\n");
         testing.contains("39.35\n");
         try {
-            Method m = TaskC3.class.getDeclaredMethod("getWeight", int.class);
+            Method m = TaskC3.class.getDeclaredMethod(  "getWeight", int.class);
             Assert.assertEquals((Double) m.invoke(null, 100), 39.35, 1e-100);
             Assert.assertEquals((Double) m.invoke(null, 75), 29.51, 1e-100);
         } catch (NoSuchMethodException e) {
