@@ -26,6 +26,18 @@ package by.it.sc03_evening_mon_fri.mironchik.lesson03;
 
 
 */
+import java.util.Scanner;
 class TaskC3 {
+    public static double getWeight(int a) {
+        double w =a*3.86/9.81;
+        double w1=Math.round(w * 100.0) / 100.0;
+        return w1;
+    }
+    public static void main(String[] args) {
+        System.out.println("Введите массу человека в кг: ");
+        Scanner in = new Scanner(System.in);
+        int m = in.nextInt();
+        System.out.println(getWeight(m));
+    }
 
 }
