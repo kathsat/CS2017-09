@@ -20,7 +20,7 @@ class TaskC2 {
         int i=sc.nextInt();
         int a=sc.nextInt();
         System.out.println(a+i);
-        System.out.println(Integer.toBinaryString(a+i)}
+        System.out.println(Integer.toBinaryString(a+i));
     }
 
 
