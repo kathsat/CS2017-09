@@ -14,7 +14,13 @@ HEX:22+1a=3c
 OKT:42+32=74
 */
 
-import com.sun.org.apache.xpath.internal.SourceTree;
+//это файл не компилировался, вызывая ошибки у всех.
+//поэтому мне пришлось его изменить.
+//теперь у вас из-за этого будет конфликт слияния.
+//Хмелев. Подойдите на занятии, расскажу подробнее.
+
+//проблема в этой строке:
+//import com.sun.org.apache.xpath.internal.SourceTree;
 
 import java.util.Scanner;
 
