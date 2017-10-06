@@ -37,12 +37,12 @@ import java.util.Scanner;
 
 class TaskA1 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+         Scanner sc=new Scanner(System.in);
         int a =sc.nextInt();
-        int b=sc.nextInt();
-        System.out.println((a+b)+" "+(a-b)+" "+a*b+" "+a/b+" "+a%b);
+        int b =sc.nextInt();
+        System.out.println((a+b)+" "+(a-b)+" "+a*b+" " +a/b+" "+a%b);
         double k=a;
         double l=b;
-        System.out.println((k+l)+" "+(k-l)+" "+k*l+" "+k/l+" "+k%l);
+        System.out.println((k+l)+" "+(k-l)+" "+k*l+" " +k/l+" "+k%l);
     }
 }

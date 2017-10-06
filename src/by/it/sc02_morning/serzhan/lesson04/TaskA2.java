@@ -23,11 +23,10 @@ Lesson 04. Task A2. Стихотворение
 class TaskA2 {
     public static void main(String[] args) {
         String a="Мое любимое стихотворение:\n";
-        String b="Я Вас любил\n";
-        String c="Любовь еще быть может\n";
-        String d="В душе моей угасла не совсем\n";
-        String e="Но пусть она Вас больше не тревожит";
+        String b="Будь добрым, не злись, обладай терпеньем.\n";
+        String c="Запомни: от светлых улыбок твоих\n";
+        String d ="Зависит не только твоё настроенье,\n";
+        String e="Но тысячу раз настроенье других.";
         System.out.println(a+b+c+d+e);
     }
-
 }
