@@ -28,4 +28,5 @@ package by.it.sc02_morning.davydov.lesson03;
 */
 class TaskC3 {
 
+
 }
