@@ -26,6 +26,7 @@ class TaskA2 {
         String b = "In everything we do";
         String c = "Remember always to say 'please'";
         String d = "And don't forget 'thank you'!";
+
         System.out.println("Мое любимое стихотворение:");
         System.out.println(a);
         System.out.println(b);

@@ -33,8 +33,7 @@ Lesson 04. Task B2. Нужно написать программу, котора
 */
 class TaskB2 {
     public static double dis (int a, int b, int c) {
-        double disc = (b * b) - (4 * a * c);
-        return disc;
+        return (double) ((b * b) - (4 * a * c));
     }
 
     public static void main(String[] args) {
@@ -42,6 +41,7 @@ class TaskB2 {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();
+
         double disc = dis(a, b, c);
 
         if (disc > 0) {

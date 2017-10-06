@@ -29,7 +29,7 @@ public class TaskC2 {
             int rem = number % 10;
             number = number / 10;
             summa = summa + rem;
-        }
+            }
         return summa;
     }
 

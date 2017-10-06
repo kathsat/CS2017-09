@@ -28,8 +28,7 @@ import java.util.Scanner;
 
 class TaskC1 {
     public static double convertCelsiumToFahrenheit(int celsium) {
-        double farenheit = celsium * 9 / 5 + 32;
-        return farenheit;
+        return (double) (celsium * 9 / 5 + 32);
     }
 
     public static void main(String[] args) {
@@ -38,6 +37,7 @@ class TaskC1 {
         double farenheit = convertCelsiumToFahrenheit(celsium);
         System.out.println(farenheit);
     }
+
 }
 
 

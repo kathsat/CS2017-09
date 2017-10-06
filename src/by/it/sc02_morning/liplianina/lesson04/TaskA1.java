@@ -40,7 +40,6 @@ class TaskA1 {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-
         int add = a + b;
         int dif = a - b;
         int mul = a * b;
@@ -49,13 +48,9 @@ class TaskA1 {
 
         System.out.println(add + " " + dif + " " + mul + " " + div + " " + rem);
 
-        double add1 = add;
-        double dif1 = dif;
-        double mul1 = mul;
         double div1 = (double) a / (double) b;
-        double rem1 = rem;
 
-        System.out.println(add1 + " " + dif1 + " " + mul1 + " " + div1 + " "+ rem1);
+        System.out.println((double) add + " " + (double) dif + " " + (double) mul + " " + div1 + " "+ (double) rem);
     }
 
 }
