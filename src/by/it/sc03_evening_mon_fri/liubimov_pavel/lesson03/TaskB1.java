@@ -19,8 +19,9 @@ import java.util.Scanner;
 
 class TaskB1 {
     public static void main(String[] args){
-        Scanner sc=new Scanner (System.in);
-        int i=sc.nextInt();
-        System.out.println();
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter your number");
+        int i = in.nextInt();
+        System.out.println(i*i);
     }
 }
