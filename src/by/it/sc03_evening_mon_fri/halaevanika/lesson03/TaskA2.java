@@ -9,8 +9,12 @@ package by.it.sc03_evening_mon_fri.halaevanika.lesson03;
 */
 class TaskA2 {
 public static void main(String[] args){
-    string s=("Я начинаю изучать Java!");
-   for(int i=0; i<5; i++);
-   System.out.println(s);
+
+    System.out.println("Я начинаю изучать Java!");
+    System.out.println("Я начинаю изучать Java!");
+    System.out.println("Я начинаю изучать Java!");
+    System.out.println("Я начинаю изучать Java!");
+    System.out.println("Я начинаю изучать Java!");
+
 }
 }

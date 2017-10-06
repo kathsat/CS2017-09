@@ -10,15 +10,15 @@ package by.it.sc03_evening_mon_fri.halaevanika.lesson03;
 */        
 class TaskB3 {
         public static void main(String[] args) {
-          String s = "C";
-        System.out.println(s + "Новым Годом");
+            //        String s = "C";
+   //     System.out.println("Новым Годом");
 //        System.out.println("C Новым");
 //        System.out.println("Годом");
-//        System.out.print("C Новым");
+       System.out.print("C Новым");
 //        System.out.println("Годом");
 //        System.out.println(s);
 //        System.out.print("C Новым!");
-//        System.out.print(" ");
-//        System.out.println("Годом");
+        System.out.print(" ");
+        System.out.println("Годом");
     }
 }
