@@ -19,6 +19,7 @@ class TaskC1 {
         int b=sc.nextInt();
         int res=a+b;
         System.out.println("Sum = " + res);
+
     }
 
 }

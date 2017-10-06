@@ -21,6 +21,7 @@ class TaskC2 {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int res=a+b;
+
         String bin1 = Integer.toBinaryString(a);
         String bin2 = Integer.toBinaryString(b);
         String res1 = Integer.toBinaryString(res);
