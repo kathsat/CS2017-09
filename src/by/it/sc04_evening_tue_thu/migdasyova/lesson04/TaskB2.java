@@ -45,8 +45,8 @@ class TaskB2 {
             System.out.println(k1);
         } else {
             if (dis(a, b, c) > 0) {
-                k1 = ((-1 * b) + Math.sqrt(dis(a, b, c))) / (2 * a);
-                k2 = ((-1 * b) - Math.sqrt(dis(a, b, c))) / (2 * a);
+                k1 = (-b + Math.sqrt(dis(a, b, c))) / (2 * a);
+                k2 = (-b - Math.sqrt(dis(a, b, c))) / (2 * a);
                 System.out.println(k1 + " " + k2);
             }
         }
@@ -56,9 +56,7 @@ class TaskB2 {
     }
 
     static double dis(int a, int b, int c) {
-        double d;
-        d = (b * b) - (4 * a * c);
-        return d;
+        return b * b - 4 * a * c;
     }
 
 
