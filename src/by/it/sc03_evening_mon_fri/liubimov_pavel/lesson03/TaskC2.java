@@ -23,7 +23,9 @@ class TaskC2 {
         int a = in.nextInt();
         System.out.println("Вывод:");
         System.out.println("DEC:"+ i + "+" +  a + "=" + (a + i));
-        System.out.println("BIN:"+ Integer.toBinaryString((i))+ "+" + Integer.toBinaryString((a)) + "=" +Integer.toBinaryString((a+i)));
+        System.out.println("BIN:"+ Integer.toBinaryString(i)+ "+" + Integer.toBinaryString(a)+ "=" +Integer.toBinaryString((a+i)));
+        System.out.println("HEX:"+ Integer.toHexString(i)+ "+" +Integer.toHexString(a)+ "=" +Integer.toHexString((a+i)));
+        System.out.println("OKT:"+ Integer.toOctalString(i)+ "+" +Integer.toOctalString(a)+ "=" +Integer.toOctalString((a+i)));
 
     }
 
