@@ -1,4 +1,4 @@
-package by.it.sc03_evening_mon_fri.Kravchinskaja.lesson03;
+package by.it.sc03_evening_mon_fri.kravchinskaja_.lesson03;
 
 /* Нужно написать программу, которая вводит два числа с клавиатуры
 и 4 раза выводит их сумму с обозначением системы счисления на экран в

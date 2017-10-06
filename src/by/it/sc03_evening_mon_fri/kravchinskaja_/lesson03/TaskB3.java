@@ -1,4 +1,4 @@
-package by.it.sc03_evening_mon_fri.Kravchinskaja.lesson03;
+package by.it.sc03_evening_mon_fri.kravchinskaja_.lesson03;
 /*
         Уберите комментарии с части кода, чтобы на экран вывелось сообщение «C Новым Годом».
 

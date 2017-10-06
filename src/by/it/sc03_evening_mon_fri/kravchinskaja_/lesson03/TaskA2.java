@@ -1,4 +1,4 @@
-package by.it.sc03_evening_mon_fri.Kravchinskaja.lesson03;
+package by.it.sc03_evening_mon_fri.kravchinskaja_.lesson03;
 
 /*
 напишите тело main программы которая выводит на экран 5 строк
