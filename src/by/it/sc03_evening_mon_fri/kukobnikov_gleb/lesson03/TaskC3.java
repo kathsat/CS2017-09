@@ -1,5 +1,7 @@
 package by.it.sc03_evening_mon_fri.kukobnikov_gleb.lesson03;
 
+import java.util.Scanner;
+
 /*
 Ускорение свободного падения на Земле и Марсе таково:
 Марс   3,86
@@ -27,5 +29,8 @@ package by.it.sc03_evening_mon_fri.kukobnikov_gleb.lesson03;
 
 */
 class TaskC3 {
-
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int i = sc.nextInt();
+        System.out.println((Math.round(100 * i * (3.86/9.81)))/100);
 }
