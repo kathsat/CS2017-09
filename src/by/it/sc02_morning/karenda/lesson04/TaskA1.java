@@ -40,24 +40,24 @@ class TaskA1 {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        int sum, razn, pr, ch, os;
-        double dsum, drazn, dch, dpr, dos;
+        int f, g, h, i, k;
+        double df, dg, dh, di, dk;
 
-        sum = a + b;
-        razn = a - b;
-        pr = a * b;
-        ch = a / b;
-        os = a % b;
+        f = a + b;
+        g = a - b;
+        h = a * b;
+        i = a / b;
+        k = a % b;
 
-        System.out.println(sum + " " + razn + " " + pr + " " + ch + " " + os);
+        System.out.println(f + " " + g + " " + h + " " + i + " " + k);
 
-        dsum = (double)a + b;
-        drazn = (double)a - b;
-        dpr = (double)a * b;
-        dch = (double)a / b;
-        dos = (double)a % b;
+        df = (double)a + b;
+        dg = (double)a - b;
+        dh = (double)a * b;
+        di = (double)a / b;
+        dk = (double)a % b;
 
-        System.out.println(dsum + " " + drazn + " " + dpr + " " + dch + " " + dos);
+        System.out.println(df + " " + dg + " " + dh + " " + di + " " + dk);
     }
 }
 
