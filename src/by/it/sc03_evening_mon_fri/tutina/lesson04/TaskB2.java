@@ -29,6 +29,22 @@ Lesson 04. Task B2. Нужно написать программу, котора
 Отрицательный дискриминант
 
 */
+import java.util.Scanner;
+
 class TaskB2 {
+    public static void main(String[] args) {
+      Scanner sc=new Scanner (System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+    int d=b*b-4*a*c;
+    double p = Math.sqrt(d);
+    double x1 = (-b+p)/(2*a);
+    double x2 = (-b-p)/(2*a);
+    double x = (-b/(2*a));
+    if (d>0) System.out.println(x1+" "+x2);
+    if (d<0) System.out.println("Отрицательный дискриминант");
+    if (d==0) System.out.println(x);
+    }
 
 }
