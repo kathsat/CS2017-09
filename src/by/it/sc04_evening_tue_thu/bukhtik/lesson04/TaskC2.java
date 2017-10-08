@@ -21,6 +21,7 @@ package by.it.sc04_evening_tue_thu.bukhtik.lesson04;
 */
 public class TaskC2 {
 
+<<<<<<< HEAD
     public static void main(String[] args) {
         System.out.println(sumDigitsInNumber(5467));
 
@@ -39,5 +40,13 @@ public class TaskC2 {
 
 
 
+=======
+
+
+
+//    public static void main(String[] args) {
+//        System.out.println(sumDigitsInNumber(5467));
+//    }
+>>>>>>> origin/master
 
 }
