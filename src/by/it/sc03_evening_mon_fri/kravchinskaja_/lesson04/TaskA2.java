@@ -1,5 +1,8 @@
 package by.it.sc03_evening_mon_fri.kravchinskaja_.lesson04;
 
+import java.io.FileReader;
+import java.io.IOException;
+
 /*
 Lesson 04. Task A2. Стихотворение
 
@@ -21,5 +24,13 @@ Lesson 04. Task A2. Стихотворение
 Для автоматической проверки откройте и запустите класс Testing
 */
 class TaskA2 {
-
+public static void main (String args []){
+    String a="Мое любимое стихотворение:\n";
+    String b="А если это так, то что есть красота\n";
+    String c="И почему её обожествляют люди?\n";
+    String d="Сосуд она, в котором пустота,\n";
+    String i="Или огонь, мерцающий в сосуде?\n";
+    System.out.println(a + b + c + d  + i);
+    }
 }
+
