@@ -23,6 +23,32 @@ package by.it.sc03_evening_mon_fri.kalita.lesson05;
 
  */
 
+import java.util.Scanner;
+
 public class TaskA2 {
+    public static void main(String[] args) {
+
+        Scanner in = new Scanner(System.in);
+        int date = in.nextInt();
+        if(date>0 && date<8)
+            switch (date){
+            case 1:
+                System.out.println("Понедельник");
+                case 2:
+                System.out.println("Вторник");
+                case 3:
+                System.out.println("Среда");
+                case 4:
+                System.out.println("Четверг");
+                case 5:
+                System.out.println("Пятница");
+                case 6:
+                System.out.println("Суббота");
+                case 7:
+                System.out.println("Воскресенье");
+            }
+         else System.out.println("Такого дня недели не существует");
+
+    }
 
 }
