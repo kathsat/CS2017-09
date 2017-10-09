@@ -24,5 +24,7 @@ package by.it.sc03_evening_mon_fri.liubimov_pavel.lesson05;
  */
 
 public class TaskA2 {
+  public static void main(String args[]){
 
+  }
 }
