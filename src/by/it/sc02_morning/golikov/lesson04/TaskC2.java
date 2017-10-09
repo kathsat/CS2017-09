@@ -32,7 +32,7 @@ public class TaskC2 {
     public static int sumDigitsInNumber(int number) {
         int sumNumb = 0;
         for (int i = 0; i < 4; i++) {
-           int newNumb = number % 10;
+            int newNumb = number % 10;
             number = number / 10;
             sumNumb = sumNumb + newNumb;
         }
