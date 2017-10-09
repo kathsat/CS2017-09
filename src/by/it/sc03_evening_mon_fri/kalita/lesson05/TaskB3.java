@@ -25,6 +25,16 @@ package by.it.sc03_evening_mon_fri.kalita.lesson05;
  */
 
 
+import java.util.Scanner;
+
 public class TaskB3 {
+    public static void main(String[] args) {
+        int i=1, end = new Scanner(System.in).nextInt(), a=0;
+        while(a<end){
+            System.out.println(a);
+            if(a>end) break;
+            a+=i++;
+        }
+    }
 
 }
