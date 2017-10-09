@@ -14,13 +14,13 @@ public class Testing {
 
     @Test
     public void testTaskA1() throws Exception {
-        Testing testing = new Testing(by.it.akhmelev.lesson03.TaskA1.class);
+        Testing testing = new Testing(TaskA1.class);
         testing.contains("Hello world!");
     }
 
     @Test
     public void testTaskA2() throws Exception {
-        Testing testing = new Testing(by.it.akhmelev.lesson03.TaskA2.class);
+        Testing testing = new Testing(TaskA2.class);
         testing.contains(
                 "Я начинаю изучать Java!\n" +
                         "Я начинаю изучать Java!\n" +
@@ -32,13 +32,13 @@ public class Testing {
 
     @Test
     public void testTaskA3() throws Exception {
-        Testing testing = new Testing(by.it.akhmelev.lesson03.TaskA3.class);
+        Testing testing = new Testing(TaskA3.class);
         testing.contains("3*3+4*4=25");
     }
 
     @Test
     public void testTaskB1() throws Exception {
-        Testing testing = new Testing(by.it.akhmelev.lesson03.TaskB1.class, "7");
+        Testing testing = new Testing(TaskB1.class, "7");
         testing.contains("49");
     }
 
@@ -50,19 +50,19 @@ public class Testing {
 
     @Test
     public void testTaskB3() throws Exception {
-        Testing testing = new Testing(by.it.akhmelev.lesson03.TaskB3.class);
+        Testing testing = new Testing(TaskB3.class);
         testing.contains("C Новым Годом");
     }
 
     @Test
     public void testTaskC1() throws Exception {
-        Testing testing = new Testing(by.it.akhmelev.lesson03.TaskC1.class, "7\n3\n");
+        Testing testing = new Testing(TaskC1.class, "7\n3\n");
         testing.contains("Sum = 10\n");
     }
 
     @Test
     public void testTaskC2() throws Exception {
-        Testing testing = new Testing(by.it.akhmelev.lesson03.TaskC2.class, "34\n26\n");
+        Testing testing = new Testing(TaskC2.class, "34\n26\n");
         testing.contains(
                 "DEC:34+26=60\n" +
                         "BIN:100010+11010=111100\n" +
@@ -73,12 +73,12 @@ public class Testing {
     @Test
 
     public void testTaskC3() throws Exception {
-        Testing testing = new Testing(by.it.akhmelev.lesson03.TaskC3.class, "75\n");
+        Testing testing = new Testing(TaskC3.class, "75\n");
         testing.contains("29.51\n");
-        testing = new Testing(by.it.akhmelev.lesson03.TaskC3.class, "100\n");
+        testing = new Testing(TaskC3.class, "100\n");
         testing.contains("39.35\n");
         try {
-            Method m = by.it.akhmelev.lesson03.TaskC3.class.getDeclaredMethod("getWeight", int.class);
+            Method m = TaskC3.class.getDeclaredMethod("getWeight", int.class);
             assertEquals((Double) m.invoke(null, 100), 39.35, 1e-100);
             assertEquals((Double) m.invoke(null, 75), 29.51, 1e-100);
         } catch (NoSuchMethodException e) {
