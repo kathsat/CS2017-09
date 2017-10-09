@@ -1,4 +1,4 @@
-package by.it.akhmelev.lesson05;
+package by.it.sc03_evening_mon_fri.kalita.lesson05;
 
 /*
 Выведите на экран в цикле 10 раз фразу
@@ -27,7 +27,7 @@ package by.it.akhmelev.lesson05;
 public class TaskA1 {
     public static void main(String[] args) {
         for (int i = 0; i < 10; i++) {
-            if(i==3 || i==9) {
+            if(i==2 || i==8) {
                 System.out.println("Меня интересует высокая зарплата");
                 continue;
             }
