@@ -22,7 +22,12 @@ package by.it.sc02_morning.menchytsky.lesson04;
 public class TaskC2 {
 
     static int sumDigitsInNumber(int a){
-        a =
+       int b = (a-a%1000)/1000;
+       int c = ((a%1000)-(a%1000)%100)/100;
+       int d = ((a%1000)%100-((a%1000)%100)%10)/10;
+       int e = ((a%1000)%100)%10;
+
+        return b+c+d+e;
     }
 
 
