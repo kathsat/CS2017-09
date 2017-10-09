@@ -40,10 +40,10 @@ class TaskB2 {
         b = sc.nextInt();
         c = sc.nextInt();
         D = dis(a,b,c);
-        x1=(-1*b-Math.sqrt(D)/(2*a));
-        x2=(-1*b+Math.sqrt(D)/(2*a));
+        x2=(-1*b-Math.sqrt(D)/(2*a));
+        x1=(-1*b+Math.sqrt(D)/(2*a));
         if(D<0) System.out.println("Отрицательный дискриминант");
-        if(D==0) System.out.println((double) (-1*b/(2*a)));
+        if(D==0) System.out.println((int) (-1*b/(2*a)));
         if(D>0) System.out.println(x1+" "+x2);
     }
 
