@@ -7,8 +7,7 @@ package by.it.akhmelev.lesson03;
 Для ручной проверки запустите программу Ctrl+Shift+F10
 Для автоматической проверки откройте и запустите класс Testing
 */
-/*
+
 class TaskA2 {
 
 }
-*/
