@@ -24,18 +24,6 @@ package by.it.akhmelev.lesson05;
 
  */
 
-
-import java.util.Scanner;
-
 public class TaskA2 {
-    public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
-        int i=scanner.nextInt();
-        if (i<1 | i>7 )
-            System.out.println("такого дня недели не существует");
-       else {
-        String[] days={"понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"};
-        System.out.println(days[i-1]);
-       }
-    }
+
 }

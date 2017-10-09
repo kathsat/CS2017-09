@@ -1,7 +1,5 @@
 package by.it.akhmelev.lesson05;
 
-import java.util.Scanner;
-
 /*
 Напишите программу которая спрашивает у пользователя:
 Какую вы хотите зарплату в $$$?
@@ -40,61 +38,5 @@ import java.util.Scanner;
 */
 
 public class TaskC1 {
-    public static void main(String[] args) {
-        System.out.println("Какую вы хотите зарплату в $$$?");
-        Scanner scanner = new Scanner(System.in);
-        int base = scanner.nextInt();
-        if (base < 300 || base > 3000) System.out.println("Мы вам перезвоним!");
-        else
-            for (int i = 0; i <= 14; i++) {
-                String str;
-                double salary = base * 1.5;
-                switch (i) {
-                    case 1:
-                        str = "январь";
-                        break;
-                    case 2:
-                        str = "февраль";
-                        break;
-                    case 3:
-                        str = "март";
-                        break;
-                    case 4:
-                        str = "апрель";
-                        break;
-                    case 5:
-                        str = "май";
-                        break;
-                    case 6:
-                        str = "июнь";
-                        salary = base;
-                        break;
-                    case 7:
-                        str = "июль";
-                        salary = base;
-                        break;
-                    case 8:
-                        str = "август";
-                        salary = base;
-                        break;
-                    case 9:
-                        str = "сентябрь";
-                        break;
-                    case 10:
-                        str = "октябрь";
-                        break;
-                    case 11:
-                        str = "ноябрь";
-                        break;
-                    case 12:
-                        str = "декабрь";
-                        break;
-                    default:
-                        str = "месяц " + i;
-                        salary = 0;
-                }
-                System.out.println("За " + str + " начислено $" + salary);
-                if (salary==666d) break;
-            }
-    }
+
 }
