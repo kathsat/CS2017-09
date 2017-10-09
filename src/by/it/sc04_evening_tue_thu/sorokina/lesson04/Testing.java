@@ -1,12 +1,11 @@
-package by.it.sc04_evening_tue_thu.sorokina.lesson03;
+package by.it.sc04_evening_tue_thu.sorokina.lesson04;
 
 import org.junit.Test;
 
 import java.io.*;
 import java.lang.reflect.Method;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 //поставьте курсор на следующую строку и нажмите Ctrl+Shift+F10
 public class Testing {
@@ -14,77 +13,74 @@ public class Testing {
 
     @Test
     public void testTaskA1() throws Exception {
-        Testing testing = new Testing(TaskA1.class);
-        testing.contains("Hello world!");
+        Testing testing = new Testing(TaskA1.class, "7 2");
+        testing.contains("9 5 14 3 1\n9.0 5.0 14.0 3.5 1.0");
     }
 
     @Test
     public void testTaskA2() throws Exception {
         Testing testing = new Testing(TaskA2.class);
-        testing.contains(
-                "Я начинаю изучать Java!\n" +
-                        "Я начинаю изучать Java!\n" +
-                        "Я начинаю изучать Java!\n" +
-                        "Я начинаю изучать Java!\n" +
-                        "Я начинаю изучать Java!\n"
-        );
-    }
-
-    @Test
-    public void testTaskA3() throws Exception {
-        Testing testing = new Testing(TaskA3.class);
-        testing.contains("3*3+4*4=25");
+        String[] lines = testing.stringWriter.toString().trim().split("\\n");
+        if (lines.length < 5)
+            fail("Недостаточно строк");
+        if (!lines[0].equals("Мое любимое стихотворение:"))
+            fail("Нет заголовка: Мое любимое стихотворение:");
+        String old = "old";
+        for (String s : lines) {
+            if (s.length() < 5)
+                fail("Слишком короткие строки");
+            if (old.equals(s))
+                fail("Есть одинаковые строки");
+            old = s;
+        }
     }
 
     @Test
     public void testTaskB1() throws Exception {
-        Testing testing = new Testing(TaskB1.class, "7");
-        testing.contains("49");
+        Testing testing = new Testing(TaskB1.class);
+        testing.contains(
+                "575.2220000610351\n" +
+                        "111.111 7 73 273 111.111"
+        );
     }
 
     @Test
     public void testTaskB2() throws Exception {
-        Testing testing = new Testing(TaskB2.class);
-        testing.contains("20");
-    }
-
-    @Test
-    public void testTaskB3() throws Exception {
-        Testing testing = new Testing(TaskB3.class);
-        testing.contains("C Новым Годом");
+        Testing testing;
+        testing = new Testing(TaskB2.class, "2 5 3");
+        testing.contains("-1.0");
+        testing.contains("-1.5");
+        testing = new Testing(TaskB2.class, "2 4 2");
+        testing.contains("-1.0\n");
+        testing = new Testing(TaskB2.class, "2 2 2");
+        testing.contains("Отрицательный дискриминант");
     }
 
     @Test
     public void testTaskC1() throws Exception {
-        Testing testing = new Testing(TaskC1.class, "7\n3\n");
-        testing.contains("Sum = 10\n");
+        try {
+            Method m = TaskC1.class.getDeclaredMethod("convertCelsiumToFahrenheit", int.class);
+            assertEquals(104.0, (double) m.invoke(null, 40), 1e-22);
+            assertEquals(68.0, (double) m.invoke(null, 20), 1e-22);
+            assertEquals(32.0, (double) m.invoke(null, 0), 1e-22);
+        } catch (NoSuchMethodException e) {
+            org.junit.Assert.fail("Метод convertCelsiumToFahrenheit не найден");
+        }
     }
 
     @Test
     public void testTaskC2() throws Exception {
-        Testing testing = new Testing(TaskC2.class, "34\n26\n");
-        testing.contains(
-                "DEC:34+26=60\n" +
-                        "BIN:100010+11010=111100\n" +
-                        "HEX:22+1a=3c\n" +
-                        "OKT:42+32=74\n");
-    }
-
-    @Test
-
-    public void testTaskC3() throws Exception {
-        Testing testing = new Testing(TaskC3.class, "75\n");
-        testing.contains("29.51\n");
-        testing = new Testing(TaskC3.class, "100\n");
-        testing.contains("39.35\n");
         try {
-            Method m = TaskC3.class.getDeclaredMethod("getWeight", int.class);
-            assertEquals((Double) m.invoke(null, 100), 39.35, 1e-100);
-            assertEquals((Double) m.invoke(null, 75), 29.51, 1e-100);
+        Method m = TaskC2.class.getDeclaredMethod("sumDigitsInNumber", int.class);
+        assertEquals((int) m.invoke(null, 5467), 22);
+        assertEquals((int) m.invoke(null, 5555), 20);
+        assertEquals((int) m.invoke(null, 1111), 4);
+        assertEquals((int) m.invoke(null, 9993), 30);
         } catch (NoSuchMethodException e) {
-            org.junit.Assert.fail("Метод getWeight не найден");
+            org.junit.Assert.fail("Метод sumDigitsInNumber не найден");
         }
     }
+
 
     /*
     ===========================================================================================================
