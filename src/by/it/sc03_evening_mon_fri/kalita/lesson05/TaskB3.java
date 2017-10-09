@@ -30,10 +30,10 @@ import java.util.Scanner;
 public class TaskB3 {
     public static void main(String[] args) {
         int i=1, end = new Scanner(System.in).nextInt(), a=0;
-        while(a<end){
-            System.out.println(a);
-            if(a>end) break;
+        while(a<=end){
+            System.out.print(a+",");
             a+=i++;
+            if(a>end) break;
         }
     }
 
