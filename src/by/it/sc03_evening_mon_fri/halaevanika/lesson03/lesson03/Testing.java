@@ -1,4 +1,4 @@
-package by.it.sc03_evening_mon_fri.halaevanika.lesson03;
+package by.it.sc03_evening_mon_fri.halaevanika.lesson03.lesson03;
 
 import org.junit.Test;
 

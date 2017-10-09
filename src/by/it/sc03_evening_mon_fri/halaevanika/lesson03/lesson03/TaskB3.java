@@ -1,4 +1,4 @@
-package by.it.sc03_evening_mon_fri.halaevanika.lesson03;
+package by.it.sc03_evening_mon_fri.halaevanika.lesson03.lesson03;
 /*
         Уберите комментарии с части кода, чтобы на экран вывелось сообщение «C Новым Годом».
 

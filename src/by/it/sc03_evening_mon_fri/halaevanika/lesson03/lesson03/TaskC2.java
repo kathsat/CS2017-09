@@ -1,4 +1,4 @@
-package by.it.sc03_evening_mon_fri.halaevanika.lesson03;
+package by.it.sc03_evening_mon_fri.halaevanika.lesson03.lesson03;
 
 import java.util.Scanner;
 
@@ -29,7 +29,7 @@ class TaskC2 {
         "=" + Integer.toBinaryString(dec));
         System.out.println("HEX:" + Integer.toHexString(number1) + "+" + Integer.toHexString(number2) +
         "=" + Integer.toHexString(dec));
-        System.out.println("OCT:" + Integer.toOctalString(number1) + "+" + Integer.toOctalString(number2) +
+        System.out.println("OKT:" + Integer.toOctalString(number1) + "+" + Integer.toOctalString(number2) +
         "=" + Integer.toOctalString(dec));
     }
 
