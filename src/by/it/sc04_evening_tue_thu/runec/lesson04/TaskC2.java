@@ -35,6 +35,6 @@ package by.it.sc04_evening_tue_thu.runec.lesson04;
             return sum;
         }
     }
-
+//
 
 
