@@ -1,5 +1,7 @@
 package by.it.sc03_evening_mon_fri.liubimov_pavel.lesson05;
 
+import java.util.Scanner;
+
 /*
 Определите количество дней в году
 
@@ -26,5 +28,9 @@ package by.it.sc03_evening_mon_fri.liubimov_pavel.lesson05;
 
 */
 public class TaskB1 {
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
 
+    }
 }
