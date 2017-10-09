@@ -9,6 +9,11 @@ package by.it.sc02_morning.kurgan.lesson03;
 */
 class TaskA2 {
     public static void main(String[] args) {
-        sout
+        System.out.println("Я начинаю изучать Java!");
+        System.out.println("Я начинаю изучать Java!");
+        System.out.println("Я начинаю изучать Java!");
+        System.out.println("Я начинаю изучать Java!");
+        System.out.println("Я начинаю изучать Java!");
     }
+
 }
