@@ -19,13 +19,19 @@ package by.it.sc03_evening_mon_fri.tutina.lesson04;
     4. Метод sumDigitsInNumber не должен ничего выводить на экран.
     5. Метод sumDigitsInNumber должен правильно возвращать сумму всех цифр в числе number.
 */
-public class TaskC2 {
+import java.util.Scanner;
+    public class TaskC2 {
+        public static void main(String[] args){
+            Scanner sc=new Scanner (System.in);
+            int number=sc.nextInt();
+            int sumDigitsInNumber = 0;
+            while (number > 0){
+                sumDigitsInNumber= sumDigitsInNumber+number% 10;
+                number= number/10;
+            }
 
+            System.out.println(sumDigitsInNumber);
 
+        }
+    }
 
-
-//    public static void main(String[] args) {
-//        System.out.println(sumDigitsInNumber(5467));
-//    }
-
-}
