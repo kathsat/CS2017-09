@@ -23,7 +23,7 @@ Lesson 04. Task A2. Стихотворение
 class TaskA2 {
 
     public static  void main(String[] args) {
-        String title = "Мое любимое любимое стихотворение:";
+        String title = "Мое любимое стихотворение:";
         String a = "Люблю грозу в начале мая";
         String b = "Когда весенний первый гром";
         String c = "Как-бы резвяся и играя";

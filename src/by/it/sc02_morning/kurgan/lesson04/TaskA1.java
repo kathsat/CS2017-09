@@ -50,10 +50,12 @@ class TaskA1 {
         int rem = a%b;
         System.out.println(sum + " " + dif + " " + prod + " "+ div + " " + rem);
 
+//        double a1=(double)a;
+//        double b1=b;
         double sum1 = a+b;
         double dif1 = a-b;
         double prod1 = a*b;
-        double div1 = a/b;
+        double div1 = ((double)a) / ((double)b);
         double rem1 = a%b;
         System.out.println(sum1 + " " + dif1 + " " + prod1 + " "+ div1 + " " + rem1);
 
