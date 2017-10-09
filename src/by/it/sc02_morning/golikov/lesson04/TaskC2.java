@@ -28,6 +28,7 @@ public class TaskC2 {
         System.out.println(sumNumb);
 
     }
+
     public static int sumDigitsInNumber(int number) {
         int sumNumb = 0;
         for (int i = 0; i < 4; i++) {
