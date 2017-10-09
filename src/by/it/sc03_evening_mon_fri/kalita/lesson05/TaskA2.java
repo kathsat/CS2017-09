@@ -33,22 +33,22 @@ public class TaskA2 {
         if(date>0 && date<8)
             switch (date){
             case 1:
-                System.out.println("Понедельник");
+                System.out.println("понедельник");
                 break;
                 case 2:
-                System.out.println("Вторник");break;
+                System.out.println("вторник");break;
                 case 3:
-                System.out.println("Среда");break;
+                System.out.println("среда");break;
                 case 4:
-                System.out.println("Четверг");break;
+                System.out.println("четверг");break;
                 case 5:
-                System.out.println("Пятница");break;
+                System.out.println("пятница");break;
                 case 6:
-                System.out.println("Суббота");break;
+                System.out.println("суббота");break;
                 case 7:
-                System.out.println("Воскресенье");break;
+                System.out.println("воскресенье");break;
             }
-         else System.out.println("Такого дня недели не существует");
+         else System.out.println("такого дня недели не существует");
 
     }
 

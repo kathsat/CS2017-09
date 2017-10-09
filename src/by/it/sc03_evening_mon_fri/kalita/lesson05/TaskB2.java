@@ -30,7 +30,7 @@ public class TaskB2 {
         int size = new Scanner(System.in).nextInt(), i=0, j=0;
         while(i<size){
             while(j<size){
-            System.out.printf("%4d",(i+1)*(j+1));
+            System.out.print((i+1)*(j+1)+" ");
             j++;
         }
             System.out.println();

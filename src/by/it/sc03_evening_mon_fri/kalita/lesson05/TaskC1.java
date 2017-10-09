@@ -47,29 +47,29 @@ public class TaskC1 {
     public static String month(int number){
         switch (number) {
             case 1:
-                return "Январь";
+                return "январь";
             case 2:
-                return "Февраль";
+                return "февраль";
             case 3:
-                return "Март";
+                return "март";
             case 4:
-                return "Апрель";
+                return "апрель";
             case 5:
-                return "Мая";
+                return "май";
             case 6:
-                return "Июнь";
+                return "июнь";
             case 7:
-                return "Июль";
+                return "июль";
             case 8:
-                return "Август";
+                return "август";
             case 9:
-                return "Сентябрь";
+                return "сентябрь";
             case 10:
-                return "Октябрь";
+                return "октябрь";
             case 11:
-                return "Ноябрь";
+                return "ноябрь";
             case 12:
-                return "Декабрь";
+                return "декабрь";
             default:return "месяц";
         }
     }
@@ -77,12 +77,13 @@ public class TaskC1 {
     public static void main(String[] args) {
         int salary = new Scanner(System.in).nextInt(),i=0;
         System.out.println("Какую зарплату вы хотите в $$$?");
-        if(salary<300||salary>3000){ System.out.println("Мы вам перезвоним");i=15;}
-        for (i = 0; i < 15; i++) {
-            if(i>5&&i<9) System.out.println("За "+ month(i) + " начисленно $" +salary);
-            else if(i==0||i>13) System.out.println("За "+ month(i) + " "+i +" "+" начисленно $" + 0);
-            else if(salary==666||salary*1.5==666) break;
-            else System.out.println("За "+ month(i) + " начисленно $" +salary*1.5);
+        if(salary<300||salary>3000){
+            System.out.println("Мы вам перезвоним!");
+            i=15;}
+        for (; i < 15; i++) {
+            if(i>5&&i<9) {System.out.println("За "+ month(i) + " начислено $" +salary*1.0);if(salary==666) break;}
+            else if(i==0||i>12){ System.out.println("За "+ month(i) + " "+i +" начислено $" + 0*1.5);}
+            else {System.out.println("За "+ month(i) + " начислено $" +salary*1.5);if(salary*1.5==666) break;}
         }
     }
 
