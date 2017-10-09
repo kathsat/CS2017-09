@@ -42,11 +42,11 @@ class TaskA1 {
         int j=sc.nextInt();{
             System.out.println(i+" "+j);
         }
-        int sum = (int) i+j;
-        int raz = (int) i-j;
-        int pr = (int) i*j;
-        int del = (int) i/j;
-        int ost = (int) i%j;{
+        int sum = i+j;
+        int raz = i-j;
+        int pr =  i*j;
+        int del = i/j;
+        int ost = i%j;{
             System.out.println(sum+" "+raz+" "+pr+" "+del+" "+ost);
             System.out.println((double) sum+" "+(double) raz+" "+(double) pr+" "+(double) i/j+" "+(double) ost);
                     }
