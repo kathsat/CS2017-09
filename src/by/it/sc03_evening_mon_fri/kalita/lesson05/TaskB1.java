@@ -1,5 +1,7 @@
 package by.it.sc03_evening_mon_fri.kalita.lesson05;
 
+import java.util.Scanner;
+
 /*
 Определите количество дней в году
 
@@ -26,5 +28,10 @@ package by.it.sc03_evening_mon_fri.kalita.lesson05;
 
 */
 public class TaskB1 {
-
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int date = in.nextInt();
+        if(date%4==0&&(date%400==0)) System.out.println(366);
+        else System.out.println(365);
+    }
 }
