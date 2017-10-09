@@ -37,6 +37,53 @@ package by.it.sc03_evening_mon_fri.kalita.lesson05;
 
 */
 
+
+
+import java.util.Scanner;
+
+
+
 public class TaskC1 {
+    public static String month(int number){
+        switch (number) {
+            case 1:
+                return "Январь";
+            case 2:
+                return "Февраль";
+            case 3:
+                return "Март";
+            case 4:
+                return "Апрель";
+            case 5:
+                return "Мая";
+            case 6:
+                return "Июнь";
+            case 7:
+                return "Июль";
+            case 8:
+                return "Август";
+            case 9:
+                return "Сентябрь";
+            case 10:
+                return "Октябрь";
+            case 11:
+                return "Ноябрь";
+            case 12:
+                return "Декабрь";
+            default:return "месяц";
+        }
+    }
+
+    public static void main(String[] args) {
+        int salary = new Scanner(System.in).nextInt(),i=0;
+        System.out.println("Какую зарплату вы хотите в $$$?");
+        if(salary<300||salary>3000){ System.out.println("Мы вам перезвоним");i=15;}
+        for (i = 0; i < 15; i++) {
+            if(i>5&&i<9) System.out.println("За "+ month(i) + " начисленно $" +salary);
+            else if(i==0||i>13) System.out.println("За "+ month(i) + " "+i +" "+" начисленно $" + 0);
+            else if(salary==666||salary*1.5==666) break;
+            else System.out.println("За "+ month(i) + " начисленно $" +salary*1.5);
+        }
+    }
 
 }
