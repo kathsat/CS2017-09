@@ -24,14 +24,13 @@ TC = (TF – 32) * 5/9
 в градусы Фаренгейта и возвращать это число.*/
 
 
-class TaskC1 {
 
+public class TaskC1 {
 
+    public static void main(String[] args) {
+        int celsium=40;
+        double farengate=9*celsium/5+32;
+        System.out.print(farengate);
 
-
-
-//    public static void main(String[] args) {
-//        System.out.println(convertCelsiumToFahrenheit(40));
-//    }
-
+    }
 }
