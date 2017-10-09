@@ -25,16 +25,15 @@ TC = (TF – 32) * 5/9
 
 
 
-    class TaskC1 {
-        public static void main(String[] args) {
-            System.out.println(convertCelsiumToFahrenheit(40));
-        }
-
-        public static double convertCelsiumToFahrenheit(int celsium){
-            int fahrenheit;
-            fahrenheit = celsium*9/5+32;
-            return fahrenheit;
-        }
+class TaskC1 {
+    public static void main(String[] args) {
+        System.out.println((convertCelsiumToFahrenheit(41)));
     }
 
+    public static double convertCelsiumToFahrenheit(int celsium){
+        return ( (double) celsium) / 5 * 9 + 32;
+    }
+}
 
+
+//
