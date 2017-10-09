@@ -22,6 +22,18 @@ package by.it.sc03_evening_mon_fri.kalita.lesson05;
  */
 
 
-public class TaskA3 {
+import java.util.Scanner;
 
+public class TaskA3 {
+    public static void main(String[] args) {
+
+
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt(), b= in.nextInt(), c = in.nextInt();
+        //for (int i = 0; i < 3; i++) {       }
+        if(a==b&&a==c) System.out.println(a +" "+ b +" "+c);
+        else if(a==c) System.out.println(a+ " "+c);
+        else if(c==b) System.out.println(c + " " + b);
+        else if(a==b) System.out.println(a + " "+b);
+    }
 }
