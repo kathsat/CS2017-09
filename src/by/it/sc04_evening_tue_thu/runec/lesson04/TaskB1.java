@@ -1,4 +1,4 @@
-package by.it.sc02_morning.davydov.lesson04;
+package by.it.sc04_evening_tue_thu.runec.lesson04;
 /*
 Lesson 04. Task B1. Литералы.
 
@@ -25,11 +25,11 @@ float f - присваивание в десятичном формате
 
 strictfp class TaskB1 {
     public static  void main(String[] args) {
-        double d = 111.111;
-        byte b = 0b111;
-        long o = 0111;
-        int h = 0x111;
-        float f = (float) 111.111;
+        double d = 0;
+        double b = 0;
+        double o = 0;
+        double h = 0;
+        double f = 0;
         System.out.println(d + b + o + h + f);
         System.out.println(d + " " + b + " " + o + " " + h + " " + f);
     }

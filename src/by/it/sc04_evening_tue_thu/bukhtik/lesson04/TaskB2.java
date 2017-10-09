@@ -1,4 +1,4 @@
-package by.it.sc02_morning.davydov.lesson04;
+package by.it.sc04_evening_tue_thu.bukhtik.lesson04;
 
 import java.util.Scanner;
 
@@ -34,24 +34,26 @@ Lesson 04. Task B2. Нужно написать программу, котора
 class TaskB2 {
 
     public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        double d=dis(a,b,c);
+        double x1;
+        double x2;
+        double x3;
+        x1=(-b + Math.pow(d,-1.2))/(2*a);
+        x2=(-b - Math.pow(d,-1.2))/(2*a);
+        x3=-(b/(2*a));
 
-        Scanner scann = new Scanner(System.in);
-        int aa=scann.nextInt();
-        int bb=scann.nextInt();
-        int cc=scann.nextInt();
+        if (d<0) System.out.println("Отрицательный дискриминант");
+        if (d>0) System.out.println(x1 + " " + x2);
+        if (d==0) System.out.println(x3);
+        }
 
-
-        if (aa==0) System.out.println ("a=0, решения не существует");
-
-        if (dis (aa,bb,cc) > 0) System.out.println ((Math.sqrt(dis (aa,bb,cc)) - bb) / (2 * aa) + " " + ((- Math.sqrt(dis (aa,bb,cc)) - bb) / (2 * aa))  );
-        if (dis (aa,bb,cc) == 0) System.out.println ((Math.sqrt(dis (aa,bb,cc)) - bb) / (2 * aa));
-        if (dis (aa,bb,cc) < 0) System.out.println ("Отрицательный дискриминант");
+    public static double dis(int a, int b, int c){
+        return b*b - 4*a*c;
     }
-
-     private static double dis (int a, int b, int c) {
-        return (b * b) - (4 * a * c);
-     }
-
 
 
 }

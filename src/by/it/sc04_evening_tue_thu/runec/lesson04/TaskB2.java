@@ -1,6 +1,4 @@
-package by.it.sc02_morning.davydov.lesson04;
-
-import java.util.Scanner;
+package by.it.sc04_evening_tue_thu.runec.lesson04;
 
 /*
 Lesson 04. Task B2. Нужно написать программу, которая вводит три числа  a b c типа int с клавиатуры
@@ -31,27 +29,21 @@ Lesson 04. Task B2. Нужно написать программу, котора
 Отрицательный дискриминант
 
 */
-class TaskB2 {
 
-    public static void main(String[] args) {
+import java.util.Scanner;
+    class TaskB2 {
+        public static void main(String[] args) {
+            Scanner s = new Scanner(System.in);
+            System.out.println("Ввод:");
+            int a = s.nextInt();
+            int b = s.nextInt();
+            int c = s.nextInt();
+            int D = b*b-4*a*c;
+            System.out.println("Вывод:");
+            if(D<0)System.out.println("Отрицательный дискриминант");
+            if(D==0)System.out.println((double) (-1*b/(2*a)));
+            if(D>0) System.out.println((-1*b-Math.sqrt(D))/(2*a)+" "+(-1*b+Math.sqrt(D))/(2*a));
 
-        Scanner scann = new Scanner(System.in);
-        int aa=scann.nextInt();
-        int bb=scann.nextInt();
-        int cc=scann.nextInt();
-
-
-        if (aa==0) System.out.println ("a=0, решения не существует");
-
-        if (dis (aa,bb,cc) > 0) System.out.println ((Math.sqrt(dis (aa,bb,cc)) - bb) / (2 * aa) + " " + ((- Math.sqrt(dis (aa,bb,cc)) - bb) / (2 * aa))  );
-        if (dis (aa,bb,cc) == 0) System.out.println ((Math.sqrt(dis (aa,bb,cc)) - bb) / (2 * aa));
-        if (dis (aa,bb,cc) < 0) System.out.println ("Отрицательный дискриминант");
+        }
     }
 
-     private static double dis (int a, int b, int c) {
-        return (b * b) - (4 * a * c);
-     }
-
-
-
-}
