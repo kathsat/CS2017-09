@@ -41,8 +41,9 @@ class TaskB2 {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();
-        sc.close();
+
         double dis = dis(a,b,c);
+
         if(dis>0)
             System.out.println((-b+Math.sqrt(dis))/(2*a) + " " + (-b-Math.sqrt(dis))/(2*a));
         if(dis==0)

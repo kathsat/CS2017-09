@@ -22,7 +22,7 @@ Lesson 04. Task A2. Стихотворение
 */
 class TaskA2 {
     public static void main(String[] args) {
-        String a = "Мое любимое стихотворение";
+        String a = "Мое любимое стихотворение:";
         String b = "Мы встретились случайно на углу.";
         String c = "Я быстро шел и вдруг как свет зарницы";
         String d = "Вечернюю прорезал полумглу";

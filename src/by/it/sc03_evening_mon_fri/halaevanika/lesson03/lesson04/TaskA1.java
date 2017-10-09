@@ -49,11 +49,11 @@ class TaskA1 {
         int e = number1 % number2;
         System.out.println(a + " " + b + " " + c + " " + d + " " + e);
 
-double a1 = (double)(number1 + number2);
-double b1 = (double)(number1 - number2);
-double c1 = (double)(number1 * number2);
-double d1 = (double)(number1 / number2);
-double e1 = (double)(number1 % number2);
+double a1 = (double)number1 + number2;
+double b1 = (double)number1 - number2;
+double c1 = (double)number1 * number2;
+double d1 = (double)number1 / number2;
+double e1 = (double)number1 % number2;
         System.out.println(a1 + " " + b1 + " " + c1 + " " + d1 + " " + e1);
 
     }
