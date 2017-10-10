@@ -25,6 +25,23 @@ package by.it.sc02_morning.degtyarov.lesson05;
  */
 
 
-public class TaskB3 {
+import java.util.Scanner;
 
+public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int sum, i,e;
+        sum=0;
+        i=1;
+        e=0;
+
+        while(sum<=a){
+            e += i;
+            i++;
+            System.out.print(e+",");
+            sum=e+i;
+        }
+
+    }
 }

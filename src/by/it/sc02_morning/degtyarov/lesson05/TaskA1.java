@@ -25,23 +25,16 @@ package by.it.sc02_morning.degtyarov.lesson05;
 
  */
  public class TaskA1 {
-   /* public static void main(String[] args) {
-        int i=0;
-
-        while(i<10){
-            if (i==2) System.out.println("Меня интересует высокая зарплата!");
-            else if (i==8) System.out.println("Меня интересует высокая зарплата!");
-            System.out.println("Я изучаю программирование" + i);
-            i++;
-        }
+   public static void main(String[] args) {
+        int i;
 
         for(i=0; i<10; i++){
-            if (i!=2 || i!=8){
+            if (i==2 || i==8)
                 System.out.println("Меня интересует высокая зарплата!");
-            continue;}
-                       System.out.println("Я изучаю программирование" + i);
+            else
+             System.out.println("Я изучаю программирование.");
 
         }
-    }  */
+    }
 
 }
