@@ -8,7 +8,11 @@ package by.it.sc04_evening_tue_thu.motuz.lesson03;
 Для автоматической проверки откройте и запустите класс Testing
 */
 class TaskA2 {
-    public static void main  (String []args){
-        System.out.println ("Я начинаю изучать Java");
+    public static void main(String[] args) {
+        System.out.println ("Я начинаю изучать Java!");
+        System.out.println ("Я начинаю изучать Java!");
+        System.out.println ("Я начинаю изучать Java!");
+        System.out.println ("Я начинаю изучать Java!");
+        System.out.println ("Я начинаю изучать Java!");
     }
 }
