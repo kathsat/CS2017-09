@@ -1,6 +1,6 @@
 package by.it.sc02_morning.golikov.lesson04;
 
-import by.it.akhmelev.lesson04.TaskC2;
+
 import org.junit.Test;
 
 import java.io.*;
