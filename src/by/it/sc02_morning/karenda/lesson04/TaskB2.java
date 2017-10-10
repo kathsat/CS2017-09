@@ -41,20 +41,20 @@ class TaskB2 {
 
         double D;
          D = b*b - 4*a*c;
-        System.out.println(D);
+       // System.out.println(D);
 
-         if(D>0);{
+         if(D>0){
            double x1, x2;
-           x1=(-b+Math.sqrt(D))/2*a;
-           x2=(-b-Math.sqrt(D))/2*a;
+           x1=(-b+Math.sqrt(D))/(2*a);
+           x2=(-b-Math.sqrt(D))/(2*a);
             System.out.println(x1+" "+x2);}
 
-        if (D==0);{
+        if (D==0){
         double x;
-            x =(-b+Math.sqrt(D))/2*a;
+            x =(-b)/(2*a);
          System.out.println(x);}
 
-        if (D<0);{
+        if (D<0){
         System.out.println("Отрицательный дискриминант");}}
 
 
