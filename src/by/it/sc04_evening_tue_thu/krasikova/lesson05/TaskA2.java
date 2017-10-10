@@ -24,6 +24,36 @@ package by.it.sc04_evening_tue_thu.krasikova.lesson05;
 
  */
 
-public class TaskA2 {
+import java.util.Scanner;
 
+public class TaskA2 {
+    public static void main(String args[]) {
+    Scanner sc=new Scanner(System.in);
+    int i=sc.nextInt();
+    if (i>=1 && i<=7) {
+        switch (i) {
+            case 1:
+                System.out.println("понедельник");
+                break;
+            case 2:
+                System.out.println("вторник");
+                break;
+            case 3:
+                System.out.println("среда");
+                break;
+            case 4:
+                System.out.println("четверг");
+                break;
+            case 5:
+                System.out.println("пятница");
+                break;
+            case 6:
+                System.out.println("суббота");
+                break;
+            case 7:
+                System.out.println("воскресенье");
+                break;
+        }
+    } else System.out.println("такого дня недели не существует");
+    }
 }
