@@ -19,7 +19,7 @@ import java.util.Scanner;
 class TaskB1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int i = sc.nexy.Int();
+        int i = sc.nextInt();
         int result=i*i;
         System.out.println(result);
     }

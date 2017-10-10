@@ -9,9 +9,12 @@ package by.it.sc02_morning.tunkina.lesson03;
 */
 class TaskA2 {
     public static void main(String[] args) {
-        System.out.println();
+        System.out.println("Я начинаю изучать Java!");
+        System.out.println("Я начинаю изучать Java!");
+        System.out.println("Я начинаю изучать Java!");
+        System.out.println("Я начинаю изучать Java!");
+        System.out.println("Я начинаю изучать Java!");
     }
-System.out.println("Я изучаю Java!");
 
  }
-}
+
