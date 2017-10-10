@@ -35,6 +35,8 @@ public class Testing {
         }
     }
 
+// Хмелев. Я отключил вам тесты, т.к. без классов они у всех вызывают ошибку.
+// включите их обратно, когда выполните задания ( отключите комментарии Ctrl+/ )
 //    @Test
 //    public void testTaskB1() throws Exception {
 //        Testing testing = new Testing(TaskB1.class);
