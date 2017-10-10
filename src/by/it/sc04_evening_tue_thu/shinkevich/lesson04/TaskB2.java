@@ -34,26 +34,28 @@ Lesson 04. Task B2. Нужно написать программу, котора
 
 class  TaskB2
 {
-        public static void main(String[] args) {
+        public static void main(String[] args)
+        {
             System.out.println("Ввод:");
             Scanner sc = new Scanner(System.in);
             int a = sc.nextInt();
             int b = sc.nextInt();
             int c = sc.nextInt();
-            double d = (b * b) - (4 * a * c);
-            double e, f ;
-            System.out.println("Вывод:");
-            if (d > 0) {
-                e = ((-1 * b) + (float) Math.sqrt(d)) / (2 * a);
-                f = ((-1 * b) - (float) Math.sqrt(d)) / (2 * a);
-                System.out.println( + e + " " + f);
-
-            } else {
-                if (d == 0) {
-                    e = -1 * (b / (2 * a));
-                    System.out.println(+e);
-                } else {
-                    System.out.println("Отрицательный дискриминант");
-                }
-            }}
- }
+            double dis = discriminant(a, b,c);
+            if (dis > 0 ){
+                double x1 =(-b+Math.sqrt(dis))/(2*a);
+                double x2 =(-b-Math.sqrt(dis))/(2*a);
+                System.out.println(x1 + " " + x2);
+            }
+            if (dis == 0){
+                double x = (-b /(2*a));
+                System.out.println(x);
+            }
+            if (dis < 0) System.out.println("Отрицательный дискриминант");
+            }
+        private static double discriminant(int a, int b, int c){
+        double d;
+        d= b*b - 4 * a * c;
+        return d;
+    }
+}

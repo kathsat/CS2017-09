@@ -38,25 +38,16 @@ import java.util.Scanner;
 class TaskA1 {
 
            public static void main(String[] args)
-        {   int isum, iraz, ipr, idel, iost;
-            double dsum, draz, dpr, ddel, dost;
+           {
             System.out.println("Ввод:");
             Scanner sc = new Scanner(System.in);
             int a = sc.nextInt();
             int b = sc.nextInt();
             System.out.println("Вывод:");
-            isum = a + b;
-            iraz = a - b;
-            ipr = a * b;
-            idel = a / b;
-            iost = a % b;
-            System.out.println(isum + " " + iraz + " " + ipr + " " + idel + " " + iost);
-            dsum = a + b;
-            draz = a - b;
-            dpr = a * b;
-            ddel = a / b;
-            dost = a % b;
-            System.out.println(dsum + " " + draz + " " + dpr + " " + ddel + " " + dost);
+            System.out.println((a+b) + " " +(a-b) + " " +(a*b) + " " + (a/b) + " " + (a%b));
+            double c;
+               c = a;
+               System.out.println((c+b) + " " +(c-b) + " " +(c*b) + " " + (c/b) + " " + (c%b));
         }
     }
 

@@ -1,5 +1,9 @@
 package by.it.sc04_evening_tue_thu.shinkevich.lesson03;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.Scanner;
+
 /*
 Ускорение свободного падения на Земле и Марсе таково:
 Марс   3,86
@@ -27,5 +31,20 @@ package by.it.sc04_evening_tue_thu.shinkevich.lesson03;
 
 */
 class TaskC3 {
-
+    private static double roundTwoPlaces(double number){
+        BigDecimal bd = new BigDecimal(number);
+        bd = bd.setScale(2, RoundingMode.HALF_UP);
+        return bd.doubleValue();
+    }
+    public static double getWeight( int weight){
+        double gEarth = 9.81;
+        double gMars = 3.86;
+        double marsWeight = weight*gMars/gEarth;
+        return roundTwoPlaces(marsWeight);
+    }
+    public static void main(String [] args){
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        System.out.println(getWeight(a));
+    }
 }
