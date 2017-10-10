@@ -31,12 +31,15 @@ public class TaskB1 {
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
         int a = in.nextInt();
-        int b =(a /100);
-        int c =(a / 400);
-        if ((a / 100 == b) && (a / 400 == c)) {
-            System.out.println("Check");
-
-
+        if ((a % 100 == 0) && (a % 400 == 0)){
+            System.out.println("количество дней в году: 366");
+        } else if (a%100==0 && a%400!=0) {
+            System.out.println("количество дней в году: 365");
+        } else if (a % 4 == 0) {
+            System.out.println("количество дней в году: 366");
+        }
+          else if (a % 4 != 0){
+            System.out.println("количество дней в году: 365");
         }
     }
 }
