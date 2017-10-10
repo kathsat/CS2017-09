@@ -51,7 +51,7 @@ class TaskA1 {
         ds = a+b;
         dr = a-b;
         dp = a*b;
-        dc = (double) a/ b;
+        dc = (double) a/ (double) b;
         doo = a%b;
         System.out.println( ds+" "+dr+" "+ dp+" "+dc+" "+doo);
 
