@@ -22,7 +22,26 @@ package by.it.sc02_morning.golikov.lesson05;
 такого дня недели не существует
 
  */
-
+import java.util.Scanner;
 public class TaskA2 {
-
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int day = sc.nextInt();
+        if (day == 1)
+            System.out.println("понедельник");
+        else if (day == 2)
+             System.out.println("вторник");
+        else if (day == 3)
+            System.out.println("среда");
+        else if (day == 4)
+            System.out.println("четверг");
+        else if (day == 5)
+            System.out.println("пятница");
+        else if (day == 6)
+            System.out.println("суббота");
+        else if (day == 7)
+            System.out.println("воскресенье");
+        else
+            System.out.println("такого дня недели не существует");
+    }
 }
