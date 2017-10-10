@@ -14,6 +14,6 @@ Scanner sc=new Scanner(System.in);
 4. Программа должна выводить квадрат считанного числа.
  */
 
-class TaskB1 {
+public class TaskB1 {
 
 }
