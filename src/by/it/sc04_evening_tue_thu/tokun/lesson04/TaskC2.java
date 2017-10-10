@@ -1,4 +1,7 @@
 package by.it.sc04_evening_tue_thu.tokun.lesson04;
+
+import java.util.Scanner;
+
 /*
     Сумма цифр четырехзначного числа
 
@@ -22,11 +25,18 @@ package by.it.sc04_evening_tue_thu.tokun.lesson04;
 public class TaskC2 {
 
     public static void main(String[] args) {
-        System.out.println(sumDigitsInNumber(5467));
+        Scanner sc = new Scanner(System.in);
+                int a = sc.nextInt();
+        System.out.println(sumDigitsInNumber(a));
    }
 
-   public static int sumDigitsInNumber(int a){
-        return a;
+   public static int sumDigitsInNumber(int a) {
+       int sum = 0;
+       while(a > 0) {
+           sum += a % 10;
+           a /= 10;
+       }
+        return sum;
    }
 
 }
