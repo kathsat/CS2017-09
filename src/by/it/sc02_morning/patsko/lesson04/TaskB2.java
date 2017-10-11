@@ -45,7 +45,7 @@ class TaskB2 {
         int c=sc.nextInt();
         double d=dis(a,b,c);
         if(d>0) System.out.println((-b+Math.sqrt(d))/(2*a)+" "+(-b-Math.sqrt(d))/(2*a));
-        if(d==0) System.out.println(-b/(2*a));
+        if(d==0) System.out.println((double)-b/(2*a));
         if(d<0) System.out.println("Отрицательный дискриминант");
     }
 }
