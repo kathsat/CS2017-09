@@ -29,16 +29,17 @@ public class TaskB2 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int size =sc.nextInt();
-        int i = 1;
-        int j = 1;
-        while (i <= 10) {
-            j = 1;
-            while (j <= 10) {
-                if (j == 10)
-                    System.out.println(i * j + " ");
-                else
-                    System.out.print(i * j + " ");
-                j++;
+        int a=1;
+        int b=1;
+        while(a <= size){
+            while (b <= size)
+            {
+                System.out.print(a*b + " ");
+                b++;
             }
-            i++;
-        }}}
+            System.out.println();
+            a++;
+            b=1;
+        }
+    }
+}

@@ -1,5 +1,7 @@
 package by.it.sc02_morning.serzhan.lesson05;
 
+import java.util.Scanner;
+
 /*
 На входе вводится число и месяц 2017 года.
 Программа должна выводить номер дня года, считая 1 января первым днем,
@@ -26,5 +28,7 @@ package by.it.sc02_morning.serzhan.lesson05;
 
  */
 public class TaskC2 {
+    public static void main(String[] args) {
 
+    }
 }
