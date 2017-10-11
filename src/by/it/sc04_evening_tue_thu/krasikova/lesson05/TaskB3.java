@@ -24,7 +24,18 @@ package by.it.sc04_evening_tue_thu.krasikova.lesson05;
 
  */
 
+import java.util.Scanner;
 
 public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        System.out.println("Ввод:");
+        System.out.println(num);
+        System.out.println("Вывод:");
+        int res=0;
+        
+    }
 
 }
+
