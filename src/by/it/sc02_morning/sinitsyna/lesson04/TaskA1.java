@@ -41,7 +41,7 @@ class TaskA1 {
         int a = sc.nextInt();
         int b = sc.nextInt();
         System.out.println((a + b) + " " + (a - b) + " " + (a * b) + " " + (a / b) + " " + (a % b));
-        System.out.println((double) (a + b) + " " + (double) (a - b) + " " + (double) (a * b) + " " + (double) (a / b) + " " + (double) (a % b));
+        System.out.println((double) (a + b) + " " + (double) (a - b) + " " + (double) (a * b) + " " + (double) a / b + " " + (double) (a % b));
 
     }
 }
