@@ -27,20 +27,36 @@ package by.it.sc02_morning.tunkina.lesson05;
 import java.util.Scanner;
 
 public class TaskA2 {
-//    public static void main(String[] args) {
-//        Scanner sc = new Scanner(System.in);
-//        int a = sc.nextInt();
-//        for (a = 1; a <=7; a++) {
-//            if (a == 1) System.out.println("понедельник");
-//            if (a == 2) System.out.println("вторник");
-//            if (a == 3) System.out.println("среда");
-//           if (a == 4) System.out.println("четверг");
-//             if (a == 5) System.out.println("пятница");
-//            if (a == 6) System.out.println("суббота");
-//            if (a == 7) System.out.println("воскресенье");
-//            else System.out.println("такого дня недели не существует");
-//
-//        }
-//    }
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       int a = sc.nextInt();
+                  switch (a) {
+              case 1:
+                  System.out.println("понедельник");
+                  break;
+              case 2:
+                  System.out.println("вторник");
+                  break;
+              case 3:
+                  System.out.println("среда");
+                  break;
+              case 4:
+                  System.out.println("четверг");
+                  break;
+              case 5:
+                  System.out.println("пятница");
+                  break;
+              case 6:
+                  System.out.println("суббота");
+                  break;
+              case 7:
+                  System.out.println("воскресенье");
+                  break;
+              default:
+                  System.out.println("такого дня недели не существует");
 
-}
+          }
+          }
+    }
+
+
