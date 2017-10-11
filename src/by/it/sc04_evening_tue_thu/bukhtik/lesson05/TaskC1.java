@@ -13,7 +13,7 @@ package by.it.sc04_evening_tue_thu.bukhtik.lesson05;
 В несуществующие месяцы 0, 13 и 14 выводится сумма в $0.0
 в остальные месяцы выводится указанная сумма с премией в 50%.
 
-Сделайте так, чтобы в тот месяц, когда получилась зарплата в $666 цикл после вывода прерывался.
+Сделайте так, чтобы в тоm т месяц, когда получилась зарплата в $666 цикл после вывода прерывался.
 
 Пример работы программы (у вас должно быть так же, до символа):
 
@@ -33,10 +33,58 @@ package by.it.sc04_evening_tue_thu.bukhtik.lesson05;
 За ноябрь начислено $3000.0
 За декабрь начислено $3000.0
 За месяц 13 начислено $0.0
-За месяц 14 начислено $0.0
-
+За месяц 14 начислено $0.0`
 */
 
-public class TaskC1 {
+import java.util.Scanner;
 
+public class TaskC1 {
+    public static void main(String[] args) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        Scanner sc = new Scanner(System.in);
+        int sum = sc.nextInt();
+        if ((sum < 300) || (sum > 3000)) System.out.println("Мы вам перезвоним!");
+        else {
+            done: //ставим метку,где прервать цикл
+             for (int month = 0; ;) {
+                switch (month) {
+                    case 0:
+                        System.out.println("За месяц 0 начислено $0.0");
+                    case 1:
+                        System.out.println("За январь начислено $" + (double) ((sum) * 1.5));
+                        if (((sum) * 1.5)==666) break done;
+                    case 2:
+                        System.out.println("За февраль начислено $" + (double) ((sum) * 1.5));
+                    case 3:
+                        System.out.println("За март начислено $" + (double) ((sum) * 1.5));
+                    case 4:
+                        System.out.println("За апрель начислено $" + (double) ((sum) * 1.5));
+                    case 5:
+                        System.out.println("За май начислено $" + (double) ((sum) * 1.5));
+                    case 6:
+                        System.out.println("За июнь начислено $" + (double)(sum));
+                        if (sum==666) break done;
+                    case 7:
+                        System.out.println("За июль начислено $" + (double) (sum));
+                    case 8:
+                        System.out.println("За август начислено $" + (double) (sum));
+                    case 9:
+                        System.out.println("За сентябрь начислено $" + (double) ((sum) * 1.5));
+                    case 10:
+                        System.out.println("За октябрь начислено $" + (double) ((sum) * 1.5));
+                    case 11:
+                        System.out.println("За ноябрь начислено $" + (double) ((sum) * 1.5));
+                    case 12:
+                        System.out.println("За декабрь начислено $" + (double) ((sum) * 1.5));
+                    case 13:
+                        System.out.println("За месяц 13 начислено $0.0");
+                    case 14:
+                        System.out.println("За месяц 14 начислено $0.0");
+                }
+                break;
+            }
+
+        }
+
+    }
 }

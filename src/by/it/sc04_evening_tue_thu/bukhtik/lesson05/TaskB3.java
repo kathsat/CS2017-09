@@ -25,6 +25,31 @@ package by.it.sc04_evening_tue_thu.bukhtik.lesson05;
  */
 
 
+import java.util.Scanner;
+
 public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+
+        int sum = 1;
+        int i = 1;
+
+        while (sum <= x) {
+
+            System.out.print(sum + ",");
+            i++;
+            sum = sum + i;
+
+        }
+
+
+
+
+
+
+
+
+    }
 
 }
