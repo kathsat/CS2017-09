@@ -37,6 +37,43 @@ package by.it.sc02_morning.menchytsky.lesson05;
 
 */
 
-public class TaskC1 {
+import java.util.Scanner;
 
-}
+public class TaskC1 {
+    public static void main(String[] args) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        Scanner sc=new Scanner(System.in);
+        double sum = sc.nextInt();
+        double zero = 0.0;
+        double prize = sum + sum*0.5;
+        if(sum < 300 || sum > 3000) System.out.println("Мы вам перезвоним!");
+        else {
+            for(int i=0 ; i<=14 ; i++){
+                if(i==6) {
+                    System.out.println("За июнь начислено $"+sum);
+                    if(sum == 666) break;
+                }
+                else if(i==7) System.out.println("За июль начислено $"+sum);
+                else if(i==8) System.out.println("За август начислено $"+sum);
+                else if(i==0) System.out.println("За месяц "+i+" начислено $"+zero);
+                else if(i==13) System.out.println("За месяц "+i+" начислено $"+zero);
+                else if(i==14) System.out.println("За месяц "+i+" начислено $"+zero);
+                else if(i==1) {
+                    System.out.println("За январь начислено $"+prize);
+                    if(prize == 666) break;
+                }
+                else if(i==2) System.out.println("За февраль начислено $"+prize);
+                else if(i==3) System.out.println("За март начислено $"+prize);
+                else if(i==4) System.out.println("За апрель начислено $"+prize);
+                else if(i==5) System.out.println("За май начислено $"+prize);
+                else if(i==9) System.out.println("За сентябрь начислено $"+prize);
+                else if(i==10) System.out.println("За октябрь начислено $"+prize);
+                else if(i==11) System.out.println("За ноябрь начислено $"+prize);
+                else if(i==12) System.out.println("За декабрь начислено $"+prize);
+            }
+                }
+            }
+        }
+
+
+
