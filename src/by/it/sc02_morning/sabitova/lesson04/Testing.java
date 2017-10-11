@@ -7,6 +7,7 @@ import java.lang.reflect.Method;
 
 import static org.junit.Assert.*;
 
+
 //поставьте курсор на следующую строку и нажмите Ctrl+Shift+F10
 public class Testing {
 
@@ -48,9 +49,10 @@ public class Testing {
     public void testTaskB2() throws Exception {
         Testing testing;
         testing = new Testing(TaskB2.class, "2 5 3");
-        testing.contains("-4.75 -5.25\n");
+        testing.contains("-1.0");
+        testing.contains("-1.5");
         testing = new Testing(TaskB2.class, "2 4 2");
-        testing.contains("-1\n");
+        testing.contains("-1.0\n");
         testing = new Testing(TaskB2.class, "2 2 2");
         testing.contains("Отрицательный дискриминант");
     }
@@ -70,11 +72,11 @@ public class Testing {
     @Test
     public void testTaskC2() throws Exception {
         try {
-        Method m = TaskC2.class.getDeclaredMethod("sumDigitsInNumber", int.class);
-        assertEquals((int) m.invoke(null, 5467), 22);
-        assertEquals((int) m.invoke(null, 5555), 20);
-        assertEquals((int) m.invoke(null, 1111), 4);
-        assertEquals((int) m.invoke(null, 9993), 30);
+            Method m = TaskC2.class.getDeclaredMethod("sumDigitsInNumber", int.class);
+            assertEquals((int) m.invoke(null, 5467), 22);
+            assertEquals((int) m.invoke(null, 5555), 20);
+            assertEquals((int) m.invoke(null, 1111), 4);
+            assertEquals((int) m.invoke(null, 9993), 30);
         } catch (NoSuchMethodException e) {
             org.junit.Assert.fail("Метод sumDigitsInNumber не найден");
         }
