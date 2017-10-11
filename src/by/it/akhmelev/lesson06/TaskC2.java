@@ -1,5 +1,4 @@
 package by.it.akhmelev.lesson06;
-
 /*
 Головоломка.
 

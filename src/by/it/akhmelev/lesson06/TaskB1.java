@@ -1,7 +1,4 @@
 package by.it.akhmelev.lesson06;
-
-import java.util.Scanner;
-
 /*
 Суммирование
 Вводить с клавиатуры числа и считать их сумму.
@@ -16,6 +13,7 @@ import java.util.Scanner;
 Если пользователь ввел -1, вывести на экран сумму и завершить программу.
 4. В программе должен использоваться цикл for или цикл while.
 */
+
 public class TaskB1 {
 
 }

@@ -2,7 +2,6 @@ package by.it.akhmelev.lesson06;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-
 /*
 Новый способ ввода данных + поиск минимума
 

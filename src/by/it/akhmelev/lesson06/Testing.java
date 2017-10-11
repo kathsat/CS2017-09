@@ -183,7 +183,7 @@ public class Testing {
     @Test
     public void testTaskC2() throws Exception {
         boolean ok=run("").stringWriter.toString().replaceAll(" ","").replaceAll("\n","").hashCode()==626587336;
-        assertTrue("Решение не верное",ok);
+        assertTrue("Решение пока не найдено ;)",ok);
     }
 
     @Test

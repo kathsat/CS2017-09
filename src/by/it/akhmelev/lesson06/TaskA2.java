@@ -1,5 +1,4 @@
 package by.it.akhmelev.lesson06;
-
 /*
 Рисуем долларовый прямоугольник
 Ввести с клавиатуры два числа m и n.
@@ -16,7 +15,6 @@ package by.it.akhmelev.lesson06;
 4. В программе должен использоваться цикл for.
 
  */
-
 
 public class TaskA2 {
 
