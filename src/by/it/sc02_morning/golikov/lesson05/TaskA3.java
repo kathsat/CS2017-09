@@ -21,7 +21,20 @@ package by.it.sc02_morning.golikov.lesson05;
 
  */
 
-
+import java.util.Scanner;
 public class TaskA3 {
-
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int numb1 = sc.nextInt();
+        int numb2 = sc.nextInt();
+        int numb3 = sc.nextInt();
+        if (numb1 == numb2 && numb2 == numb3)
+            System.out.println(numb1 + " " + numb2 + " " + numb3);
+        else if (numb1 == numb2)
+            System.out.println(numb1 + " " + numb2);
+        else if (numb2 == numb3)
+            System.out.println(numb2 + " " + numb3);
+        else if (numb1 == numb3)
+            System.out.println(numb1 + " " + numb3);
+    }
 }
