@@ -23,6 +23,6 @@ class TaskB1
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int  a2 = a*a;
-        System.out.println();
+        System.out.println(a2);
     }
 }
