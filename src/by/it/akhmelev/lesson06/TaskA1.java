@@ -21,12 +21,5 @@ $ $ $ $ $ $ $ $ $ $
 
  */
 public class TaskA1 {
-    public static void main(String[] args) {
-        int count=0;
-        while (count++<100){
-            System.out.print("$ ");
-            if (count%10==0)
-                System.out.println();
-        }
-    }
+
 }

@@ -1,7 +1,5 @@
 package by.it.akhmelev.lesson06;
 
-import java.math.BigInteger;
-
 /*
 Головоломка.
 
@@ -20,18 +18,5 @@ import java.math.BigInteger;
 
  */
 public class TaskC2 {
-    public static void main(String[] args) {
-        long res=fact(20);
-        String s=res+" = "+Long.toHexString(res)+" = "+Long.toBinaryString(res);
-        System.out.println(s);
-    }
-
-    private static long fact(int k){
-        long res=1;
-        for (int i = 1; i <= k; i++) {
-            res=res*i;
-        }
-        return res;
-    }
 
 }

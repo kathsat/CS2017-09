@@ -32,8 +32,7 @@ public class TaskC3 {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
         long n=scanner.nextLong();
-        String res=((n&(n-1))==0)?"YES":"NO";
-                //"Вместо этой строки тут нужно ввести выражение";
+        String res="Вместо этой строки тут нужно ввести выражение";
         System.out.println(res);
     }
 

@@ -17,16 +17,5 @@ import java.util.Scanner;
 4. В программе должен использоваться цикл for или цикл while.
 */
 public class TaskB1 {
-    public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
-        int sum=0;
-        do {
-            int i = scanner.nextInt();
-            sum+=i;
-            if (i==-1) break;
-        } while (true);
-        System.out.println("Minimum = "+sum);
-    }
-
 
 }

@@ -14,25 +14,6 @@ package by.it.akhmelev.lesson06;
 4. Программа должна выводить строку "Average = " среднее арифметическое в формате double.
  */
 
-
-import java.util.Scanner;
-
 public class TaskB3 {
-    public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
-        int count=scanner.nextInt();
-        int min=Integer.MAX_VALUE;
-        int max=Integer.MIN_VALUE;
-        double avg=0;
-        for (int i = 0; i < count; i++) {
-            int in=scanner.nextInt();
-            if (min>in) min=in;
-            if (max<in) max=in;
-            avg+=in;
-        }
-        System.out.println("Minimum = "+min);
-        System.out.println("Maximum = "+max);
-        System.out.println("Average = "+avg/count);
-    }
 
 }

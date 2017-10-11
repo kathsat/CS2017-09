@@ -26,15 +26,5 @@ $$$$$$$$$$
 import java.util.Scanner;
 
 public class TaskA3 {
-    public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
-        int size=scanner.nextInt();
-        char start='A';
-        for (int i = 0; i < size; i++) {
-            for (int j = 0; j < i+1; j++) {
-                System.out.print((char)(start+j));
-            }
-            System.out.println();
-        }
-    }
+
 }

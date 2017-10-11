@@ -49,19 +49,6 @@ package by.it.akhmelev.lesson06;
 
 */
 
-import java.util.Scanner;
-
 public class TaskC1 {
-    public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
-        int n=scanner.nextInt();
-        long value=1;
-        for (int i = 0; i <= n; i++) {
-            String d=Long.toBinaryString(value);
-            while (d.length()<=n) d="0"+d;
-            System.out.println(d+" = "+value);
-            value=value<<1;
-        }
-    }
 
 }
