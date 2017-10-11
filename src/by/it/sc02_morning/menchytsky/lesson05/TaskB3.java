@@ -25,6 +25,23 @@ package by.it.sc02_morning.menchytsky.lesson05;
  */
 
 
+import java.util.Scanner;
+
 public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int i = sc.nextInt();
+        int sum = 0;
+        int y = 1;
+        while (true){
+
+            sum = sum + y;
+            System.out.print(sum + ",");
+            y++;
+            if((sum+y) > i)
+                break;
+
+        }
+    }
 
 }
