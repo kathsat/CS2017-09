@@ -25,6 +25,19 @@ package by.it.sc02_morning.serzhan.lesson05;
  */
 
 
-public class TaskB3 {
+import java.util.Scanner;
 
+public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int i = sc.nextInt();
+        int sum = 0;
+        for (int j = 1; sum < i; j = j + 1) {
+            sum = sum + j;
+            if (sum > i) {
+                break;
+            }
+            System.out.print(sum + ",");
+        }
+    }
 }
