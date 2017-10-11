@@ -1,7 +1,5 @@
 package by.it.sc04_evening_tue_thu.sorokina.lesson04;
 
-import java.util.Scanner;
-
 /*
     Сумма цифр четырехзначного числа
 
