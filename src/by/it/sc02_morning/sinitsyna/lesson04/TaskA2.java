@@ -22,11 +22,13 @@ Lesson 04. Task A2. Стихотворение
 */
 class TaskA2 {
     public static void main(String[] args) {
-        String a="Она всегда была немного кошкой";
-        String b="Она любила спать и молоко";
-        String c="И под перчаткой каждая ладошка";
-        String d="Скрывала пять изящных коготков";
-        System.out.println("Мое любимое стихотворение");
-        System.out.println(a+"\n"+b+"\n"+c+"\n"+d+"\n");
+
+        String a="Она всегда была немного кошкой \n";
+        String b="Она любила спать и молоко \n";
+        String c="И под перчаткой каждая ладошка \n";
+        String d="Скрывала пять изящных коготков \n";
+
+        System.out.println("Мое любимое стихотворение:");
+        System.out.println(a + b + c + d);
     }
 }
