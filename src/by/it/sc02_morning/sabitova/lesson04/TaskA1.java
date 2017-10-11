@@ -44,9 +44,9 @@ class TaskA1 {
         double g = a;
         double d = b;
 
-        System.out.println((a + b) + "\t" + (a - b) + "\t" + (a * b) + "\t" + (a / b) + "\t" + (a % b));
-        System.out.println((g + d) + "\t" + (g - d) + "\t" + (g * d) + "\t" + (g / d) + "\t" + (g % d));
+        System.out.println((a + b) + " " + (a - b) + " " + (a * b) + " " + (a / b) + " " + (a % b));
+        System.out.println((g + d) + " " + (g - d) + " " + (g * d) + " " + (g / d) + " " + (g % d));
     }
+
+
 }
-
-
