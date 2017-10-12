@@ -74,7 +74,7 @@ public class Testing {
 
     @Test
     public void testTaskB3() throws Exception {
-        run("10 9 8 7 6 5 4 3 2 1 0")
+        run("10\n9\n8\n7\n6\n5\n4\n3\n2\n1\n0\n")
                 .include("Minimum = 0\n")
                 .include("Maximum = 9\n")
                 .include("Average = 4.5");
