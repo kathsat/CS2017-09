@@ -37,6 +37,26 @@ package by.it.sc04_evening_tue_thu.krasikova.lesson05;
 
 */
 
-public class TaskC1 {
+import java.util.Scanner;
 
+public class TaskC1 {
+    public static void main(String args[]) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        Scanner sc = new Scanner(System.in);
+        int sum = sc.nextInt();
+        if (sum < 300 && sum > 3000) {
+            System.out.println("Мы вам перезвоним!");
+        } else {
+            for (int month = 0; month < 15; month++) {
+                switch (month) {
+                    case 0:
+                        System.out.println("За месяц 0 начислено $0.0");
+                        break;
+                    case 1:
+                        System.out.println("За январь начислено "+sum);
+
+                }
+            }
+        }
+    }
 }
