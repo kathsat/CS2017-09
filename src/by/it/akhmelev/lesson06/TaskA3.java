@@ -9,17 +9,16 @@ package by.it.akhmelev.lesson06;
 Пример
 Ввод: 10
 Вывод:
-$
-$$
-$$$
-$$$$
-$$$$$
-$$$$$$
-$$$$$$$
-$$$$$$$$
-$$$$$$$$$
-$$$$$$$$$$
-
+A
+AB
+ABC
+ABCD
+ABCDE
+ABCDEF
+ABCDEFG
+ABCDEFGH
+ABCDEFGHI
+ABCDEFGHIJ
 */
 
 public class TaskA3 {
