@@ -23,8 +23,11 @@ public class TaskB2 {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int a = Integer.parseInt(reader.readLine());
         int b = Integer.parseInt(reader.readLine());
+        int c=Integer.parseInt(reader.readLine());
+       int d= Integer.parseInt(reader.readLine());
+       int e = Integer.parseInt(reader.readLine());
 
-        int minimum = min(a, b);
+        int minimum = min(min(min(min(a,b),c),d),e);
 
         System.out.println("Minimum = " + minimum);
     }
