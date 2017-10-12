@@ -18,18 +18,20 @@ import java.io.InputStreamReader;
 */
 
 public class TaskB2 {
-
+    public int num(BufferedReader out) throws Exception{
+        return Integer.parseInt(out.readLine());
+    }
     public static void main(String[] args) throws Exception {
+        TaskB2 b2=new TaskB2();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int a = Integer.parseInt(reader.readLine());
-        int b = Integer.parseInt(reader.readLine());
-        int c=Integer.parseInt(reader.readLine());
-       int d= Integer.parseInt(reader.readLine());
-       int e = Integer.parseInt(reader.readLine());
+        int min=b2.num(reader);
+        for (int i = 0; i <4 ; i++) {
+          min= min(b2.num(reader), min);
+        }
 
-        int minimum = min(min(min(min(a,b),c),d),e);
+       // int minimum = min;//min(min(min(min(a,b),c),d),e);
 
-        System.out.println("Minimum = " + minimum);
+        System.out.println("Minimum = " + min);
     }
 
     private static int min(int a, int b) {
