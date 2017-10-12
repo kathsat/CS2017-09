@@ -24,7 +24,7 @@ public class TaskA2 {
         Scanner in=new Scanner(System.in);
         a=in.nextInt();
         b=in.nextInt();
-        System.out.println("m="+a+" n="+b);
+      //  System.out.println("m="+a+" n="+b);
         for (int i = 0; i < a; i++) {
             for (int j = 0; j < b; j++) {
                 System.out.print("$");
