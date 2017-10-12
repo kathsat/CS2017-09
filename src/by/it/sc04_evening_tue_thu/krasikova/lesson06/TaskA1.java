@@ -28,8 +28,7 @@ public class TaskA1 {
         while (vert<11) {
             if (hor<=10) {
                 System.out.print(buck+" "+buck+" "+buck+" "+buck+" "+buck+" "+buck+" "+buck+" "+buck+" "+buck+" "+buck+" ");
-                hor++;
-            }
+                }
             System.out.println();
             vert++;
         }

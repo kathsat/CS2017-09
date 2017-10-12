@@ -15,7 +15,23 @@ $$$$
 4. В программе должен использоваться цикл for.
 
  */
+import java.util.Scanner;
 
 public class TaskA2 {
+    public static void main (String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int m=sc.nextInt();
+        int n=sc.nextInt();
+        int vert=1;
+        for (; vert<=m; vert++) {
+            int hor=1;
+            while (hor <=n) {
+                System.out.print("$");
+                hor++; }
+                System.out.println();
+            }
 
+    }
 }
+
+
