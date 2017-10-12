@@ -84,7 +84,7 @@ public class Testing {
         run("122").include(",120").exclude(",136").exclude(",121");
         run("120").include(",120").exclude(",136").exclude(",121");
         run("50").include(",45").exclude(",46").exclude(",55");
-        run("3").include(",3").exclude(",6").exclude(",1");
+        run("3").include(",3").exclude(",6");//.exclude(",1");
     }
 
 

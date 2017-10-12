@@ -31,7 +31,8 @@ public class TaskB1 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int date = in.nextInt();
-        if(date%4==0&&(date%400==0)) System.out.println(366);
-        else System.out.println(365);
+        if(date%4==0&&date%100!=0) System.out.println("количество дней в году: 366");
+        else if(date%4==0&&date%100==0&&date%400==0)System.out.println("количество дней в году: 366");
+        else System.out.println("количество дней в году: 365");
     }
 }
