@@ -9,7 +9,7 @@ package by.it.akhmelev.lesson03;
 Вывод:
 Sum = 26
 */
-public class TaskC1 {
+class TaskC1 {
 
 
 

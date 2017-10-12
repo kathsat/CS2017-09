@@ -33,21 +33,6 @@ Scanner sc=new Scanner(System.in);
 
  */
 
-import java.util.Scanner;
-
 class TaskA1 {
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        double g = a;
-        double d = b;
-
-
-        System.out.println((a+b)+" "+(a-b)+ " " +(a*b)+" "+(a/b)+" "+(a%b));
-        System.out.println((g+d)+" "+(g-d)+ " " +(g*d)+" "+(g/d)+" "+(g%d));
-    }
 
 }
-
-

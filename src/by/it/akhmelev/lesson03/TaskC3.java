@@ -28,6 +28,6 @@ import java.util.Scanner;
 
 
 */
-public class TaskC3 {
+class TaskC3 {
 
 }

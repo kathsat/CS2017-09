@@ -15,7 +15,7 @@ BIN:100010+11010=111100
 HEX:22+1a=3c
 OKT:42+32=74
 */
-public class TaskC2 {
+class TaskC2 {
 
 
 }

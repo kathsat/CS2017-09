@@ -7,8 +7,8 @@ package by.it.akhmelev.lesson03;
         2. Нужно убрать комментарии в некоторых строках и не менять остальные.
         3. В программу нельзя добавлять новые строки или удалять имеющиеся.
         4. Выведенный текст должен соответствовать заданию.
-*/
-public class TaskB3 {
+*/        
+class TaskB3 {
         public static void main(String[] args) {
 //        String s = "C";
 //        System.out.println("Новым Годом");
