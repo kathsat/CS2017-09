@@ -24,5 +24,4 @@ package by.it.sc04_evening_tue_thu.shinkevich.lesson05;
 */
 
 public class TaskC3 {
-
 }

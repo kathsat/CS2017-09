@@ -24,6 +24,46 @@ package by.it.sc04_evening_tue_thu.shinkevich.lesson05;
 
  */
 
-public class TaskA2 {
+import java.io.IOException;
+import java.util.Scanner;
 
+public class TaskA2 {
+    public static void main(String[] args)
+            throws IOException
+    {
+            Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+            if (num == 1)
+            {
+                System.out.print("понедельник");
+            }
+            else if (num == 2)
+            {
+                System.out.print("вторник");
+            }
+            else if (num == 3)
+            {
+                System.out.print("среда");
+            }
+            else if (num == 4)
+            {
+                System.out.print("четверг");
+            }
+            else if (num == 5)
+            {
+                System.out.print("пятница");
+            }
+            else if (num == 6)
+            {
+                System.out.print("суббота");
+            }
+            else if (num == 7)
+            {
+                System.out.print("воскресенье");
+            }
+            else
+            {
+                System.out.print("такого дня недели не существует");
+            }
+    }
 }

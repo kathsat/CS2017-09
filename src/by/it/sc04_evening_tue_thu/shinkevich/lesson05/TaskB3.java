@@ -25,6 +25,23 @@ package by.it.sc04_evening_tue_thu.shinkevich.lesson05;
  */
 
 
-public class TaskB3 {
 
-}
+import java.util.Scanner;
+
+public class TaskB3 {
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int sum = 0;
+        int i=1 ;
+        while (true) {
+            sum+=i;
+            if (sum>n)
+                break;
+            else i=i+1;
+            System.out.print(sum + ",");
+
+                 }
+    }}

@@ -25,5 +25,13 @@ package by.it.sc04_evening_tue_thu.shinkevich.lesson05;
 
  */
 public class TaskA1 {
-
+    public static void main(String[] args)
+    {
+      for (int i=1; i < 11; i ++) {
+          if (i == 3 || i == 9)
+              System.out.println("Меня интересует высокая зарплата!");
+          else
+              System.out.println("Я изучаю программирование.");
+      }
+    }
 }
