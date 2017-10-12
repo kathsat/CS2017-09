@@ -20,7 +20,18 @@ ABCDEFGH
 ABCDEFGHI
 ABCDEFGHIJ
 */
+import java.util.Scanner;
 
 public class TaskA3 {
+    public static void main (String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int size=sc.nextInt();
+        char a='A';
+        for (int dif=0;dif<size;dif+=1) {
+            System.out.print(a+=dif);     //dif=1
+
+        }
+
+    }
 
 }
