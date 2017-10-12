@@ -25,6 +25,22 @@ package by.it.sc04_evening_tue_thu.sushchenja.lesson05;
  */
 
 
+import java.util.Scanner;
+
 public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a,b,c;
+        b=2;
+        c=1;
+        a=sc.nextInt();
+        System.out.printf(c+",");
+        do{
+            c+=b++;
+            if (c<=a)
+            System.out.printf(c+",");
+        }
+        while (c<a);
+    }
 
 }
