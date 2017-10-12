@@ -34,7 +34,12 @@ public class TaskB3 {
         System.out.println(num);
         System.out.println("Вывод:");
         int res=0;
-        
+        int del=1;
+        while (del+res<=num) {
+            res+=del;
+            del++;
+            System.out.print(res+",");
+            }
     }
 
 }
