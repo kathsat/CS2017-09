@@ -28,12 +28,12 @@ class TaskC1 {
 
 
      static double convertCelsiumToFahrenheit(int celsium){
-        return (celsium*9)/5+32;
+        return ((double)celsium*9)/5+32;
     }
 
 
     public static void main(String[] args) {
-       System.out.println(convertCelsiumToFahrenheit(40));
+       System.out.println(convertCelsiumToFahrenheit(41));
    }
 
 }
