@@ -16,6 +16,26 @@ package by.it.sc03_evening_mon_fri.kalita.lesson06;
  */
 
 
+import com.sun.org.apache.xml.internal.security.algorithms.JCEMapper;
+
+import java.util.Scanner;
+
 public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        int size = in.nextInt();
+        int num = in.nextInt();
+        int min= num, max=num, Average = num, sum=num;
+        for (int i = 0; i < size-1; i++) {
+
+            num=in.nextInt();
+           min= Math.min(min,num);
+           max = Math.max(max,num);
+            sum+=num;
+        }
+        System.out.println("Minimum = " + min);
+        System.out.println("Maximum = "+max);
+        System.out.println("Average = "+((double)sum/size));
+    }
 
 }
