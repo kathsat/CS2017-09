@@ -25,6 +25,32 @@ package by.it.sc04_evening_tue_thu.krasikova.lesson05;
 256
 
  */
+import java.util.Scanner;
+
 public class TaskC2 {
+    public static void main (String args[]) {
+        System.out.println("Ввод:");
+        Scanner sc=new Scanner(System.in);
+        int day=sc.nextInt();
+        int month=sc.nextInt();
+        System.out.println("Вывод:");
+        int number=0;
+        if (month==1) {number=day;}
+            else if (month==2) {number=31+day;}
+            else if (month==3) {number=31+28+day;}
+            else if (month==4) {number=31+28+31+day;}
+            else if (month==5) {number=31+28+31+30+day;}
+            else if (month==6) {number=31+28+31+30+31+day;}
+            else if (month==7) {number=31+28+31+30+31+30+day;}
+            else if (month==8) {number=31+28+31+30+31+30+31+day;}
+            else if (month==9) {number=31+28+31+30+31+30+31+31+day;}
+            else if (month==10) {number=31+28+31+30+31+30+31+31+30+day;}
+            else if (month==11) {number=31+28+31+30+31+30+31+31+30+31+day;}
+            else if (month==12) {number=31+28+31+30+31+30+31+31+30+31+30+day;}
+        System.out.println(number);
+
+
+    }
 
 }
+
