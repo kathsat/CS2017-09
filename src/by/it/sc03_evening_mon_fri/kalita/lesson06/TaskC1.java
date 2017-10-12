@@ -50,6 +50,18 @@ package by.it.sc03_evening_mon_fri.kalita.lesson06;
 
 */
 
-public class TaskC1 {
+import java.util.Scanner;
 
+public class TaskC1 {
+    public static void main(String[] args) {
+        long a = new Scanner(System.in).nextLong()+1;
+        for (long i = 0; i < a; i++) {
+            String binary = Long.toBinaryString((1L<<i));
+            long length = binary.length();
+            for (long j = 0; j < a-length; j++) {
+                binary = "0"+binary;
+            }
+            System.out.println(binary + " = " +(1L<<i));//+ " " + 1<<i);
+        }
+    }
 }
