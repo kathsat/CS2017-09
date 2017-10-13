@@ -28,12 +28,12 @@ import java.util.Scanner;
 
 public class TaskB3 {
     public static void main(String[] args) {
-        int i=1, lim = new Scanner(System.in).nextInt(), a=0;
-        while(a<=lim) {
-            System.out.print(a+",");
+        int i=1, sum = new Scanner(System.in).nextInt(), a=0;
+        while(true) {
             a+=i;
             i++;
-            if(a>lim) break;
+            if(a>sum) break;
+            System.out.print(a+",");
         }
     }
 }
