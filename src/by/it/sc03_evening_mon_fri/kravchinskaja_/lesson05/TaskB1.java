@@ -1,5 +1,7 @@
 package by.it.sc03_evening_mon_fri.kravchinskaja_.lesson05;
 
+import java.util.Scanner;
+
 /*
 Определите количество дней в году
 
@@ -26,5 +28,16 @@ package by.it.sc03_evening_mon_fri.kravchinskaja_.lesson05;
 
 */
 public class TaskB1 {
+    public static void main (String args []){
+        Scanner cr=new Scanner(System.in);
+        int data=cr.nextInt();
+        if(data%4==0&&data%100!=0)
+            System.out.println ("количество дней в году: 366");
+        else if (data%4==0&&data%100==0&&data%400==0)
+            System.out.println("количество дней в году: 366");
+        else
+            System.out.println("количество дней в году: 365");
 
+
+    }
 }
