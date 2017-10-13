@@ -36,5 +36,4 @@ public class TaskB3 {
             if(a>lim) break;
         }
     }
-
 }
