@@ -24,7 +24,17 @@ package by.it.sc03_evening_mon_fri.tutina.lesson05;
 
  */
 
+import java.util.Scanner;
 
 public class TaskB3 {
+    public static void main(String[] args) {
+        int i=1, lim = new Scanner(System.in).nextInt(), a=0;
+        while(a<=lim) {
+            System.out.print(a+",");
+            a+=i;
+            i++;
+            if(a>lim) break;
+        }
+    }
 
 }
