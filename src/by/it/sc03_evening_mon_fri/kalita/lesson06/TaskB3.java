@@ -16,7 +16,6 @@ package by.it.sc03_evening_mon_fri.kalita.lesson06;
  */
 
 
-import com.sun.org.apache.xml.internal.security.algorithms.JCEMapper;
 
 import java.util.Scanner;
 
