@@ -41,10 +41,10 @@ import java.util.Scanner;
 
 public class TaskC1 {
     public static void main(String[] args) {
-        System.out.println("Какую вы хотите зарплату в $$$?");
+        //System.out.println("Какую вы хотите зарплату в $$$?");
         Scanner sc= new Scanner(System.in);
         double a = sc.nextDouble();
-
+        double sum=0;
         if(a<300 || a>3000) System.out.println("Мы вам перезвоним!");
         else {
             for(int month=0; month<15; month++) {
@@ -90,9 +90,9 @@ public class TaskC1 {
                 }
                 System.out.print(" начислено ");
                 if (month==0 || month==13 || month==14) System.out.println("$0.0");
-                else if (month>5 && month<9) System.out.println(a);
-                else System.out.println("$"+1.5*a);
-                if(a==666 || 1.5*a==666) break;
+                else if (month>5 && month<9) { sum=a; System.out.println("$"+sum);}
+                else { sum=1.5*a; System.out.println("$"+sum);}
+                if(sum==666) break;
             }
         }
     }
