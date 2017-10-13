@@ -31,9 +31,10 @@ public class TaskB2 {
     public static void main(String args[]){
         Scanner in = new Scanner(System.in);
         int size = in.nextInt();
-        while (size >=1){
-            System.out.println(size);
+        while (size >=1){         //while (i*j<size*size) {}
             size--;
+            System.out.print(size);
+
         }
     }
 
