@@ -35,9 +35,9 @@ public class TaskB2 {
         int size = scanner.nextInt();
         int x=0, y=0;
 
-        while (x < size){
+        while (x <= size){
 
-            while (y<size){
+            while (y<=size){
 
                 System.out.print((y+1) * (x+1) + " ");
                 y++;
