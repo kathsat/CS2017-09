@@ -16,6 +16,42 @@ package by.it.sc02_morning.davydov.lesson06;
  */
 
 
+import java.util.Scanner;
+
 public class TaskB3 {
 
-}
+    public static void main(String[] args) {
+
+
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        int curr = 0;
+        int a;
+        int sum = 0;
+        int min = 0;
+        int max = 0;
+
+        while(curr < N) {
+            a = sc.nextInt();
+
+            sum = sum + a;
+            if (a < min) min = a;
+            if (a > max) max = a;
+            if (curr == 0) {
+                min = a;
+                max = a;}
+            curr++;
+
+
+                        }
+        double av = (double) sum / ((double) curr);
+        System.out.println("Minimum = " + min);
+        System.out.println("Maximum = " + max);
+        System.out.println("Average = " + av);
+
+
+
+        }
+
+
+    }

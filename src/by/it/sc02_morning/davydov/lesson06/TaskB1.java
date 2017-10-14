@@ -14,6 +14,64 @@ package by.it.sc02_morning.davydov.lesson06;
 4. В программе должен использоваться цикл for или цикл while.
 */
 
+
+import java.util.Scanner;
+
 public class TaskB1 {
 
+
+    public static void main(String[] args) {
+
+
+        int a = 0;
+        Scanner sc = new Scanner(System.in);
+        int one;
+
+        for (; ; ) {
+            one = sc.nextInt();
+            a = a + one;
+
+
+            if (one == -1) {
+                System.out.print(a);
+                break;
+            }
+        }
+
+
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
