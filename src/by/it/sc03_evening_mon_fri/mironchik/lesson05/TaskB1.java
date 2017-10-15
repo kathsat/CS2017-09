@@ -32,7 +32,11 @@ public class TaskB1 {
         System.out.println("Введите год: ");
         Scanner sc = new Scanner(System.in);
         int year = sc.nextInt();
-        if (year%100==0 && year%400==0) System.out.println("количество дней в году: 366");
+        if(year%4==0) {
+            if (year % 100 == 0 && year % 400 != 0) System.out.println("количество дней в году: 365");
+            else System.out.println("количество дней в году: 366");
+
+        }
         else System.out.println("количество дней в году: 365");
     }
 
