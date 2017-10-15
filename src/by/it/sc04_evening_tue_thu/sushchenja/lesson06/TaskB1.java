@@ -14,6 +14,16 @@ package by.it.sc04_evening_tue_thu.sushchenja.lesson06;
 4. В программе должен использоваться цикл for или цикл while.
 */
 
-public class TaskB1 {
+import java.util.Scanner;
 
+public class TaskB1 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a,b;
+        b=0;
+        do {a=sc.nextInt();
+        b=a+b;
+        }while (a!= -1);
+        System.out.println(b);
+    }
 }
