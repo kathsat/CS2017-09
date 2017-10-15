@@ -26,7 +26,7 @@ package by.it.sc03_evening_mon_fri.liubimov_pavel.lesson05;
 
 
 public class TaskB3 {
-while (true) {
-    sum = sum +
-    }
+//while (true) {
+//    sum = sum +
+//    }
 }
