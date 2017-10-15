@@ -14,6 +14,26 @@ package by.it.sc02_morning.golikov.lesson06;
 4. В программе должен использоваться цикл for или цикл while.
 */
 
-public class TaskB1 {
+import java.util.Scanner;
 
+public class TaskB1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num;
+        int sum = 0;
+
+// с помощью цикла do While
+//
+//        do {
+//            num = sc.nextInt();
+//            sum = sum + num;
+//        } while (num != -1);
+//        System.out.println(sum);
+
+        for (num = 0; num != -1; ) {
+            num = sc.nextInt();
+            sum = sum + num;
+        }
+        System.out.println(sum);
+    }
 }
