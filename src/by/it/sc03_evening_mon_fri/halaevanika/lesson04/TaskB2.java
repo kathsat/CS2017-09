@@ -1,4 +1,4 @@
-package by.it.sc03_evening_mon_fri.halaevanika.lesson03.lesson04;
+package by.it.sc03_evening_mon_fri.halaevanika.lesson04;
 
 import java.util.Scanner;
 
