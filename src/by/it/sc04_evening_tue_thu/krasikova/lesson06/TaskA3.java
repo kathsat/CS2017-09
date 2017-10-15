@@ -26,10 +26,16 @@ public class TaskA3 {
     public static void main (String args[]) {
         Scanner sc=new Scanner(System.in);
         int size=sc.nextInt();
-        char a='A';
-        for (int dif=0;dif<size;dif+=1) {
-            System.out.print(a+=dif);     //dif=1
-
+        int vert=1;
+        for (;vert<=size;vert++) {
+            char a='A';
+            int hor=1;
+            while (hor<=vert) {
+                System.out.print(a);
+                hor++;
+                a++; 
+            }
+            System.out.println();
         }
 
     }
