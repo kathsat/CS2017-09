@@ -1,4 +1,4 @@
-package by.it.sc02_morning.golikov.lesson06;
+package by.it.akhmelev.lesson06;
 /*
 Треугольник из $
 Прочитать переменную size с клавиатуры
@@ -20,18 +20,7 @@ ABCDEFGH
 ABCDEFGHI
 ABCDEFGHIJ
 */
-import java.util.Scanner;
-public class TaskA3 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int size = sc.nextInt();
-        char a = 'A';
-            for (int i = 0; i < size; i++) {
-                for (int j = 0; j <= i; j++) {
-                    System.out.print((char) (a + j));
-                }
-                System.out.println();
-            }
 
-        }
+public class TaskA3 {
+
 }
