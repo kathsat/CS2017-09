@@ -33,6 +33,5 @@ public class TaskA3 {
             }
             System.out.println();
         }
-
     }
 }
