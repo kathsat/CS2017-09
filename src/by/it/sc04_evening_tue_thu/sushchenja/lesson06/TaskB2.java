@@ -23,13 +23,18 @@ public class TaskB2 {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int a = Integer.parseInt(reader.readLine());
         int b = Integer.parseInt(reader.readLine());
-
-        int minimum = min(a, b);
-
-        System.out.println("Minimum = " + minimum);
-    }
-
-    private static int min(int a, int b) {
-        return a < b ? a : b;
+        int c = Integer.parseInt(reader.readLine());
+        int d = Integer.parseInt(reader.readLine());
+        int e = Integer.parseInt(reader.readLine());
+        if ((a<=b)&&(a<=c)&&(a<=d)&&(a<=e))
+        System.out.println("Minimum = " +a);
+        if ((b<a)&&(b<=c)&&(b<=d)&&(b<=e))
+        System.out.println("Minimum = " +b);
+        if ((c<=a)&&(c<=a)&&(c<=d)&&(c<=e))
+        System.out.println("Minimum = " +c);
+        if ((d<=a)&&(d<=b)&&(d<=c)&&(d<=e))
+        System.out.println("Minimum = " +d);
+        if ((e<=a)&&(e<=b)&&(e<=c)&&(e<=d))
+        System.out.println("Minimum = " +e);
     }
 }
