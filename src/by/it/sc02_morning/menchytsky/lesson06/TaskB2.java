@@ -35,15 +35,15 @@ public class TaskB2 {
     private static int min(int a, int b, int c, int d, int e) {
        int g=0;
         if(a<=b && a<=c && a<=d && a<=e)
-             g=a;
+            g=a;
         else if(b<=a && b<=c && b<=d && b<=e)
             g= b;
         else if(c<=a && c<=b && c<=d && c<=e)
-        g =c;
+            g =c;
         else if(d<=a && d<=b && d<=c && d<=e)
             g = d;
         else if(e<=a && e<=b && e<=c && e<=d)
-       g = e;
+            g = e;
 
         return g;
 
