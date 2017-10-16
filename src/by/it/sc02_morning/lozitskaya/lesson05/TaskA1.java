@@ -1,4 +1,4 @@
-package by.it.sc02_morning.lozitskaya.lesson03.lesson05;
+package by.it.sc02_morning.lozitskaya.lesson05;
 
 /*
 Выведите на экран в цикле 10 раз фразу

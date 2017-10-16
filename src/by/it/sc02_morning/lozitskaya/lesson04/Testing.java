@@ -1,4 +1,4 @@
-package by.it.sc02_morning.lozitskaya.lesson03.lesson04;
+package by.it.sc02_morning.lozitskaya.lesson04;
 
 import org.junit.Test;
 

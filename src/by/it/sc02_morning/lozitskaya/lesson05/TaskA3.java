@@ -1,4 +1,4 @@
-package by.it.sc02_morning.lozitskaya.lesson03.lesson05;
+package by.it.sc02_morning.lozitskaya.lesson05;
 /*
 Существует ли пара?
 Ввести с клавиатуры три целых числа.

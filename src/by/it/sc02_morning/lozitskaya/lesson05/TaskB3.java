@@ -1,4 +1,4 @@
-package by.it.sc02_morning.lozitskaya.lesson03.lesson05;
+package by.it.sc02_morning.lozitskaya.lesson05;
 /*
 С клавиатуры вводится некоторое число.
 Пусть считается сумма int sum=1+2+3+4+5+... и т.д.
@@ -25,6 +25,18 @@ package by.it.sc02_morning.lozitskaya.lesson03.lesson05;
  */
 
 
-public class TaskB3 {
+import java.util.Scanner;
 
+public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int i=sc.nextInt();
+        int sum=0, j=1;
+        while((sum+j)<=i){
+            //j++;
+            sum+=j;
+            j++;
+            System.out.print(sum+",");
+        }
+    }
 }
