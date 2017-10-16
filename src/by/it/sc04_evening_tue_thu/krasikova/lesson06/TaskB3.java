@@ -16,6 +16,30 @@ package by.it.sc04_evening_tue_thu.krasikova.lesson06;
  */
 
 
-public class TaskB3 {
+import java.util.Scanner;
+import static java.lang.Integer.MIN_VALUE;
+import static java.lang.Integer.MAX_VALUE;
 
+public class TaskB3 {
+    public static void main(String[] args)  {
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        int maximum = MIN_VALUE;
+        int minimum = MAX_VALUE;
+        int sum = 0;
+
+        for (int a = 0; a < n; a++) {
+            int number = sc.nextInt();
+            minimum = Math.min(number, minimum);
+            maximum = Math.max(number, maximum);
+            sum = sum+number;
+        }
+        double average=(sum/(double) n);
+
+        System.out.println("Minimum = " + minimum);
+        System.out.println("Maximum = " + maximum);
+        System.out.println("Average = " + average);
+
+
+    }
 }
