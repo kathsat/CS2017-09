@@ -18,15 +18,15 @@ package by.it.sc03_evening_mon_fri.mironchik.lesson06;
 import java.util.Scanner;
 
 public class TaskB1 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
             int s = 0;
-            int a=0;
-            while (a != -1) {
-                Scanner sc = new Scanner(System.in);
+            int a=0;                Scanner sc = new Scanner(System.in);
+
+        while (a != -1) {
                 a = sc.nextInt();
                 s += a;
             }
-            System.out.println("Сумма чисел = " + s);
+            System.out.println(s);
     }
 }
 //второй вариант
