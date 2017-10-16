@@ -21,5 +21,14 @@ $ $ $ $ $ $ $ $ $ $
 */
 
 public class TaskA1 {
-
+    public static void main(String[] args) {
+        int a = 1;
+        while (a <= 100) {
+            System.out.print ("$ ");
+            if (a % 10 == 0) {
+                System.out.println("/n");
+            }
+            a++;
+        }
+    }
 }
