@@ -23,7 +23,7 @@ END
 [ONE, TWO, THREE, FOUR, FIVE]
 
 */
-public class TaskA3 {
+public class TaskA2 {
     public static void main(String[] args) {
         List<String> l=new ArrayList<>();
         Scanner scanner=new Scanner(System.in);

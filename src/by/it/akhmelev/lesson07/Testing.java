@@ -21,7 +21,7 @@ public class Testing {
 
 
     @Test
-    public void testTaskA3() throws Exception {
+    public void testTaskA2() throws Exception {
         run("ONE\nTWO\nTHREE\nFOUR\nFIVE\nEND\n").include("[ONE, TWO, THREE, FOUR, FIVE]");
         run("ONE\nEND\n").include("[ONE]");
     }
@@ -35,7 +35,7 @@ public class Testing {
 
     @Test
     public void testTaskB2() throws Exception {
-        run("1 2 3 4 5 6 7 8 9 10 11 22 33 44 55 66 77 88 99 0")
+        run("1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n22\n33\n44\n55\n66\n77\n88\n99\n0")
                 .include("a=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n" +
                         "b=[11, 22, 33, 44, 55, 66, 77, 88, 99, 0]\n");
     }
@@ -49,8 +49,8 @@ public class Testing {
 
     @Test
     public void testTaskC2() throws Exception {
-        boolean ok = run("").stringWriter.toString().replaceAll(" ", "").replaceAll("\n", "").hashCode() == 626587336;
-        assertTrue("Решение пока не найдено ;)", ok);
+        run("1\n-2\n3\n4\n5\n666\n7\n8\n9\n0\n1\n-1\n3\n4\n5\n665\n7\n8\n9\n0\n").
+                include("666\n665\n9\n9\n8\n8\n7\n7\n5\n5\n4\n4\n3\n3\n1\n1\n0\n0\n-1\n-2");
     }
 
 
