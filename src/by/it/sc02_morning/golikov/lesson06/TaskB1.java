@@ -37,3 +37,4 @@ public class TaskB1 {
         System.out.println(sum);
     }
 }
+
