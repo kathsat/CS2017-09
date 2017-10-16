@@ -20,21 +20,21 @@ import java.util.Scanner;
 
 public class TaskB3 {
     public static void main(String[] args) {
-        int N;
+        int N;Scanner sc = new Scanner(System.in);
         do {
-            System.out.println("Введите число > 0: ");
-            Scanner sc = new Scanner(System.in);
+           // System.out.println("Введите число > 0: ");
+
             N = sc.nextInt();
         }
         while (N<0);
-        System.out.println("Введите "+N+" чисел: ");
+        //System.out.println("Введите "+N+" чисел: ");
         int [] ar=new int[N];
 
         for (int i=0; i<N; i++) {
-            Scanner sc = new Scanner(System.in);
+
             ar[i] = sc.nextInt();
         }
-        int max=ar[0], min=ar[1];
+        int max=ar[0], min=ar[0];
         double s=0;
         for (int i=0; i<N; i++) {
             if(ar[i]>max) max=ar[i];
