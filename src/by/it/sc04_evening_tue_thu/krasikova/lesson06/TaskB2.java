@@ -32,9 +32,9 @@ public class TaskB2 {
     }
 
     private static int min(int a, int b, int c, int d, int e) {
-        return (a <= b)&&(a <= c)&&(a <= d)&&(a <= e) ? a :
-                (b<=a)&&(b<=c)&&(b<=d)&&(b<=e) ? b :
-                        (c<=a)&&(c<=b)&&(c<=d)&&(c<=e) ? c :
-                                (d<=a)&&(d<=b)&&(d<=c)&&(d<=e) ? d : e ;
+        return (a <= b) && (a <= c) && (a <= d) && (a <= e) ? a :
+                (b <= a) && (b <= c) && (b <= d) && (b <= e) ? b :
+                        (c <= a) && (c <= b) && (c <= d) && (c <= e) ? c :
+                                (d <= a) && (d <= b) && (d <= c) && (d <= e) ? d : e;
     }
 }
