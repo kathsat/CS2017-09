@@ -25,6 +25,43 @@ package by.it.sc02_morning.striga.lesson05;
  */
 
 
-public class TaskB3 {
+import java.util.Scanner;
 
+public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int sum = 0;
+        int i = 0;
+
+        while (sum < a) {
+            i++;
+            sum = sum + i;
+            if (sum > a)
+                break;
+            System.out.print(sum + ",");
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        int a = sc.nextInt();
+//        int n = 1;
+//        int sum=(i*(i+1))/2;
+//
+//        for (int i = 1; i <= a; i++){
+//            if (sum <= a)
+//                break;
+//
+//            System.out.print(sum + ",");
