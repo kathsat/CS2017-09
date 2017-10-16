@@ -16,6 +16,32 @@ package by.it.sc04_evening_tue_thu.sushchenja.lesson06;
  */
 
 
-public class TaskB3 {
+import java.util.Scanner;
 
+
+public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int N, min, max, sum;
+        N=sc.nextInt();
+        min = 0;
+        max= 0;
+        sum=0;
+        for (int i=0; i<N; i++) {
+            int a = sc.nextInt();
+            if (i > 0) {
+                if (min <= a);
+                else min = a;
+            } else min = a;
+            if (i>0) {
+                if (max <= a)
+                    max = a;
+
+            } else max = a;
+            sum=sum+a;
+        }
+        System.out.println("Minimum = " + min);
+        System.out.println("Maximum = " + max);
+        System.out.println("Average = " + (double)sum/N);
+    }
 }
