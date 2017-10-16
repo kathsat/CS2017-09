@@ -24,15 +24,5 @@ END
 
 */
 public class TaskA2 {
-    public static void main(String[] args) {
-        List<String> l=new ArrayList<>();
-        Scanner scanner=new Scanner(System.in);
-        while (true) {
-            String s = scanner.next();
-            if (s.equals("END")) break;
-            l.add(s);
-        }
-        System.out.println(l);
-    }
 
 }
