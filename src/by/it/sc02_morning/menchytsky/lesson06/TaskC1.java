@@ -50,6 +50,28 @@ package by.it.sc02_morning.menchytsky.lesson06;
 
 */
 
+import java.util.Scanner;
+
 public class TaskC1 {
+    public static void main(String[] args) {
+
+        Scanner sc=new Scanner(System.in);
+        int n = sc.nextInt();
+        long a = 1;
+
+        for(int i=0 ; i<=n ; i++){
+            String zero = "";
+            for(int j=0; j<=(n-Long.toBinaryString(a).length()) ; j++){
+                zero = zero + "0";
+            }
+            String bin = Long.toBinaryString(a);
+            bin = zero + bin;
+            System.out.println(bin+" = "+a);
+
+            a=a<<1;
+        }
+
+
+    }
 
 }
