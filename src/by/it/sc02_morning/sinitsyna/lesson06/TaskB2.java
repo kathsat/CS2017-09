@@ -21,14 +21,14 @@ public class TaskB2 {
 
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int a = Integer.parseInt(reader.readLine());
-        int b = Integer.parseInt(reader.readLine());
 
-        int minimum = min(a, b);
-
-        System.out.println("Minimum = " + minimum);
+        int minimum = Integer.parseInt(reader.readLine());
+       for (int s = 0; s < 4; s++) {
+        int n = Integer.parseInt(reader.readLine());
+           minimum = min (minimum, n);
+       }
+      System.out.println("Minimum = " + minimum);
     }
-
     private static int min(int a, int b) {
         return a < b ? a : b;
     }

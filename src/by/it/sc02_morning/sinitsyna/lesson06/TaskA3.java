@@ -21,6 +21,18 @@ ABCDEFGHI
 ABCDEFGHIJ
 */
 
-public class TaskA3 {
+import java.util.Scanner;
 
+public class TaskA3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        char english = 'A' ;
+        for (int p = 0; p < size; p++) {
+            for (int t = 0; t <= p; t++) {
+                System.out.print((char) (english + t));
+            }
+            System.out.println();
+        }
+    }
 }
