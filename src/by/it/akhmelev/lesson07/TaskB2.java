@@ -22,7 +22,7 @@ b=[11, 22, 33, 44, 55, 66, 77, 88, 99, 0]
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class TaskA2 {
+public class TaskB2 {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
         int[] m=new int[20];

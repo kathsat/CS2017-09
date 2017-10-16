@@ -19,12 +19,6 @@ public class Testing {
                 include("0\n9\n8\n7\n666\n5\n4\n3\n-2\n1\n");
     }
 
-    @Test
-    public void testTaskA2() throws Exception {
-        run("1 2 3 4 5 6 7 8 9 10 11 22 33 44 55 66 77 88 99 0")
-                .include("a=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n" +
-                        "b=[11, 22, 33, 44, 55, 66, 77, 88, 99, 0]\n");
-    }
 
     @Test
     public void testTaskA3() throws Exception {
@@ -41,23 +35,9 @@ public class Testing {
 
     @Test
     public void testTaskB2() throws Exception {
-        run("1\n2\n3\n-4\n0\n").include("Minimum = -4");
-    }
-
-    @Test
-    public void testTaskB3() throws Exception {
-        run("10\n9\n8\n7\n6\n5\n4\n3\n2\n1\n0\n")
-                .include("Minimum = 0\n")
-                .include("Maximum = 9\n")
-                .include("Average = 4.5");
-        run("1\n1\n")
-                .include("Minimum = 1\n")
-                .include("Maximum = 1\n")
-                .include("Average = 1.0");
-        run("7\n1\n6\n3\n2\n-9\n2\n-9\n")
-                .include("Minimum = -9\n")
-                .include("Maximum = 6\n")
-                .include("Average = -0.571428571428");
+        run("1 2 3 4 5 6 7 8 9 10 11 22 33 44 55 66 77 88 99 0")
+                .include("a=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n" +
+                        "b=[11, 22, 33, 44, 55, 66, 77, 88, 99, 0]\n");
     }
 
 
@@ -71,23 +51,6 @@ public class Testing {
     public void testTaskC2() throws Exception {
         boolean ok = run("").stringWriter.toString().replaceAll(" ", "").replaceAll("\n", "").hashCode() == 626587336;
         assertTrue("Решение пока не найдено ;)", ok);
-    }
-
-    @Test
-    public void testTaskC3() throws Exception {
-        run("4611686018427387904").is("YES\n");
-        run("4611680010027387902").is("NO\n");
-        run("1152921504606846976").is("YES\n");
-        run("1152921508764567976").is("NO\n");
-        run("4294967296").is("YES\n");
-        run("4225742356").is("NO\n");
-        run("65536").is("YES\n");
-        run("65567").is("NO\n");
-        run("1024").is("YES\n");
-        run("2222").is("NO\n");
-        run("2").is("YES\n");
-        run("3").is("NO\n");
-        run("1").is("YES\n");
     }
 
 
