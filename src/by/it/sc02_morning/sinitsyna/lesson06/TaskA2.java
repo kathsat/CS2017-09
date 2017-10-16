@@ -16,6 +16,18 @@ $$$$
 
  */
 
-public class TaskA2 {
+import java.util.Scanner;
 
+public class TaskA2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int m = sc.nextInt();
+        int n = sc.nextInt();
+        for (int p = 1; p <= m; p++) {
+            for (int t = 1; t <= n; t++) {
+                System.out.print("$");
+            }
+            System.out.println();
+        }
+    }
 }
