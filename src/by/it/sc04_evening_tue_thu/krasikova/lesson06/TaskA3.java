@@ -33,7 +33,7 @@ public class TaskA3 {
             while (hor<=vert) {
                 System.out.print(a);
                 hor++;
-                a++; 
+                a++;
             }
             System.out.println();
         }
