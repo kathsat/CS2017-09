@@ -9,5 +9,7 @@ package by.it.sc02_morning.golikov.lesson07;
 
 
 public class TaskB1 {
+    public static void main(String[] args) {
 
+    }
 }
