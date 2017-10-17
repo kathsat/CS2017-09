@@ -8,8 +8,22 @@ package by.it.sc02_morning.golikov.lesson07;
 */
 
 
+import java.util.ArrayList;
+
 public class TaskB1 {
     public static void main(String[] args) {
+        ArrayList<String> str = new ArrayList<>();
+        str.add("Hello");
+        str.add("Привет");
+        str.add("Hao");
+        str.add("Aloha");
+        str.add("Opa");
 
+        System.out.println(str.size());
+//for (String value:str)
+//    System.out.println(value);
+        for (int i = 0; i < str.size(); i++) {
+            System.out.println(str.get(i));
+        }
     }
 }

@@ -11,10 +11,12 @@ package by.it.sc02_morning.golikov.lesson07;
 */
 
 import java.util.List;
+import java.util.Scanner;
 
 public class TaskC1 {
     public static void main(String[] args) throws Exception
     {
+        Scanner sc = new Scanner(System.in);
 
 
     }
