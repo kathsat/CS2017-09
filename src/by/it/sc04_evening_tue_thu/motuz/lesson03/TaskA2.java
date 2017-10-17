@@ -9,10 +9,10 @@ package by.it.sc04_evening_tue_thu.motuz.lesson03;
 */
 class TaskA2 {
     public static void main(String[] args) {
-        System.out.println ("Я начинаю изучать Java!");
-        System.out.println ("Я начинаю изучать Java!");
-        System.out.println ("Я начинаю изучать Java!");
-        System.out.println ("Я начинаю изучать Java!");
-        System.out.println ("Я начинаю изучать Java!");
+        System.out.println("Я начинаю изучать Java!");
+        System.out.println("Я начинаю изучать Java!");
+        System.out.println("Я начинаю изучать Java!");
+        System.out.println("Я начинаю изучать Java!");
+        System.out.println("Я начинаю изучать Java!");
     }
 }
