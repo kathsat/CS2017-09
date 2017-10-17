@@ -1,4 +1,4 @@
-package by.it.sc02_morning.lozitskaya.lesson03;
+package by.it.sc02_morning.lozitskaya;
 /*
 Подойдет только 20
 В методе main расставь правильно знаки плюс и минус, чтобы значение переменной result получилось равным 20.
