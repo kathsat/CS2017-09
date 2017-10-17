@@ -11,7 +11,7 @@ import static org.junit.Assert.fail;
 //поставьте курсор на следующую строку и нажмите Ctrl+Shift+F10
 public class Testing {
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskA1() throws Exception {
         run("").include(
                 "$ $ $ $ $ $ $ $ $ $ \n" +
@@ -26,7 +26,7 @@ public class Testing {
                         "$ $ $ $ $ $ $ $ $ $ ");
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskA2() throws Exception {
         run("2 3").is("$$$\n$$$\n").exclude("\n\n").include("$$$");
         run("4 8").is(
@@ -37,7 +37,7 @@ public class Testing {
         run("1 1").is("$\n").include("$").exclude("\n\n\n");
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskA3() throws Exception {
         run("10").is("A\n" +
                 "AB\n" +
@@ -54,7 +54,7 @@ public class Testing {
         run("1").is("A\n");
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskB1() throws Exception {
         run("-2 2 1 -1").include("0");
         run("1 2 3 4 56 45 234 23 423 4 234 2 34 23 4 234 34 23 423 -1").include("1805");
@@ -63,7 +63,7 @@ public class Testing {
     }
 
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskB2() throws Exception {
         run("1\n2\n3\n4\n5\n").include("Minimum = 1");
         run("2\n2\n2\n2\n5\n").include("Minimum = 2");
@@ -72,7 +72,7 @@ public class Testing {
         run("1\n2\n3\n-4\n0\n").include("Minimum = -4");
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskB3() throws Exception {
         run("10\n9\n8\n7\n6\n5\n4\n3\n2\n1\n0\n")
                 .include("Minimum = 0\n")
@@ -89,7 +89,7 @@ public class Testing {
     }
 
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskC1() throws Exception {
         run("0").is("1 = 1\n");
         run("6").is("0000001 = 1\n" +
@@ -180,13 +180,13 @@ public class Testing {
 
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskC2() throws Exception {
         boolean ok=run("").stringWriter.toString().replaceAll(" ","").replaceAll("\n","").hashCode()==626587336;
         assertTrue("Решение пока не найдено ;)",ok);
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskC3() throws Exception {
         run("4611686018427387904").is("YES\n");
         run("4611680010027387902").is("NO\n");

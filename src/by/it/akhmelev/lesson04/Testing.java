@@ -13,13 +13,13 @@ import static org.junit.Assert.fail;
 public class Testing {
 
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskA1() throws Exception {
         Testing testing = new Testing(TaskA1.class, "7 2");
         testing.contains("9 5 14 3 1\n9.0 5.0 14.0 3.5 1.0");
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskA2() throws Exception {
         Testing testing = new Testing(TaskA2.class);
         String[] lines = testing.stringWriter.toString().trim().split("\\n");
@@ -37,7 +37,7 @@ public class Testing {
         }
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskB1() throws Exception {
         Testing testing = new Testing(TaskB1.class);
         testing.contains(
@@ -46,7 +46,7 @@ public class Testing {
         );
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskB2() throws Exception {
         Testing testing;
         testing = new Testing(TaskB2.class, "2 5 3");
@@ -58,7 +58,7 @@ public class Testing {
         testing.contains("Отрицательный дискриминант");
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskC1() throws Exception {
         try {
             Method m = TaskC1.class.getDeclaredMethod("convertCelsiumToFahrenheit", int.class);
@@ -70,7 +70,7 @@ public class Testing {
         }
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskC2() throws Exception {
         try {
         Method m = TaskC2.class.getDeclaredMethod("sumDigitsInNumber", int.class);

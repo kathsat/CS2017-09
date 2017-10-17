@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 //поставьте курсор на следующую строку и нажмите Ctrl+Shift+F10
 public class Testing {
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskA1() throws Exception {
         run("").include(
                 "Я изучаю программирование.\n" +
@@ -25,7 +25,7 @@ public class Testing {
                         "Я изучаю программирование.");
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskA2() throws Exception {
         run("1").include("понедельник");
         run("2").include("вторник");
@@ -40,7 +40,7 @@ public class Testing {
         run("9917").include("такого дня недели не существует");
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskA3() throws Exception {
         run("1 2 3").exclude("1").exclude("2").exclude("3");
         run("2 2 3").include("2 2").exclude("3");
@@ -49,7 +49,7 @@ public class Testing {
         run("2 2 2").include("2 2 2");
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskB1() throws Exception {
         run("0").include("количество дней в году: 366").exclude("365");
         run("2000").include("количество дней в году: 366").exclude("365");
@@ -61,7 +61,7 @@ public class Testing {
     }
 
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskB2() throws Exception {
         run("3")
                 .include("1 2 3")
@@ -78,7 +78,7 @@ public class Testing {
                 .exclude("11 12");
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskB3() throws Exception {
         run("122").include(",120").exclude(",136").exclude(",121");
         run("120").include(",120").exclude(",136").exclude(",121");
@@ -87,7 +87,7 @@ public class Testing {
     }
 
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskC1() throws Exception {
         run("299").include("Мы вам перезвоним!");
         run("3001").include("Мы вам перезвоним!");
@@ -120,7 +120,7 @@ public class Testing {
                         "За июнь начислено $666.0").exclude("июль");
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskC2() throws Exception {
         run("1 1").include("1");
         run("31 12").include("365");
@@ -129,7 +129,7 @@ public class Testing {
         run("8 3").include("67");
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskC3() throws Exception {
         run("")
         .include("два умножить на два равно четыре ")
