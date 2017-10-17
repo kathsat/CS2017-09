@@ -13,7 +13,8 @@ Scanner sc=new Scanner(System.in);
 3. Программа должна считывать число типа Int с клавиатуры.
 4. Программа должна выводить квадрат считанного числа.
  */
-import  java.util.Scanner;
+
+import java.util.Scanner;
 
 class TaskB1
 {
