@@ -27,7 +27,7 @@ public class TaskB3 {
 
         int min = 0;
         int max = 0;
-        int sm = 0;
+        int sum = 0;
         double avg = 0;
 
         for (int i = 0; i < N; i++) {
@@ -37,12 +37,12 @@ public class TaskB3 {
                 max = input;
             }
 
-            sm = sm + input;
+            sum = sum + input;
 
             min = min(min, input);
             max = max(max, input);
         }
-        avg = (double) sm / N;
+        avg = (double) sum / N;
 
         System.out.println("Minimum = " + min);
         System.out.println("Maximum = " + max);
