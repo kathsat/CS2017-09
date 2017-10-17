@@ -1,4 +1,7 @@
 package by.it.sc04_evening_tue_thu.koktysh.lesson04;
+
+import java.util.Scanner;
+
 /*
     Сумма цифр четырехзначного числа
 
@@ -21,6 +24,8 @@ package by.it.sc04_evening_tue_thu.koktysh.lesson04;
 */
 public class TaskC2 {
 
+    }
+
 
 
 
@@ -28,4 +33,4 @@ public class TaskC2 {
 //        System.out.println(sumDigitsInNumber(5467));
 //    }
 
-}
+
