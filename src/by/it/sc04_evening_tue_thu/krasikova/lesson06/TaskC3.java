@@ -31,9 +31,9 @@ import java.util.Scanner;
 public class TaskC3 {
     public static void main(String[] args) {
         System.out.println("Ввод:");
-        Scanner scanner=new Scanner(System.in);
-        long n=scanner.nextLong();
-        String res=((n&(n-1))==0) ? "Yes" : "No";
+        Scanner scanner = new Scanner(System.in);
+        long n = scanner.nextLong();
+        String res = ((n & (n - 1)) == 0) ? "Yes" : "No";
         System.out.println("Вывод:");
         System.out.println(res);
 
