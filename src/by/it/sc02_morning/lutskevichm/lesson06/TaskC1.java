@@ -59,7 +59,7 @@ public class TaskC1 {
         long k=1;
         if (i>=0 && i<=62) {
             for (int j = 0; j<=i; j++) {
-                System.out.println(String.format("%"+(i+1)+"s",Long.toBinaryString(k).replace(' ', '0')) + " = " + k);
+                System.out.println(String.format("%"+(i+1)+"s", Long.toBinaryString(k)).replace(" ", "0") + " = " + k);
                 k=k<<1;
             }
         }
