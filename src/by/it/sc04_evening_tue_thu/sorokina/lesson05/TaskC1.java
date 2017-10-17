@@ -55,7 +55,7 @@ String monthName = " ";
             }
             else {
                 for(monthNumber=0;monthNumber<14;monthNumber++){
-                    if(monthName!="июнь" && monthName!="июль" && monthName!="август") salary*=1.5;
+
                     switch (monthNumber){
                         case 0:
                             monthName = "месяц " + monthNumber;
@@ -63,73 +63,59 @@ String monthName = " ";
                             System.out.println("За " + monthName + " начислено $0.0");
                         case 1:
                             monthName = "январь";
-                            System.out.println("За " + monthName + " начислено $" + salary);
-                            if(salary==666){
+                            System.out.println("За " + monthName + " начислено $" + salary*1.5);
+                            if(salary*1.5==666){
                                 break;
                             }
                         case 2:
                             monthName = "февраль";
-                            System.out.println("За " + monthName + " начислено $" + salary);
-                            if(salary==666){
-                                break;
-                            }
+                            System.out.println("За " + monthName + " начислено $" + salary*1.5);
+
                         case 3:
                             monthName = "март";
-                            System.out.println("За " + monthName + " начислено $" + salary);
-                            if(salary==666){
-                                break;
-                            }
+                            System.out.println("За " + monthName + " начислено $" + salary*1.5);
+
                         case 4:
                             monthName = "апрель";
-                            System.out.println("За " + monthName + " начислено $" + salary);
-                            if(salary==666){
-                                break;
-                            }
+                            System.out.println("За " + monthName + " начислено $" + salary*1.5);
+
                         case 5:
                             monthName = "май";
-                            System.out.println("За " + monthName + " начислено $" + salary);
-                            if(salary==666){
-                                break;
-                            }
+                            System.out.println("За " + monthName + " начислено $" + salary*1.5);
+
                         case 6:
                             monthName = "июнь";
                             System.out.println("За " + monthName + " начислено $" + salary);
-                            if(salary==666){
-                                break;
-                            }
+                            if(salary==666)break;
                         case 7:
                             monthName = "июль";
                             System.out.println("За " + monthName + " начислено $" + salary);
-                            if(salary==666){
-                                break;
-                            }
+
                         case 8:
                             monthName = "август";
                             System.out.println("За " + monthName + " начислено $" + salary);
-                            if(salary==666){
-                                break;
-                            }
+
                         case 9:
                             monthName = "сентябрь";
-                            System.out.println("За " + monthName + " начислено $" + salary);
+                            System.out.println("За " + monthName + " начислено $" + salary*1.5);
                             if(salary==666){
                                 break;
                             }
                         case 10:
                             monthName = "октябрь";
-                            System.out.println("За " + monthName + " начислено $" + salary);
+                            System.out.println("За " + monthName + " начислено $" + salary*1.5);
                             if(salary==666){
                                 break;
                             }
                         case 11:
                             monthName = "ноябрь";
-                            System.out.println("За " + monthName + " начислено $" + salary);
+                            System.out.println("За " + monthName + " начислено $" + salary*1.5);
                             if(salary==666){
                                 break;
                             }
                         case 12:
                             monthName = "декабрь";
-                            System.out.println("За " + monthName + " начислено $" + salary);
+                            System.out.println("За " + monthName + " начислено $" + salary*1.5);
                             if(salary==666){
                                 break;
                             }
