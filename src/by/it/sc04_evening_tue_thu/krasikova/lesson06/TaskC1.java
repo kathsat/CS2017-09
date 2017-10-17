@@ -49,23 +49,24 @@ package by.it.sc04_evening_tue_thu.krasikova.lesson06;
 1000000 = 64
 
 */
+
 import java.util.Scanner;
 
 public class TaskC1 {
-    public static void main (String args[])  {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        for (int a=0; a<=n;a++) {
-            if (a==0) {
-                long x=2;
-                System.out.println(Long.toBinaryString(x>>1)+" = "+(x>>1));
-            } else if (a==1) {
-                long x=2;
-                System.out.println(Long.toBinaryString(x)+" = "+(x));
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for (int a = 0; a <= n; a++) {
+            if (a == 0) {
+                long x = 2;
+                System.out.println(Long.toBinaryString(x >> 1) + " = " + (x >> 1));
+            } else if (a == 1) {
+                long x = 2;
+                System.out.println(Long.toBinaryString(x) + " = " + (x));
             } else {
-                long x=2;
-                long result=x<<(a-1);
-                System.out.println(Long.toBinaryString(result)+" = "+result);
+                long x = 2;
+                long result = x << (a - 1);
+                System.out.println(Long.toBinaryString(result) + " = " + result);
             }
         }
 
