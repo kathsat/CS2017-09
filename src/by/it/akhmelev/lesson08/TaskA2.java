@@ -1,7 +1,7 @@
 package by.it.akhmelev.lesson08;
 
 /*
-    Геттеры и сеттеры для класса Dog
+    toString() для класса Dog
 
     Доработайте class Dog из задания A1. Создайте в классе Dog метод
     public String toString(){
