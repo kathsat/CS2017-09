@@ -21,29 +21,25 @@ ABCDEFGHI
 ABCDEFGHIJ
 */
 
-import com.sun.org.apache.xpath.internal.SourceTree;
-
 import java.util.Scanner;
 
 public class TaskA3 {
+
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int size=sc.nextInt();
-        int i;
-        int j;
+        Scanner sc = new Scanner(System.in);
+        int size = Integer.parseInt(sc.next());
 
-
-        for (i = 0; i<size; i++){
+        for (int i = 1; i <= size; i++) {
             char x = 'A';
-            for (j = i; j<size; j++){
-
+            for (int j = 1; j <= i; j++) {
                 System.out.print(x);
                 x++;
-                }
+            }
             System.out.println();
 
         }
 
     }
+
 
 }

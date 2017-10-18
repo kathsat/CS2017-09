@@ -36,7 +36,7 @@ public class TaskA1 {
         int i = 0;
         int j = 0;
         while (i< 10 && j<10){
-            System.out.print('$');
+            System.out.print('$'+ " ");
             i++;
             if (i==10) {
                 System.out.println();
@@ -45,6 +45,7 @@ public class TaskA1 {
             }
         }
     }
+
 
 
 }
