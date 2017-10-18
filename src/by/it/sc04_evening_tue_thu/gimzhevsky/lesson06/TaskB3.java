@@ -32,13 +32,13 @@ public class TaskB3 {
         int max = k;
         int sum = k;
         int counter = 1;
-        do{
+        for (int i = 1; i<n; i++){
             k=Integer.parseInt(reader.readLine());
             counter++;
             if (k<min)min=k;
             if (k>max)max=k;
             sum=sum+k;
-        }while (counter !=n);
+        }
         av = (double)sum/n;
         System.out.println("Minimum = " + min);
         //System.out.println("Minimum = 0");

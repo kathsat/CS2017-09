@@ -56,9 +56,16 @@ public class TaskC1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        String s1 = "1";
-        for (int i = 1; i<n; i++) {
-
+        long d = 1;
+        for (int i = 0; i <= n; i++) {
+            String b = Long.toBinaryString(d);
+            String s = "";
+            for (int j = 1; j<=n-i; j++){
+                s = s+"0";
+            }
+            b = s + b;
+            System.out.println(b + " = " + d);
+            d = d << 1;
         }
     }
 }
