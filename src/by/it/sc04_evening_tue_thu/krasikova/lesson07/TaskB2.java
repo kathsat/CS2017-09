@@ -19,7 +19,31 @@ a=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 b=[11, 22, 33, 44, 55, 66, 77, 88, 99, 0]
 
 */
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class TaskB2 {
+    public static void main (String args[]) {
+        int m[]=new int[20];
+        Scanner sc=new Scanner(System.in);
+
+        for (int i=0; i < m.length; i++) {
+            int l = sc.nextInt();
+            m[i]= l;
+        }
+
+        int a[] = new int[10];
+        int b[] = new int[10];
+        for (int z = 0; z < m.length; z++) {
+            if (z <10) {
+                a[z]=m[z];
+            } else b[z-10]=m[z];
+        }
+        System.out.println("a="+ Arrays.toString(a));
+        System.out.println("b="+Arrays.toString(b));
+
+
+
+    }
 
 }
