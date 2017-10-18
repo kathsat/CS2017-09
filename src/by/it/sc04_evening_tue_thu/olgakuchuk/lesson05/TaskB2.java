@@ -34,7 +34,6 @@ public class TaskB2 {
         while (i<=size) {
             System.out.print(i + " ");
 
-
             while (n <size) {
                 n++;
                 System.out.print(i * n + " ");

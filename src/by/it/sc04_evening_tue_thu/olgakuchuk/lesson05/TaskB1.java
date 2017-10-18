@@ -40,7 +40,6 @@ public class TaskB1 {
         else
             x=365;
 
-
             System.out.println("количество дней в году: "+x);
 
     }

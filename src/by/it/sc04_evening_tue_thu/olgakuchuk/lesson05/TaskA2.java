@@ -57,4 +57,5 @@ public class TaskA2 {
                 System.out.println("воскресенье");
     }
 
-}}}
+}}
+}

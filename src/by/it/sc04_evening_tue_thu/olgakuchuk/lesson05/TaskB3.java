@@ -42,7 +42,6 @@ public class TaskB3 {
             a++;}
         }
 
-
     }
 
 }
