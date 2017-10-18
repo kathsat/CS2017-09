@@ -33,7 +33,7 @@ public class TaskA1 {
 
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < mas.length; i++) {//считываем числа с клав. в массив
-            mas[i] = sc.nextInt();
+            mas[i] = sc.nextInt(); // ?? почему без преобразования Integer.parseInt работает
         }
 
         for (int i = mas.length-1; i >= 0; i--) {//вывод массива в обратном порядке
