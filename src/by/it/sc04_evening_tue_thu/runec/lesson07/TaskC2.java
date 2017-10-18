@@ -28,7 +28,7 @@ public class TaskC2 {
                     data[b] = t;
                 }
             }
-
+//
 
         for(int i=0; i < data.length; i++)
             System.out.println( data[i]);

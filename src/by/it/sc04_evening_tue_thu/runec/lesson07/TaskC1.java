@@ -39,7 +39,7 @@ public class TaskC1 {
         printList(three);
         printList(two);
         printList(another);
-
+//
     }
 
 

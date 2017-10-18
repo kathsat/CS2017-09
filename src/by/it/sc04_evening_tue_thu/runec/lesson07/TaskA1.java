@@ -42,7 +42,7 @@ public class TaskA1 {
 
             for (int value : number)
                 System.out.println(value);
-
+//
 
         }
 
