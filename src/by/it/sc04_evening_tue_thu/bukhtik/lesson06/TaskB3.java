@@ -16,6 +16,43 @@ package by.it.sc04_evening_tue_thu.bukhtik.lesson06;
  */
 
 
+import java.util.Scanner;
+
 public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int N =sc.nextInt();
+        int sample [] = new int [N];
+        int min;
+        int max;
+
+        int sum = 0;
+        double avg;
+        if (N>0){
+            for (int i = 0; i < N; i++) {
+                sample [i] = sc.nextInt();
+            }
+
+            min = max = sample[0];
+
+            for (int i = 1; i < N; i++) {
+                if (sample[i] < min) min = sample [i];
+                if (sample [i] > max) max = sample [i];
+            }
+
+            for (int i = 0; i < N; i++) {
+                sum += sample [i];
+            }
+            avg = (double )sum / N;
+
+            System.out.println("Minimum = " + min);
+            System.out.println("Maximum = " + max);
+            System.out.println("Average = " + avg);
+
+        }
+
+
+    }
+
 
 }
