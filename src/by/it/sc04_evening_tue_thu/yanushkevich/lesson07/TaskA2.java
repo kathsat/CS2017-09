@@ -34,10 +34,10 @@ public class TaskA2 {
         //запись в одну строку
         //BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        ArrayList<String> arc = new ArrayList<String>(); //создание контейнера элементов по аналогии с созданием массива
+        ArrayList<String> arc = new ArrayList<>(); //создание контейнера элементов по аналогии с созданием массива
 
-        //ввод строк с клавиатуры
-        while (true) //применяем while потому как размер массива неивестен для for
+        //ввод строк с клавиатуры (while потому как кол-во итераций неизветстно)
+        while (true)
            {
                String line = reader.readLine(); //почему-то эта запись просит или IOException или try catch
                if(line.equals("END"))break;
