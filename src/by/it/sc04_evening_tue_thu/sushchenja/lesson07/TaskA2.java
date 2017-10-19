@@ -31,9 +31,6 @@ public class TaskA2 {
             if (line.equals("END")) break;
             arr.add(line);
         }
-        System.out.println(arr.size());
-        for (String s : arr) {
-            System.out.println(s+" ");
-        }
+        System.out.println(arr);
     }
 }
