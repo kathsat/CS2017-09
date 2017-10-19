@@ -20,6 +20,38 @@ b=[11, 22, 33, 44, 55, 66, 77, 88, 99, 0]
 
 */
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 public class TaskB2 {
+    public static void main(String[] args) throws Exception {
+        int[] array1 = new int[20];
+        int[] array2 = new int[10];
+        int[] array3 = new int[10];
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        for (int i=0;i<array1.length;i++){
+            array1[i]=Integer.parseInt(reader.readLine());
+        }
+        System.out.print("a=[");
+        for (int i=0;i<array2.length -1;i++){
+            array2[i]=array1[i];
+            System.out.print(array2[i]+ ", ");
+        }
+        for (int i=array2.length -1;i<array2.length;i++){
+            array2[i]=array1[i];
+            System.out.print(array2[i]);
+        }
+        System.out.println("]");
+        System.out.print("b=[");
+        for (int i=0;i<array3.length - 1;i++) {
+            array3[i] = array1[i + 10];
+            System.out.print(array3[i] + ", ");
+        }
+        for (int i=array3.length - 1;i<array3.length ;i++) {
+            array3[i] = array1[i + 10];
+            System.out.print(array3[i]);
+        }
+        System.out.println("]");
+    }
 
 }
