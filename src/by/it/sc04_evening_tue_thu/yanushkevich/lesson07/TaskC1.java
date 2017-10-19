@@ -72,7 +72,7 @@ public class TaskC1 {
 
         //переделал метод - именил тип данных
         //исходный код с типом Integer - не могу в него список списков передать
-        //и не понятно что за тип List принимаемой переменной в методе??
+        //и не понятно что за тип List принимаемой переменной в методе???
 
         //private static void printList(List<Integer> list) {
         //  for (Integer aList : list) System.out.println(aList);
