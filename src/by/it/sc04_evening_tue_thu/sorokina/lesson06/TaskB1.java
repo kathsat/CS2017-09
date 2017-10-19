@@ -20,10 +20,10 @@ public class TaskB1 {
     public static void main( String[] args ) {
         int number;
         int sum=0;
-
+        Scanner sc=new Scanner(System.in);
+        number=sc.nextInt();
         do{
-            Scanner sc=new Scanner(System.in);
-            number=sc.nextInt();
+
 
             sum = sum+number;
 
