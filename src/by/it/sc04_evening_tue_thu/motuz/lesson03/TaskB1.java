@@ -22,5 +22,5 @@ class TaskB1 {
         int a = sc.nextInt();
         int result = a * a;
         System.out.println(result);
-}
+    }
 }

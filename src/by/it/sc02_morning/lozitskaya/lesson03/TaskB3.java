@@ -1,4 +1,4 @@
-package by.it.sc02_morning.lozitskaya.lesson03;
+package by.it.sc02_morning.lozitskaya;
 /*
         Уберите комментарии с части кода, чтобы на экран вывелось сообщение «C Новым Годом».
 

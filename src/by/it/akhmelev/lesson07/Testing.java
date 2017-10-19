@@ -11,7 +11,7 @@ import static org.junit.Assert.fail;
 //поставьте курсор на следующую строку и нажмите Ctrl+Shift+F10
 public class Testing {
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskA1() throws Exception {
         run("1\n2\n3\n4\n5\n6\n7\n8\n9\n0\n").
                 include("0\n9\n8\n7\n6\n5\n4\n3\n2\n1\n");
@@ -20,20 +20,20 @@ public class Testing {
     }
 
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskA2() throws Exception {
         run("ONE\nTWO\nTHREE\nFOUR\nFIVE\nEND\n").include("[ONE, TWO, THREE, FOUR, FIVE]");
         run("ONE\nEND\n").include("[ONE]");
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskB1() throws Exception {
         String[] lines=run("").stringWriter.toString().split("\n");
         assertTrue("Неверный размер",lines.length==6 && lines[0].trim().equals("5"));
     }
 
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskB2() throws Exception {
         run("1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n22\n33\n44\n55\n66\n77\n88\n99\n0")
                 .include("a=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n" +
@@ -41,13 +41,13 @@ public class Testing {
     }
 
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskC1() throws Exception {
         run("1\n2\n3\n4\n5\n6\n7\n8\n9\n44\n55\n11\n11\n12\n14\n12\n45\n38\n88\n77").
                 include("3\n6\n9\n12\n12\n45\n2\n4\n6\n8\n44\n12\n14\n12\n38\n88\n1\n5\n7\n55\n11\n11\n77");
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskC2() throws Exception {
         run("1\n-2\n3\n4\n5\n666\n7\n8\n9\n0\n1\n-1\n3\n4\n5\n665\n7\n8\n9\n0\n").
                 include("666\n665\n9\n9\n8\n8\n7\n7\n5\n5\n4\n4\n3\n3\n1\n1\n0\n0\n-1\n-2");

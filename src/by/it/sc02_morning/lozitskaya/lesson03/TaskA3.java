@@ -1,4 +1,4 @@
-package by.it.sc02_morning.lozitskaya.lesson03;
+package by.it.sc02_morning.lozitskaya;
 /*
 Измените переменные и строку вывода в программе так,
 чтобы она расчитывала и печатала следующее выражение

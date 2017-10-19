@@ -11,13 +11,13 @@ import static org.junit.Assert.*;
 public class Testing {
 
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskA1() throws Exception {
         Testing testing = new Testing(TaskA1.class);
         testing.contains("Hello world!");
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskA2() throws Exception {
         Testing testing = new Testing(TaskA2.class);
         testing.contains(
@@ -29,37 +29,37 @@ public class Testing {
         );
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskA3() throws Exception {
         Testing testing = new Testing(TaskA3.class);
         testing.contains("3*3+4*4=25");
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskB1() throws Exception {
         Testing testing = new Testing(TaskB1.class, "7");
         testing.contains("49");
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskB2() throws Exception {
         Testing testing = new Testing(TaskB2.class);
         testing.contains("20");
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskB3() throws Exception {
         Testing testing = new Testing(TaskB3.class);
         testing.contains("C Новым Годом");
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskC1() throws Exception {
         Testing testing = new Testing(TaskC1.class, "7\n3\n");
         testing.contains("Sum = 10\n");
     }
 
-    @Test
+    @Test(timeout = 500)
     public void testTaskC2() throws Exception {
         Testing testing = new Testing(TaskC2.class, "34\n26\n");
         testing.contains(
@@ -69,7 +69,7 @@ public class Testing {
                         "OKT:42+32=74\n");
     }
 
-    @Test
+    @Test(timeout = 500)
 
     public void testTaskC3() throws Exception {
         Testing testing = new Testing(TaskC3.class, "75\n");

@@ -1,4 +1,4 @@
-package by.it.sc02_morning.lozitskaya.lesson03;
+package by.it.sc02_morning.lozitskaya;
 
 /*
 Выводим квадрат числа

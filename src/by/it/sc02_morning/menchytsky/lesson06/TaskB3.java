@@ -16,6 +16,30 @@ package by.it.sc02_morning.menchytsky.lesson06;
  */
 
 
-public class TaskB3 {
 
+import java.util.Scanner;
+
+public class TaskB3 {
+    public static void main(String[] args)  {
+
+        Scanner sc=new Scanner(System.in);
+        int a = sc.nextInt();
+        double sum = 0;
+        int y = 0;
+        int z = 2147483647 ;
+
+        for (int i = 1; i <= a; i++) {
+            int b = sc.nextInt();
+            sum += b;
+            if(b>=y) y=b;
+
+            if(b<=z) z=b;
+
+        }
+        System.out.println("Minimum = " + z);
+        System.out.println("Maximum = " + y);
+        System.out.println("Average = " + (sum/a));
+
+
+    }
 }
