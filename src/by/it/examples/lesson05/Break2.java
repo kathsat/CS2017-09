@@ -9,7 +9,7 @@ class Break2 {
  
     for( ; ; ) { 
       ch = (char) System.in.read(); // get a char 
-      if(ch == 'q') break;
+      if(ch == 'q') break; 
     } 
     System.out.println("You pressed q!"); 
   }   
