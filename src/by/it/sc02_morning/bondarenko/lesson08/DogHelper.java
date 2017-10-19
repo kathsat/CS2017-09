@@ -4,7 +4,7 @@ class DogHelper {
 
     static void printAllNames(Dog[] dogs) {
         for (int i = 0; i < dogs.length; i++) {
-            System.out.printf(dogs[i].getName() + ((i == dogs.length - 1) ? "" : " "));
+            System.out.printf(dogs[i].getName() + ((i == dogs.length - 1) ? "%n" : " "));
         }
     }
 
