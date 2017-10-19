@@ -1,0 +1,30 @@
+package by.it.sc04_evening_tue_thu.krasikova.lesson08;
+
+public class Dog {
+    private String name;
+    private int age;
+
+    String getName() {
+        return name;
+    }
+
+    void setName (String name) {
+        this.name = name;
+    }
+
+    int getAge() {
+        return age;
+    }
+
+    void setAge (int age) {
+        this.age = age;
+    }
+
+    public String toString(){
+        return ("Кличка: "+name+". Возраст: "+age);
+
+
+
+
+    }
+}
