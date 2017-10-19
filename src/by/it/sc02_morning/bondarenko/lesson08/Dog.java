@@ -4,12 +4,14 @@ public class Dog {
 
     private String name;
     private int age;
+    private int weight;
+    private double power;
 
-    public String getName() {
+    String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    void setName(String name) {
         this.name = name;
     }
 
@@ -17,8 +19,29 @@ public class Dog {
         return age;
     }
 
-    public void setAge(int age) {
+    void setAge(int age) {
         this.age = age;
+    }
+
+    int getWeight() {
+        return weight;
+    }
+
+    void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    double getPower() {
+        return power;
+    }
+
+    void setPower(double power) {
+        this.power = power;
+    }
+
+    boolean win(Dog otherDog) {
+        return (0.2 * this.getAge() + 0.3 * this.getWeight() + 0.5 * getPower()) >
+                (0.2 * otherDog.getAge() + 0.3 * otherDog.getWeight() + 0.5 * otherDog.getPower());
     }
 
     @Override
