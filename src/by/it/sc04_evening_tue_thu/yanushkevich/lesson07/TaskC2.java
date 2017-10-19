@@ -2,7 +2,7 @@ package by.it.sc04_evening_tue_thu.yanushkevich.lesson07;
 
 /* Задачка на сортировку
 Задача: Написать программу, которая вводит с клавиатуры 20 чисел и выводит их в убывающем порядке.
-*/
+*/ 
 
 import java.util.Scanner;
 
