@@ -50,6 +50,19 @@ package by.it.sc02_morning.davydov.lesson06;
 
 */
 
+import java.util.Scanner;
+
 public class TaskC1 {
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+
+
+
+
+
+
+
+
+
 
 }
