@@ -17,20 +17,17 @@ $$$$
  */
 
 import java.util.Scanner;
+
 public class TaskA2 {
     public static void main(String[] args) {
-        Scanner cr = new Scanner(System.in);
-        int m = cr.nextInt();
-        int n = cr.nextInt();
-        System.out.println ("m="+ m + "," + "n=" + n);
-        for (int i=0; i<m; i++){
-            for (int j=0; j<n; j++) {
-                System.out.print ("$");}
-
-
-                    System.out.println();
-
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt(), b=sc.nextInt();
+        char c='$';
+        for (int i=1; i<a+1; i++) {
+            for(int j=1; j<b+1; j++) {
+                System.out.print(c);
             }
+            System.out.println("");
         }
-
-        }
+    }
+}
