@@ -11,16 +11,28 @@ package by.it.sc03_evening_mon_fri.kalita.lesson07;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 public class TaskB1 {
     public static void main(String[] args) throws IOException {
-        String[] str=new String[5];
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int i=0;
-        for (i = 0;i<5;i++) {
-            str[i] = reader.readLine();
-            System.out.println(str[i].length() + " " + str[i]);
+        List str=new ArrayList<String>();
+        //BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        //Scanner reader = new Scanner(System.in);
+        String[]strin=new String[5];
+        strin[0]="jkdlvnv";
+        strin[1]="kdvjkbdvkjdbvjkdbvkj";
+        strin[2]="vbdjklvbdkjvbdjklvbdkjvbdvk";
+        strin[3]="vbjdk";
+        strin[4]="ndbvjdbvkdbvvbjdz";
+        for (int i = 0;i<5;i++) {
+            str.add(strin[i]);
         }
+        System.out.println(str.size());
+        for (int i=0;i<5;i++){
+            System.out.println(str.get(i));
+    }
 
     }
 

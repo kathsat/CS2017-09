@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Created by Denis on 20.10.2017.
  */
-public class Dog {
+ class Dog {
     private int age;
     private String name;
     private int weight;

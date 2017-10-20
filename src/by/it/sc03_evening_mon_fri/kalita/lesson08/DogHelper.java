@@ -4,8 +4,7 @@ import java.lang.reflect.Array;
 
 /**
  * Created by Denis on 20.10.2017.
- */
-public class DogHelper extends Dog{
+ */ class DogHelper extends Dog{
     public  static void printAllNames(Dog[] dogs){
         for (Dog str: dogs      ) {
             System.out.print(str.getName()+" ");

@@ -39,17 +39,25 @@ public class TaskC1 {
         Dog d2 = new Dog();
         Scanner in = new Scanner(System.in);
         String[] str = new String[8];
-        for(int i=0;i<8;i++){
+        /*for(int i=0;i<8;i++){
             str[i] =in.nextLine();
-        }
-        d1.setName(str[0]);
+        }*/
+        /*d1.setName(str[0]);
         d1.setAge(Integer.parseInt(str[1]));
         d1.setWeight(Integer.parseInt(str[2 ]));
         d1.setPower(Double.parseDouble(str[3].replace(",",".")));
         d2.setName(str[4]);
         d2.setAge(Integer.parseInt(str[5]));
         d2.setWeight(Integer.parseInt(str[6 ]));
-        d2.setPower(Double.parseDouble(str[7].replace(",",".")));
+        d2.setPower(Double.parseDouble(str[7].replace(",",".")));*/
+        d1.setName(in.next());
+        d1.setAge(in.nextInt());
+        d1.setWeight(in.nextInt());
+        d1.setPower(in.nextDouble());
+        d2.setName(in.next());
+        d2.setAge(in.nextInt());
+        d2.setWeight(in.nextInt());
+        d2.setPower(in.nextDouble());
         System.out.println(d1.win(d2) ? d1.getName() : d2.getName());
 
     }
