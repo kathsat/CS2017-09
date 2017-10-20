@@ -11,10 +11,10 @@ public class DogHelper {
 
     static double averageAge(Dog[] dogs){  //должен вычислять средний возраст переданных ему собак
         int i;
-        double avgAge=0;
+        double averAge=0;
         for(i=0; i<dogs.length; i++){
-            avgAge=avgAge+dogs[i].getAge();
+            averAge=averAge+dogs[i].getAge();
     }
-    return avgAge/dogs.length;
+    return averAge/dogs.length;
     }
 }
