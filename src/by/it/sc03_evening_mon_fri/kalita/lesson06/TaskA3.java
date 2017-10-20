@@ -25,10 +25,7 @@ import java.util.Scanner;
 
 public class TaskA3 {
     public static void main(String[] args) {
-       /* for (int i = 0; i < 256;) {
-            System.out.println(i+": "+(char)i+++"  "+i+": "+(char)i++);
-        }*/
-        for (int i = 1, num = 65, size = new Scanner(System.in).nextInt(); i < size+1; i++,num=65) {
+         for (int i = 1, num = 65, size = new Scanner(System.in).nextInt(); i < size+1; i++,num=65) {
             for (int j = 0; j < i; j++) {
                 System.out.print((char)num++);
             }
