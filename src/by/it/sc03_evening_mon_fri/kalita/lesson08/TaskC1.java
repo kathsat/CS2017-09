@@ -33,32 +33,6 @@ boolean win(Dog otherDog)
 import java.util.Scanner;
 
 public class TaskC1 {
-    public static Dog input() {
-        Dog d = new Dog();
-        Scanner in = new Scanner(System.in);
-        while (in.hasNext())
-            if (in.hasNextLine()) {
-                d.setName(in.nextLine());
-                break;
-            }
-        while (in.hasNext())
-            if (in.hasNextInt()) {
-                d.setAge(in.nextInt());
-                break;
-            }
-        while (in.hasNextInt())
-            if (in.hasNextInt()) {
-                d.setWeight(in.nextInt());
-                break;
-            }
-        while (in.hasNextDouble())
-            if (in.hasNextDouble()) {
-                d.setPower(in.nextDouble());
-                break;
-            }
-           return d;
-    }
-
     public static void main(String[] args) {
 
         Dog d1 = new Dog();
