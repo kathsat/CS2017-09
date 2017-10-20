@@ -21,17 +21,16 @@ $ $ $ $ $ $ $ $ $ $
 */
 
 public class TaskA1 {
-    public static void main (String args []){
-        char a ='$';
-        int i = 1;
-        while (i<=100){
-            if(i%10==0) System.out.println(" " );
-            else
-            System.out.print(a+" ");
-            i++;}
-
-            }
-
+    public static void main(String[] args) {
+        char a='$';
+        int i=1;
+        while (i<=110) {
+            if (i%11==0) System.out.println("");
+            else System.out.print(a+" ");
+            i++;
+        }
     }
+}
+
 
 
