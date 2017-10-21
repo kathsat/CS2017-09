@@ -7,7 +7,6 @@ public class Dog {
 
     String getName() {
         return name;
-
     }
 
     int getAge() {
@@ -15,10 +14,14 @@ public class Dog {
     }
 
     void setName(String name){
-  this.name=name;
-}
-  void setAge(int age){
+        this.name=name;
+    }
+    void setAge(int age){
       this.age=age;
+    }
+    public String toString(){
+        return  "Кличка: "+this.name+". Возраст: "+this.age;
     }
 
 }
+
