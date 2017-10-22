@@ -44,7 +44,7 @@ public class Dog {
     }
 
     boolean win(Dog otherDog) {
-        return (0.2 * this.age + 0.3 * this.weight + 0.5 * this.power) >
-                (0.2 * otherDog.getAge() + 0.3 * otherDog.getWeight() + 0.5 * otherDog.getPower());
+        return 0.2 * this.age + 0.3 * this.weight + 0.5 * this.power >
+                0.2 * otherDog.getAge() + 0.3 * otherDog.getWeight() + 0.5 * otherDog.getPower();
     }
 }
