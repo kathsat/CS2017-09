@@ -22,7 +22,8 @@ public class TaskC1 {
         ArrayList<Integer> list2 = new ArrayList<>();
         ArrayList<Integer> list3 = new ArrayList<>();
         for (int i = 0; i < 20; i++) {
-            list0.add(sc.nextInt());
+            int a = sc.nextInt();
+            list0.add(a); // list0.add(sc.nextInt())
         }
         for (int i = 0; i < list0.size(); i++) {
             if (list0.get(i) % 2 == 0)
@@ -31,10 +32,6 @@ public class TaskC1 {
                 list2.add(list0.get(i));
             if (list0.get(i) % 2 != 0 && list0.get(i) % 3 != 0)
                 list3.add(list0.get(i));
-//            if (list0.get(i) % 2 == 0 && list0.get(i) % 3 == 0) {
-//                list1.add(list0.get(i));
-//                list2.add(list0.get(i));
-//            }
         }
         printList(list2);
         printList(list1);
