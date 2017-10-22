@@ -22,6 +22,26 @@ package by.it.sc03_evening_mon_fri.tsewan.lesson05;
  */
 
 
+import java.util.Scanner;
+
 public class TaskA3 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int i=sc.nextInt();
+        int x=sc.nextInt();
+        int c=sc.nextInt();
+        if (i==x) {
+            if (i==c) System.out.println(i+" "+x+" "+c);
+            else if (x==c) System.out.println(i+" "+x+" "+c);
+            else System.out.println(i+" "+x);
+        }
+        else {
+            if (i==c) System.out.println(i+" "+c);
+            else if (x==c) System.out.println(x+" "+c);
+        }
+
+
+
+    }
 
 }

@@ -37,6 +37,20 @@ package by.it.sc03_evening_mon_fri.tsewan.lesson05;
 
 */
 
+import java.util.Scanner;
+
 public class TaskC1 {
+    public static void main(String[] args) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        Scanner sc=new Scanner (System.in);
+        int zp=sc.nextInt();
+        int i=0;
+        double pr = zp + zp*0.5;
+        if (zp<300) System.out.println("Мы вам перезвоним!");
+
+        else if (zp>3000) System.out.println("Мы вам перезвоним!");
+            else for (i=0; i<15; i++)
+            switch(i) {
+
 
 }

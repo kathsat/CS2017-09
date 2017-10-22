@@ -81,9 +81,15 @@ public class TaskC1 {
             System.out.println("Мы вам перезвоним!");
             i=15;}
         for (; i < 15; i++) {
-            if(i>5&&i<9) {System.out.println("За "+ month(i) + " начислено $" +salary*1.0);if(salary==666) break;}
-            else if(i==0||i>12){ System.out.println("За "+ month(i) + " "+i +" начислено $" + 0*1.5);}
-            else {System.out.println("За "+ month(i) + " начислено $" +salary*1.5);if(salary*1.5==666) break;}
+            if(i>5&&i<9) {
+                System.out.println("За "+ month(i) + " начислено $" +salary*1.0);
+                if(salary==666) break;
+            }
+            else if(i==0||i>12){
+                System.out.println("За "+ month(i) + " "+i +" начислено $" + 0*1.5);
+            }
+            else {System.out.println("За "+ month(i) + " начислено $" +salary*1.5);if(salary*1.5==666) break;
+            }
         }
     }
 

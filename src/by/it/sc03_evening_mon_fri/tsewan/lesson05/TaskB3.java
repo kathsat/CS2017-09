@@ -25,6 +25,21 @@ package by.it.sc03_evening_mon_fri.tsewan.lesson05;
  */
 
 
+import java.util.Scanner;
+
 public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int i=sc.nextInt();
+        int s=1;
+        int sum=0;
+        while (sum<=i){
+
+            sum= sum+s;
+            if(sum<=i) {
+            System.out.print(sum+",");}
+            s++;
+        }
+    }
 
 }
