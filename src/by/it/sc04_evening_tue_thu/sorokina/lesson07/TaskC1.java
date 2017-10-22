@@ -33,16 +33,13 @@ public class TaskC1 {
 
 
         for (int i = 0; i < list.size(); i++) {
-            Integer a = list.get(i);
-            if (a%2==0) {
-                listDouble.add(a);
-                            }
-            else if (a%3==0) {
-                listTriple.add(a);
-                            }
-            else if (a%2!=0) {
-                listOther.add(a);
-                            }
+            if(list.get(i)%3==0 && list.get(i)%2==0) {
+                listDouble.add(list.get(i));
+                listTriple.add(list.get(i));
+            }
+            else if (list.get(i)%2==0) listDouble.add(list.get(i));
+            else if (list.get(i)%3==0) listTriple.add(list.get(i));
+            else listOther.add(list.get(i));
 
         }
 
@@ -51,7 +48,7 @@ public class TaskC1 {
 
 
         printList(listTriple);
-        printList(listDouble);
+       printList(listDouble);
         printList(listOther);
 
     }
