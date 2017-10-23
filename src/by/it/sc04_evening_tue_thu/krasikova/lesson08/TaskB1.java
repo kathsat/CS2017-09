@@ -29,14 +29,20 @@ public class TaskB1 {
     public static void main(String[] args) {
         Dog[] dogs = new Dog[5];
         String[] names = "Шарик Жучка Бобик Барбос Полкан".split(" ");
+        int age[] = new int[5];
         for (int i = 0; i < dogs.length; i++) {
             dogs[i] = new Dog();
             dogs[i].setName(names[i]);
             }
+        dogs[0].setAge(1);
+        dogs[1].setAge(2);
+        dogs[2].setAge(3);
+        dogs[3].setAge(4);
+        dogs[4].setAge(5);
 
         DogHelper.printAllNames(dogs);
-
-
+        System.out.println();
+        System.out.println(DogHelper.averageAge(dogs));
         }
 
     }
