@@ -1,7 +1,6 @@
 package by.it.akhmelev.lesson09;
 
 import java.math.BigInteger;
-import java.util.ArrayList;
 
 /*
  * Вам необходимо выполнить способ вычисления чисел Фибоначчи с вспомогательным массивом

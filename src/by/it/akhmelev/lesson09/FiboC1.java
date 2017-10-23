@@ -6,8 +6,6 @@ package by.it.akhmelev.lesson09;
  * время расчета должно быть не более 2 секунд
  */
 
-import java.util.ArrayList;
-
 public class FiboC1 {
 
     private long startTime = System.currentTimeMillis();
