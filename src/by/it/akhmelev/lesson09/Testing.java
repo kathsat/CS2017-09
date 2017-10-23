@@ -9,6 +9,7 @@ import java.math.BigInteger;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
+//поставьте курсор на следующую строку и нажмите Ctrl+Shift+F10
 public class Testing {
     /*
     для прохождения тестов создайте JUnit-конфигурацию на свой пакет:
