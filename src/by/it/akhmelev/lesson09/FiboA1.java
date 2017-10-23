@@ -32,8 +32,7 @@ public class FiboA1 {
         //здесь простейший вариант, в котором код совпадает с мат.определением чисел Фибоначчи
         //время O(2^n)
         //составим мы этот алгоритм на занятии
-        if (n<=1) return n;
-        return calc(n-2)+calc(n-1);
+        return 0;
     }
 
 
@@ -42,9 +41,7 @@ public class FiboA1 {
         //здесь нужно реализовать вариант без ограничения на размер числа,
         //в котором код совпадает с мат.определением чисел Фибоначчи
         //время O(2^n)
-        if (n==0) return BigInteger.ZERO;
-        if (n==1) return BigInteger.ONE;
-        return slowA(n-2).add(slowA(n-1));
+        return BigInteger.ZERO;
     }
 
 

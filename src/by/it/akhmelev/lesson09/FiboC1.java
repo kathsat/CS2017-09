@@ -27,24 +27,7 @@ public class FiboC1 {
         //решение практически невозможно найти интуитивно
         //вам потребуется дополнительный поиск информации
         //см. период Пизано
-        ArrayList<Long> numbers = new ArrayList();
-        numbers.add((long) 0);
-        numbers.add((long) 1);
-
-        for (int i = 2; i < m * 6; i++) {
-            numbers.add((numbers.get(i - 1) + numbers.get(i - 2)) % m);
-            //System.out.println("Num" + numbers);
-            if (numbers.get(i) == 1 && numbers.get(i - 1) == 0) {
-                break;
-            }
-        }
-        long periodOfPizano = numbers.size() - 2; // находим период Пизано
-        int val = (int) (n % periodOfPizano);
-        //System.out.println("Val" + periodOfPizano);
-        return numbers.get(val);
-
-        //return 0L;
-
+        return 0L;
     }
 
 
