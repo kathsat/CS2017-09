@@ -35,8 +35,8 @@ public class Dog {
          return "Кличка: "+name+". "+ "Возраст: "+age;
          }
 
-    static boolean win(Dog thisDog, Dog otherDog){
-             double chancesToWin1=0.2* thisDog.getAge()+0.3*thisDog.getWeight()+0.5*thisDog.getPower();
+    boolean win(Dog otherDog){
+             double chancesToWin1=0.2* this.getAge()+0.3*this.getWeight()+0.5*this.getPower();
              double chancesToWin2=0.2* otherDog.getAge()+0.3*otherDog.getWeight()+0.5*otherDog.getPower();
             if (chancesToWin1>chancesToWin2)
                 return true;
