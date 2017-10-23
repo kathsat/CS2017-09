@@ -26,6 +26,17 @@ double averageAge(Dog[] dogs){.....}; //должен вычислять сред
 */
 
 public class TaskB1 {
-
-
+    public static void main(String[] args) {
+        Dog [] dogs = new Dog[5];
+        String [] names = {"Шарик", "Жучка", "Бобик", "Барбос", "Полкан"};
+        int [] ages = {1, 2, 3, 4, 5};
+        for (int i=0; i< dogs.length; i++) {
+            dogs[i]=new Dog();
+            dogs[i].setName(names[i]);
+            dogs[i].setAge(ages[i]);
+        }
+        DogHelper.printAllNames(dogs);
+        System.out.println();
+        System.out.println(DogHelper.averageAge(dogs));
+    }
 }
