@@ -11,15 +11,6 @@ import static org.junit.Assert.fail;
 
 //поставьте курсор на следующую строку и нажмите Ctrl+Shift+F10
 public class Testing {
-    /*
-    для прохождения тестов создайте JUnit-конфигурацию на свой пакет:
-    Поля:
-    Name:               Test a_khmelev (тут ваша фамилия)
-    Test kind:          All in package
-    Package:            by.it.группа.a_khmelev (тут ваша фамилия)
-    Search for test:    In whole project
-    */
-
     @Test(timeout = 2000)
     public void slowA() throws Exception {
 //        FiboA fibo = new FiboA();
