@@ -29,7 +29,24 @@ boolean win(Dog otherDog)
 Напечатайте кличку победителя.
 */
 
+import java.util.Scanner;
 
 public class TaskC1 {
+    public static void main (String args[]) {
+        Scanner sc=new Scanner(System.in);
+        Dog dog1 = new Dog();
+        Dog dog2 = new Dog();
+        dog1.setName((sc.next()));
+        dog1.setAge(sc.nextInt());
+        dog1.setWeight(sc.nextInt());
+        dog1.setPower(sc.nextDouble());
+        dog2.setName((sc.next()));
+        dog2.setAge(sc.nextInt());
+        dog2.setWeight(sc.nextInt());
+        dog2.setPower(sc.nextDouble());
+        boolean result = dog1.win(dog2);
+        if (result) System.out.println(dog1.getName());
+            else System.out.println(dog2.getName());
+    }
 
 }
