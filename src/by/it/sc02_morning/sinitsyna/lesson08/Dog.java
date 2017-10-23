@@ -22,12 +22,19 @@ public class Dog {
         this.age = age;
     }
 
-    //    @Override
+    public int getWeight() { return weight; }
+
+    public void setWeight(int weight) { this.weight = weight; }
+
+    public double getPower() { return power; }
+
+    public void setPower(double power) { this.power = power; }
+
+    @Override
     public String toString() {
-//        String result=String.format(
-        //               "Кличка": %s. Возраст: %d
-        //       )
-        return super.toString();
+        return String.format("Кличка: %s. Возраст: %d", name, age);
+
     }
+
 }
 

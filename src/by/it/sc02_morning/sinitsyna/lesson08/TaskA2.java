@@ -25,4 +25,16 @@ package by.it.sc02_morning.sinitsyna.lesson08;
 
 */
 public class TaskA2 {
+    public static void main(String[] args) {
+        Dog d1=new Dog ();
+        d1.setName("Шарик");
+        d1.setAge(5);
+
+        Dog d2=new Dog ();
+        d2.setName("Тузик");
+        d2.setAge(3);
+
+        System.out.println(d1.toString());
+        System.out.println(d2.toString());
+    }
 }
