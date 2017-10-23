@@ -27,16 +27,21 @@ package by.it.sc03_evening_mon_fri.kalita.lesson07;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class TaskA1 {
     public static void main(String[] args) throws IOException {
-        int[] a = new int[11];
-        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        String[] s = in.readLine().split(" ");
-        for (String str:s)
-
-
-        System.out.println(str);
+        int[] a = new int[10];
+        /*BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        String[] s = in.readLine().split(" ");*/
+        String[]s=new String[10];
+        Scanner in = new Scanner(System.in);
+        for (int i = 0; i < s.length; i++) {
+            a[i]=in.nextInt();
+        }
+        for (int i=a.length-1;i>=0;i--) {
+            System.out.println(a[i]);
+        }
     }
 }
 /*        for (int x=0;x<a.length;x++  ) {
