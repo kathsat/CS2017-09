@@ -13,7 +13,6 @@ package by.it.sc04_evening_tue_thu.yanushkevich.lesson07;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class TaskC1 {
@@ -51,31 +50,17 @@ public class TaskC1 {
                 list3.add(x);
             }
         }
-        //System.out.println(list1);
         //System.out.println(list2);
+        //System.out.println(list1);
         //System.out.println(list3);
 
-
-        ArrayList <ArrayList> arrayOfLists = new ArrayList<>();
-        arrayOfLists.add(list2);
-        arrayOfLists.add(list1);
-        arrayOfLists.add(list3);
-        //Collections.addAll(arrayOfLists, list1, list2, list3);
-        printList(arrayOfLists);
-
-
+        printList(list2);
+        printList(list1);
+        printList(list3);
     }
 
-
-    private static void printList(List<ArrayList> list) {
-        for (ArrayList aList : list) System.out.println(aList);
-
-        //переделал метод - именил тип данных
-        //исходный код с типом Integer - не могу в него список списков передать
-        //и не понятно что за тип List принимаемой переменной в методе???
-
-        //private static void printList(List<Integer> list) {
-        //  for (Integer aList : list) System.out.println(aList);
+        private static void printList(List<Integer> list) {
+            for (Integer aList : list) System.out.println(aList);
 
 
     }
