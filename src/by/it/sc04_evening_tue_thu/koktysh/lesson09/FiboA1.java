@@ -13,7 +13,7 @@ public class FiboA1 {
     private long time() {
         long result=System.currentTimeMillis() - startTime;
         startTime = System.currentTimeMillis();
-        return System.currentTimeMillis() - startTime;
+        return result;
     }
 
     public static void main(String[] args) {
@@ -32,8 +32,11 @@ public class FiboA1 {
         //здесь простейший вариант, в котором код совпадает с мат.определением чисел Фибоначчи
         //время O(2^n)
         //составим мы этот алгоритм на занятии
-        return 0;
-    }
+
+        if (n==0) return 0;
+        if (n==1) return 1;
+        return calc(n-1) + calc(n-2);
+        }
 
 
     BigInteger slowA(int n) {
@@ -41,7 +44,10 @@ public class FiboA1 {
         //здесь нужно реализовать вариант без ограничения на размер числа,
         //в котором код совпадает с мат.определением чисел Фибоначчи
         //время O(2^n)
-        return BigInteger.ZERO;
+
+        if (n==0) return BigInteger.ZERO;
+        if (n==1) return BigInteger.ONE;
+        return slowA(n-1).add(slowA(n-2));
     }
 
 
