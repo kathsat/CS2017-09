@@ -57,30 +57,18 @@ public class TaskC1 {
         Scanner sc = new Scanner(System.in);
         int k = sc.nextInt(); //требуемое число повторений, возведений в степень
         int i;                //фиктическое число прогонов
-        int a=0;              //степень
-        int n=2;              //исходная 2
-        int w;
+        long n=1;              //исходная 2
+
         for(i=0;i<=k;i++){
-           w=(int) Math.pow(n,a);
-            System.out.println(Integer.toBinaryString((int)w)+"="+w) ;
-            a++;
+        String z="";
+        for (int j=0;j<=(k-Long.toBinaryString(n).length());j++){
+            z=z+"0";
+        }
+String bin=Long.toBinaryString(n);
+            bin=z+bin;
+            System.out.println(bin+" = "+n);
+//            System.out.println(Integer.toBinaryString((int)n)+"="+n) ;
+            n=n<<1;
         }
     }
 }
-    // Возведение в квадрат числа 3
-//    int a1 = 3;
-//    int b1 = 2;
-//      System.out.printf("Число 3 в квадрате равно %.0f \n", Math.pow(a1, b1));
-//    public static void main(String[] args) {
-//        Scanner sc = new Scanner(System.in);
-//        int s1 = sc.nextInt();
-//        int s2 = sc.nextInt();
-//        int res = s1 + s2;
-//        System.out.println("DEC:"+s1+"+"+s2+"="+res);
-//        System.out.println("BIN:"+Integer.toBinaryString((int)s1)+"+"+Integer.toBinaryString((int)s2)+"="+Integer.toBinaryString((int) res));
-//        System.out.println("HEX:"+Integer.toHexString((int)s1)+"+"+Integer.toHexString((int)s2)+"="+Integer.toHexString((int) res));
-//        System.out.println("OKT:"+Integer.toOctalString((int)s1)+"+"+Integer.toOctalString((int)s2)+"="+Integer.toOctalString((int) res));
-//
-//
-//
-//    }

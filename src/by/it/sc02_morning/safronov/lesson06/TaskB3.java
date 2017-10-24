@@ -16,6 +16,39 @@ package by.it.sc02_morning.safronov.lesson06;
  */
 
 
-public class TaskB3 {
+import javafx.beans.binding.IntegerBinding;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+import static java.util.Collections.*;
+
+public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double aver;
+        double s = 0;
+        int n = sc.nextInt();
+
+        ArrayList<Integer> list = new ArrayList();
+        for (int i = 0; i < n; i++) {
+            int k = sc.nextInt();
+            list.add(k);
+            s = s + k;
+
+            System.out.println("Minimum = " + min(list));
+            System.out.println("Maximum = " + max(list));
+            System.out.println("Average = " + (double) s / n);
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
