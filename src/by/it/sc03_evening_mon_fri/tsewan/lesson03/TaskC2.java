@@ -20,12 +20,13 @@ class TaskC2 {
         Scanner sc = new Scanner(System.in);
         int i = sc.nextInt();
         int j = sc.nextInt();
-        int Sum=i+j;
+        int Sum = i + j;
+
         {
-           System.out.println("DEC:"+Integer.toString(i, 1)+"+"+Integer.toString(j, 1)+"="+Sum);
-           System.out.println("BIN:"+Integer.toString(i, 2)+"+"+Integer.toString(j, 2)+"=");
-           System.out.println("HEX:"+Integer.toString(i, 16)+"+"+Integer.toString(j, 16)+"=");
-           System.out.println("OKT:"+Integer.toString(i, 8)+"+"+Integer.toString(j, 8)+"=");
+            System.out.println("DEC:" + Integer.toString(i, 1) + "+" + Integer.toString(j, 1) + "=" + Sum);
+            System.out.println("BIN:" + Integer.toString(i, 2) + "+" + Integer.toString(j, 2) + "=");
+            System.out.println("HEX:"+Integer.toString(i, 16)+"+"+Integer.toString(j, 16)+"=");
+            System.out.println("OKT:"+Integer.toString(i, 8)+"+"+Integer.toString(j, 8)+"=");
         }
     }
 }
