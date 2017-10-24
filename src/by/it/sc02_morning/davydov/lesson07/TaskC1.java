@@ -10,11 +10,23 @@ package by.it.sc02_morning.davydov.lesson07;
     Сначала тот, который для x%3, потом тот, который для x%2, потом последний.
 */
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class TaskC1 {
     public static void main(String[] args) throws Exception
     {
+        Scanner sc = new Scanner(System.in);
+        ArrayList<Integer> first = new ArrayList<Integer> ();
+        for (int i = 0; i < first.size(); i++) {
+            first.add(sc.nextInt());
+
+        }
+
+
+
+
 
 
     }
