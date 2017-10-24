@@ -23,14 +23,14 @@ END
 
 */
 public class TaskA2 {
-    public static void main(String[] args);
-    ArrayList<String> arrs = new ArrayList<>();
-    Scanner sc = new Scanner(System.in);
-    while (true)
-    {
-        String line = sc.next();
-        if (line.equals("END")) break;
-        else arrs.add(line);
-        System.out.println(arrs);
+    public static void main(String[] args) {
+        ArrayList<String> arrs = new ArrayList<>();
+        Scanner sc = new Scanner(System.in);
+        while (true) {
+            String line = sc.next();
+            if (line.equals("END")) break;
+            else arrs.add(line);
+            System.out.println(arrs);
+        }
     }
 }

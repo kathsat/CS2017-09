@@ -27,14 +27,14 @@ package by.it.sc02_morning.sabitova.lesson07;
 import java.util.Scanner;
 
 public class TaskA1 {
-public static void main (String[]args) {
-    int[] arr = new int[10];
-    Scanner sc = new Scanner(System.in);
-    for (int i = 0; i < arr.length; i++) {
-        arr[i] = sc.nextInt();
+    public static void main(String[] args) {
+        int[] arr = new int[10];
+        Scanner sc = new Scanner(System.in);
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
+        }
+        for (int i = arr.length - 1; i >= 0; i--) {
+            System.out.println(arr[i]);
+        }
     }
-    for (int i = arr.length - 1; i >= 0,i--){
-        System.out.println(arr[i]);
-    }
-}
 }
