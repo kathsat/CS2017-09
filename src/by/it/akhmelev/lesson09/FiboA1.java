@@ -13,7 +13,7 @@ public class FiboA1 {
     private long time() {
         long result=System.currentTimeMillis() - startTime;
         startTime = System.currentTimeMillis();
-        return System.currentTimeMillis() - startTime;
+        return result;
     }
 
     public static void main(String[] args) {
