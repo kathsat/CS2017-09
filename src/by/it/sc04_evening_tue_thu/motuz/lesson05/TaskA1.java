@@ -25,5 +25,15 @@ package by.it.sc04_evening_tue_thu.motuz.lesson05;
 
  */
 public class TaskA1 {
+    public static void main(String[] arg) {
+        for (int a = 1; a <= 10; a++) {
+            if ((a == 3)||(a == 9)) {
+                System.out.println("Меня интересует высокая зарплата!");
+            }else{
+                System.out.println("Я изучаю программирование.");
+            }
+        }
+
+    }
 
 }
