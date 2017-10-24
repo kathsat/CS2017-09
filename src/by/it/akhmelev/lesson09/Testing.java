@@ -9,6 +9,8 @@ import java.math.BigInteger;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
+@SuppressWarnings("all") //море warnings. всех прячем.
+
 //поставьте курсор на следующую строку и нажмите Ctrl+Shift+F10
 public class Testing {
     @Test(timeout = 2000)
