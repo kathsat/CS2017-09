@@ -14,6 +14,7 @@ package by.it.sc02_morning.safronov.lesson06;
 4. В программе должен использоваться цикл for или цикл while.
 */
 
+
 import java.util.Scanner;
 
 public class TaskB1 {

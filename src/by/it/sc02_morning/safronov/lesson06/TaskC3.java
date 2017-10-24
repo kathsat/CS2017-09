@@ -32,7 +32,7 @@ public class TaskC3 {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
         long n=scanner.nextLong();
-        String res="Вместо этой строки тут нужно ввести ваше выражение";
+        String res=(Long.highestOneBit(n)==n)? "YES":"NO";
         System.out.println(res);
     }
 

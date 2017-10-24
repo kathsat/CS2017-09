@@ -17,5 +17,24 @@ package by.it.sc02_morning.safronov.lesson06;
 
  */
 public class TaskC2 {
-
+//    public static void main(String[] args) {
+//        long g = 1;
+//        while (true) {
+//            if (fact(g) < 0) {
+//            g--;
+//            System.out.printf("%d = %x = %s", fact(g), fact(g), Long.toBinaryString(fact(g)));
+//            break;
+//        }
+//            else g++;
+//    }
+//}
+//
+//    private static long fact(long k) {
+//        long i =1;
+//        for (long j=1; j<=k; j++) {
+//            i = i * j;
+//        }
+//        return 1;
+//    }
 }
+
