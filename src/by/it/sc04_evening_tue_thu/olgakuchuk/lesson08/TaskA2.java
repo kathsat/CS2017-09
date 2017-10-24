@@ -1,7 +1,5 @@
 package by.it.sc04_evening_tue_thu.olgakuchuk.lesson08;
 
-import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
-
 /*
     toString() для класса Dog
 
