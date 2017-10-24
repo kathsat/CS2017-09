@@ -37,7 +37,7 @@ package by.it.sc04_evening_tue_thu.olgakuchuk.lesson05;
 
 */
 
-import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
+
 
 import java.util.Scanner;
 
