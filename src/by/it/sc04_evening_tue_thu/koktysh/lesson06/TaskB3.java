@@ -16,6 +16,33 @@ package by.it.sc04_evening_tue_thu.koktysh.lesson06;
  */
 
 
-public class TaskB3 {
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
+public class TaskB3 {
+    public static void main(String[] args) throws IOException {
+        int n;
+        int k;
+        double av;
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        n = Integer.parseInt(reader.readLine());
+        k = Integer.parseInt(reader.readLine());
+        int min = k;
+        int max = k;
+        int sum = k;
+        int counter = 1;
+        for (int i = 1; i<n; i++){
+            k=Integer.parseInt(reader.readLine());
+            counter++;
+            if (k<min)min=k;
+            if (k>max)max=k;
+            sum=sum+k;
+        }
+        av = (double)sum/n;
+        System.out.println("Minimum = " + min);
+        //System.out.println("Minimum = 0");
+        System.out.println("Maximum = " + max);
+        System.out.println("Average = " + av);
+    }
 }
