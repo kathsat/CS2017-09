@@ -25,6 +25,16 @@ package by.it.sc04_evening_tue_thu.koktysh.lesson05;
  */
 
 
-public class TaskB3 {
+import java.util.Scanner;
 
+public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int sum = 0;
+        int a = sc.nextInt();
+        for (int i = 1; sum+i<=a; i++){
+            sum = sum+i;
+            System.out.print(sum +",");
+        }
+    }
 }

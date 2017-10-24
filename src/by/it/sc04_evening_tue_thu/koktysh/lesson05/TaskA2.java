@@ -27,35 +27,33 @@ package by.it.sc04_evening_tue_thu.koktysh.lesson05;
 import java.util.Scanner;
 
 public class TaskA2 {
-    public static void main(String[] args) {
-        Scanner sc=new Scanner (System.in);
-        int x=sc.nextInt();
-
-        switch (x) {
-            case (1):
-                System.out.println ("понедельник");
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        switch (n){
+            case 1:
+                System.out.println("понедельник");
                 break;
-            case (2):
-                System.out.println ("вторник");
+            case 2:
+                System.out.println("вторник");
                 break;
-            case (3):
-                System.out.println ("среда");
+            case 3:
+                System.out.println("среда");
                 break;
-            case (4):
-                System.out.println ("четверг");
+            case 4:
+                System.out.println("четверг");
                 break;
-            case (5):
-                System.out.println ("пятница");
+            case 5:
+                System.out.println("пятница");
                 break;
-            case (6):
-                System.out.println ("суббота");
+            case 6:
+                System.out.println("суббота");
                 break;
-            case (7):
-                System.out.println ("воскресенье");
+            case 7:
+                System.out.println("воскресенье");
                 break;
             default:
-                System.out.println ("такого дня не существует");
+                System.out.println("такого дня недели не существует");
         }
-
     }
 }

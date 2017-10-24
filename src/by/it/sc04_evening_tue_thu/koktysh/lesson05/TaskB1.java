@@ -29,10 +29,15 @@ import java.util.Scanner;
 */
 public class TaskB1 {
     public static void main(String[] args) {
+        String s = "количество дней в году: 366";
         Scanner sc = new Scanner (System.in);
-        int i = sc.nextInt();
+        int year = sc.nextInt();
+        if ((year%4 != 0) || (year%4 == 0 && year%100 ==0 && year%400 != 0)){
+            s="количество дней в году: 365";
+        }
 
-        if ((i%4==0)||(i%100==0)&&(i%400==0)) System.out.println("количество дней в году: 366");
-        else System.out.println("количество дней в году: 365");
 
-    }}
+        System.out.println(s);
+    }
+
+}
