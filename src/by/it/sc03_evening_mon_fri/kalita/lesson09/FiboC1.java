@@ -18,8 +18,8 @@ public class FiboC1 {
 
     public static void main(String[] args) {
         FiboC1 fibo = new FiboC1();
-        int n =10;
-        int m = 2;
+        int n =5987456;
+        int m = 9999;
         System.out.printf("fasterC(%d)=%d \n\t time=%d \n\n", n, fibo.fasterC(n, m), fibo.time());
     }
 
@@ -27,7 +27,7 @@ public class FiboC1 {
         //решение практически невозможно найти интуитивно
         //вам потребуется дополнительный поиск информации
         //см. период Пизано
-        int em = m*5;
+        int em = m*m+1;
         BigInteger[] fib = new BigInteger[em];
 
         BigInteger[] fib1 = new BigInteger[em];
@@ -40,9 +40,9 @@ public class FiboC1 {
             fib1[i] = fib[i].mod(BigInteger.valueOf(m));
             //System.out.println(i + " " + fib[i] + "  "+fib1[i]);
             if(i>2)
-            if(fib1[i-1].compareTo(BigInteger.ZERO)==0&&fib1[i].compareTo(BigInteger.ONE)==0&&flag){
+            if(fib1[i-1].compareTo(BigInteger.ZERO)==0&&fib1[i].compareTo(BigInteger.ONE)==0){
                 period = i-1;
-                flag = false;
+                break;
             }
         }
        // System.out.println(period);
