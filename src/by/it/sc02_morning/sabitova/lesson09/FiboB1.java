@@ -29,12 +29,12 @@ public class FiboB1 {
         ArrayList<BigInteger> f = new ArrayList<>();
         f.add(BigInteger.ZERO);
         f.add(BigInteger.ONE);
-        for (int i=2, i<=n, i++);
-        BigInteger s1 = f.get(i-1);
-        BigInteger s2=f.get(i-2);
-        BigInteger result=s1.add(s2);
-        f.add(result);
-    }
+        for (int i = 2; i<=n; i++){
+            BigInteger s1 = f.get(i - 1);
+            BigInteger s2 = f.get(i - 2);
+            BigInteger result = s1.add(s2);
+            f.add(result);
+        }
         return f.get(n);
     }
 }
