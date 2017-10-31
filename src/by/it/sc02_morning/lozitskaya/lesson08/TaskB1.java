@@ -25,7 +25,7 @@ double averageAge(Dog[] dogs){.....}; //должен вычислять сред
 
 */
 
-import com.sun.scenario.effect.impl.sw.java.JSWBlend_SRC_OUTPeer;
+//import com.sun.scenario.effect.impl.sw.java.JSWBlend_SRC_OUTPeer;
 
 public class TaskB1 {
     public static void main(String[] args) {

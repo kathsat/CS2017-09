@@ -10,7 +10,7 @@ package by.it.sc02_morning.lozitskaya.lesson07;
     Сначала тот, который для x%3, потом тот, который для x%2, потом последний.
 */
 
-import com.sun.deploy.util.ArrayUtil;
+//import com.sun.deploy.util.ArrayUtil;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
